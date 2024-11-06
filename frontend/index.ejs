@@ -1,0 +1,15 @@
+<!-- index.ejs -->
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <% posts.forEach(function(post) { %>
+                <article class="mb-4">
+                    <h2><%= post.title %></h2>
+                    <p class="text-muted">Veröffentlicht am <%= post.date %></p>
+                    <p><%= post.summary %></p>
+                    <a href="/post/<%= post.id %>" class="btn btn-primary">Mehr lesen</a>
+                </article>
+            <% }); %>
+        </div>
+    </div>
+</main>

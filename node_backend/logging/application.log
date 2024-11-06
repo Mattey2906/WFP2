@@ -1,0 +1,341 @@
+01.10.2024, 08:59:26 [info]: Server is running on http://localhost:3000
+01.10.2024, 08:59:26 [info]: Connected to database.
+01.10.2024, 09:00:00 [info]: Server is running on http://localhost:3000
+01.10.2024, 09:00:00 [info]: Connected to database.
+01.10.2024, 09:00:43 [info]: Server is running on http://localhost:3000
+01.10.2024, 09:00:45 [info]: Connected to database.
+05.10.2024, 16:21:12 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:21:12 [info]: Connected to database.
+05.10.2024, 16:21:59 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:21:59 [info]: Connected to database.
+05.10.2024, 16:22:12 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:22:12 [info]: Connected to database.
+05.10.2024, 16:22:51 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:22:51 [info]: Connected to database.
+05.10.2024, 16:23:03 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:23:03 [info]: Connected to database.
+05.10.2024, 16:24:32 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:24:32 [info]: Connected to database.
+05.10.2024, 16:24:40 [info]: User inserted with ID:
+05.10.2024, 16:25:10 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:25:11 [info]: Connected to database.
+05.10.2024, 16:25:42 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:25:42 [info]: Connected to database.
+05.10.2024, 16:28:40 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:28:40 [info]: Connected to database.
+05.10.2024, 16:28:45 [info]: Server is running on http://localhost:3000
+05.10.2024, 16:28:45 [info]: Connected to database.
+06.10.2024, 22:27:21 [info]: Server is running on http://localhost:3000
+06.10.2024, 22:27:21 [info]: Connected to database.
+21.10.2024, 18:43:32 [info]: Server is running on http://localhost:3000
+21.10.2024, 18:43:32 [info]: Connected to database.
+21.10.2024, 18:45:13 [info]: Server is running on http://localhost:3000
+21.10.2024, 18:45:13 [info]: Connected to database.
+21.10.2024, 18:59:39 [info]: Server is running on http://localhost:3000
+21.10.2024, 18:59:39 [info]: Connected to database.
+21.10.2024, 19:01:53 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:01:53 [info]: Connected to database.
+21.10.2024, 19:02:40 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:02:41 [info]: Connected to database.
+21.10.2024, 19:03:08 [error]: Error inserting user into database: ER_BAD_FIELD_ERROR: Unknown column 'email' in 'field list'
+21.10.2024, 19:03:08 [error]: Error: ER_BAD_FIELD_ERROR: Unknown column 'email' in 'field list'
+21.10.2024, 19:03:33 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:03:33 [info]: Connected to database.
+21.10.2024, 19:03:35 [info]: User inserted with ID:
+21.10.2024, 19:05:24 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:05:24 [info]: Connected to database.
+21.10.2024, 19:06:21 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:06:21 [info]: Connected to database.
+21.10.2024, 19:07:13 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:07:14 [info]: Connected to database.
+21.10.2024, 19:07:38 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:07:38 [info]: Connected to database.
+21.10.2024, 19:08:55 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:08:55 [info]: Connected to database.
+21.10.2024, 19:09:00 [info]: Server is running on http://localhost:3000
+21.10.2024, 19:09:01 [info]: Connected to database.
+22.10.2024, 07:09:50 [info]: Server is running on http://localhost:3000
+27.10.2024, 08:48:03 [info]: Server is running on http://localhost:3000
+27.10.2024, 08:48:04 [info]: Connected to database.
+27.10.2024, 09:21:12 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:21:12 [info]: Connected to database.
+27.10.2024, 09:21:46 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:21:46 [info]: Connected to database.
+27.10.2024, 09:22:20 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:22:20 [info]: Connected to database.
+27.10.2024, 09:23:00 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:23:00 [info]: Connected to database.
+27.10.2024, 09:23:39 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:23:39 [info]: Connected to database.
+27.10.2024, 09:23:57 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:23:57 [info]: Connected to database.
+27.10.2024, 09:25:11 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:25:12 [info]: Connected to database.
+27.10.2024, 09:25:32 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:25:32 [info]: Uvicorn Server Status:
+27.10.2024, 09:25:32 [info]: Connected to database.
+27.10.2024, 09:26:55 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:26:55 [info]: Uvicorn Server Status: {"status":"ok"}
+27.10.2024, 09:26:55 [info]: Connected to database.
+27.10.2024, 09:26:57 [info]: Server is running on http://localhost:3000
+27.10.2024, 09:26:57 [info]: Uvicorn Server Status: {"status":"ok"}
+27.10.2024, 09:26:57 [info]: Connected to database.
+27.10.2024, 18:25:46 [info]: Server is running on http://localhost:3000
+27.10.2024, 18:25:46 [info]: Uvicorn Server Status: {"status":"ok"}
+27.10.2024, 18:25:46 [info]: Connected to database.
+27.10.2024, 18:39:24 [info]: Server is running on http://localhost:3000
+27.10.2024, 18:39:24 [info]: Uvicorn Server Status: {"status":"ok"}
+27.10.2024, 18:39:24 [info]: Connected to database.
+01.11.2024, 01:15:48 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:15:48 [info]: Connected to database.
+01.11.2024, 01:15:48 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:18:27 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:18:27 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:18:27 [info]: Connected to database.
+01.11.2024, 01:23:14 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:23:14 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.11.2024, 01:23:14 [info]: Connected to database.
+01.11.2024, 01:24:07 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:24:07 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:24:07 [info]: Connected to database.
+01.11.2024, 01:26:52 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:26:52 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:26:52 [info]: Connected to database.
+01.11.2024, 01:27:24 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:27:24 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:27:24 [info]: Connected to database.
+01.11.2024, 01:30:25 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:30:25 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:30:26 [info]: Connected to database.
+01.11.2024, 01:30:32 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:30:32 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:30:32 [info]: Connected to database.
+01.11.2024, 01:30:44 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:30:44 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:30:44 [info]: Connected to database.
+01.11.2024, 01:31:02 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:31:02 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:31:02 [info]: Connected to database.
+01.11.2024, 01:31:13 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:31:13 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:31:13 [info]: Connected to database.
+01.11.2024, 01:31:28 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:31:28 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:31:29 [info]: Connected to database.
+01.11.2024, 01:32:47 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:32:47 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:32:48 [info]: Connected to database.
+01.11.2024, 01:32:54 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:32:54 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:32:54 [info]: Connected to database.
+01.11.2024, 01:33:12 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:33:12 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:33:12 [info]: Connected to database.
+01.11.2024, 01:33:24 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:33:24 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:33:24 [info]: Connected to database.
+01.11.2024, 01:33:30 [info]: Server is running on http://localhost:3000
+01.11.2024, 01:33:31 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 01:33:31 [info]: Connected to database.
+01.11.2024, 17:41:05 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:41:05 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:41:26 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:41:26 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:42:50 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:42:50 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:43:06 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:43:06 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:43:20 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:43:20 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:43:21 [info]: [object Object],[object Object]
+01.11.2024, 17:44:10 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:44:10 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:44:10 [info]: Database connection successful
+01.11.2024, 17:44:11 [error]: Database error: Duplicate entry '1' for key 'mytest.PRIMARY'
+01.11.2024, 17:44:38 [info]: Server is running on http://localhost:3000
+01.11.2024, 17:44:38 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 17:44:38 [info]: Database connection successful
+01.11.2024, 19:23:10 [info]: Server is running on http://localhost:3000
+01.11.2024, 19:23:10 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 19:23:10 [info]: Database connection successful
+01.11.2024, 23:07:08 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:07:08 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:07:08 [info]: Database connection successful
+01.11.2024, 23:08:56 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:08:56 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:08:56 [info]: Database connection successful
+01.11.2024, 23:10:31 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:10:31 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:10:32 [info]: Database connection successful
+01.11.2024, 23:12:59 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:12:59 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:12:59 [info]: Database connection successful
+01.11.2024, 23:13:45 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:13:45 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:13:45 [info]: Database connection successful
+01.11.2024, 23:14:09 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:14:09 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:14:09 [info]: Database connection successful
+01.11.2024, 23:20:33 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:20:33 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:20:34 [info]: Database connection successful
+01.11.2024, 23:20:44 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:20:44 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:20:44 [info]: Database connection successful
+01.11.2024, 23:20:51 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:20:51 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:20:51 [info]: Database connection successful
+01.11.2024, 23:21:05 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:21:05 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:21:05 [info]: Database connection successful
+01.11.2024, 23:21:51 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:21:51 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:21:51 [info]: Database connection successful
+01.11.2024, 23:32:29 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:32:29 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:32:29 [info]: Database connection successful
+01.11.2024, 23:32:45 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:32:45 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:32:45 [info]: Database connection successful
+01.11.2024, 23:34:07 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:34:08 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:34:08 [info]: Database connection successful
+01.11.2024, 23:34:36 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:34:36 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:34:36 [info]: Database connection successful
+01.11.2024, 23:35:21 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:35:21 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:35:22 [info]: Database connection successful
+01.11.2024, 23:35:28 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:35:28 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:35:29 [info]: Database connection successful
+01.11.2024, 23:36:48 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:36:48 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:36:48 [info]: Database connection successful
+01.11.2024, 23:37:06 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:37:06 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:37:07 [info]: Database connection successful
+01.11.2024, 23:37:25 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:37:25 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:37:25 [info]: Database connection successful
+01.11.2024, 23:37:29 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:37:29 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:37:29 [info]: Database connection successful
+01.11.2024, 23:39:36 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:39:36 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:39:36 [info]: Database connection successful
+01.11.2024, 23:41:38 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:41:38 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:41:39 [info]: Database connection successful
+01.11.2024, 23:44:11 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:44:11 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:44:11 [info]: Database connection successful
+01.11.2024, 23:48:11 [info]: Server is running on http://localhost:3000
+01.11.2024, 23:48:11 [info]: Uvicorn Server Status: {"status":"ok"}
+01.11.2024, 23:48:11 [info]: Database connection successful
+02.11.2024, 19:17:40 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:17:40 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:17:40 [info]: Database connection successful
+02.11.2024, 19:17:49 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:17:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:17:50 [info]: Database connection successful
+02.11.2024, 19:18:33 [error]: Error inserting user into database: dbConnection.execute is not a function
+02.11.2024, 19:18:33 [error]: Error: dbConnection.execute is not a function
+02.11.2024, 19:19:59 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:19:59 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:19:59 [info]: Database connection successful
+02.11.2024, 19:20:11 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:20:11 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:20:11 [info]: Database connection successful
+02.11.2024, 19:20:26 [error]: Error inserting user into database: dbConnection.query is not a function
+02.11.2024, 19:20:26 [error]: Error: dbConnection.query is not a function
+02.11.2024, 19:23:06 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:23:06 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:23:06 [info]: Database connection successful
+02.11.2024, 19:24:03 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:24:03 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:24:03 [info]: Database connection successful
+02.11.2024, 19:25:25 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:25:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:25:25 [info]: Database connection successful
+02.11.2024, 19:25:31 [info]: User inserted with ID:
+02.11.2024, 19:26:57 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:26:57 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:26:58 [info]: Database connection successful
+02.11.2024, 19:27:04 [error]: Error inserting user into database: Duplicate entry 'admin' for key 'users.username'
+02.11.2024, 19:27:04 [error]: Error: Duplicate entry 'admin' for key 'users.username'
+02.11.2024, 19:27:12 [info]: User inserted with ID:
+02.11.2024, 19:27:29 [error]: Error inserting user into database: Duplicate entry 'admin1' for key 'users.username'
+02.11.2024, 19:27:29 [error]: Error: Duplicate entry 'admin1' for key 'users.username'
+02.11.2024, 19:38:49 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:38:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:38:49 [info]: Database connection successful
+02.11.2024, 19:39:11 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:39:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:39:12 [info]: Database connection successful
+02.11.2024, 19:40:19 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:40:19 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:40:20 [info]: Database connection successful
+02.11.2024, 19:40:33 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:40:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:40:33 [info]: Database connection successful
+02.11.2024, 19:40:51 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:40:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:40:51 [info]: Database connection successful
+02.11.2024, 19:41:09 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:41:09 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:41:09 [info]: Database connection successful
+02.11.2024, 19:41:23 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:41:23 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:41:24 [info]: Database connection successful
+02.11.2024, 19:41:40 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:41:40 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:41:41 [info]: Database connection successful
+02.11.2024, 19:42:05 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:42:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:42:05 [info]: Database connection successful
+02.11.2024, 19:42:43 [info]: User inserted
+02.11.2024, 19:47:22 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:47:22 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:47:22 [info]: Database connection successful
+02.11.2024, 19:47:26 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:47:26 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:47:26 [info]: Database connection successful
+02.11.2024, 19:48:27 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:48:27 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:48:27 [info]: Database connection successful
+02.11.2024, 19:52:04 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:52:04 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:52:04 [info]: Database connection successful
+02.11.2024, 19:52:40 [info]: Server is running on http://localhost:3000
+02.11.2024, 19:52:40 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 19:52:40 [info]: Database connection successful
+02.11.2024, 21:48:43 [info]: Server is running on http://localhost:3000
+02.11.2024, 21:48:44 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 21:48:44 [info]: Database connection successful
+02.11.2024, 21:52:00 [info]: Server is running on http://localhost:3000
+02.11.2024, 21:52:00 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 21:52:00 [info]: Database connection successful
+02.11.2024, 21:52:00 [error]: Error getting user from database: Cannot read properties of undefined (reading 'query')
+02.11.2024, 21:52:00 [info]: Error during authentication: Cannot read properties of undefined (reading 'query')
+02.11.2024, 21:53:05 [info]: Server is running on http://localhost:3000
+02.11.2024, 21:53:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 21:53:05 [info]: Database connection successful
+02.11.2024, 21:53:10 [info]: Server is running on http://localhost:3000
+02.11.2024, 21:53:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 21:53:10 [info]: Database connection successful
+02.11.2024, 21:53:18 [error]: Error getting user from database: Cannot read properties of undefined (reading 'execute')
+02.11.2024, 21:53:18 [info]: Error during authentication: Cannot read properties of undefined (reading 'execute')
+02.11.2024, 21:58:29 [info]: Server is running on http://localhost:3000
+02.11.2024, 21:58:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+02.11.2024, 21:58:29 [info]: Database connection successful
+02.11.2024, 21:58:32 [error]: Error getting user from database: Cannot read properties of undefined (reading 'execute')
+02.11.2024, 21:58:32 [info]: Error during authentication: Cannot read properties of undefined (reading 'execute')
+04.11.2024, 19:52:34 [info]: Server is running on http://localhost:3000
+04.11.2024, 19:52:34 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+06.11.2024, 08:00:37 [info]: Server is running on http://localhost:3000
+06.11.2024, 08:00:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+06.11.2024, 08:00:37 [info]: Database connection successful
+06.11.2024, 09:56:21 [info]: Server is running on http://localhost:3000
+06.11.2024, 09:56:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+06.11.2024, 09:56:22 [info]: Database connection successful
