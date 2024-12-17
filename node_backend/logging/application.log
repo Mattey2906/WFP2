@@ -339,3 +339,1103 @@
 06.11.2024, 09:56:21 [info]: Server is running on http://localhost:3000
 06.11.2024, 09:56:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
 06.11.2024, 09:56:22 [info]: Database connection successful
+16.12.2024, 22:06:41 [info]: Server is running on http://localhost:3000
+16.12.2024, 22:06:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+16.12.2024, 22:06:41 [info]: Database connection successful
+17.12.2024, 00:12:39 [error]: Error getting user from database: Cannot read properties of undefined (reading 'execute')
+17.12.2024, 00:12:39 [info]: Error during authentication: Cannot read properties of undefined (reading 'execute')
+17.12.2024, 00:14:10 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:14:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:14:11 [info]: Database connection successful
+17.12.2024, 00:20:20 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:20:20 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:20:20 [info]: Database connection successful
+17.12.2024, 00:21:21 [error]: Error: pwSalt is not defined
+17.12.2024, 00:22:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:22:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:22:29 [info]: Database connection successful
+17.12.2024, 00:22:39 [error]: Error inserting user into database: No database connection available
+17.12.2024, 00:22:39 [error]: Error: No database connection available
+17.12.2024, 00:22:46 [error]: Error inserting user into database: No database connection available
+17.12.2024, 00:22:46 [error]: Error: No database connection available
+17.12.2024, 00:30:12 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:30:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:30:13 [info]: Database connection successful
+17.12.2024, 00:30:32 [error]: Error inserting user into database: No database connection available
+17.12.2024, 00:30:32 [error]: Error: No database connection available
+17.12.2024, 00:34:14 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:34:14 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:34:15 [info]: Database connection successful
+17.12.2024, 00:36:33 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:36:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:36:34 [info]: Database connection established
+17.12.2024, 00:37:02 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:37:02 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:37:02 [info]: Database connection established
+17.12.2024, 00:37:21 [info]: User inserted successfully
+17.12.2024, 00:47:31 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:47:31 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:47:31 [info]: Database connection established
+17.12.2024, 00:48:15 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:48:15 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:48:16 [info]: Database connection established
+17.12.2024, 00:48:45 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:48:45 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:48:46 [info]: Database connection established
+17.12.2024, 00:49:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:49:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:49:47 [info]: Database connection established
+17.12.2024, 00:49:56 [error]: Error getting user from database: dbConnection is not defined
+17.12.2024, 00:49:56 [info]: Error during authentication: dbConnection is not defined
+17.12.2024, 00:52:00 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:52:00 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:52:01 [info]: Database connection established
+17.12.2024, 00:52:05 [error]: Error during login validation: encryptPassword is not a function
+17.12.2024, 00:52:24 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:52:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:52:25 [info]: Database connection established
+17.12.2024, 00:53:28 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:53:28 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:53:29 [info]: Database connection established
+17.12.2024, 00:53:34 [error]: Error during login validation: encryptPassword is not a function
+17.12.2024, 00:54:07 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:54:07 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:54:08 [info]: Database connection established
+17.12.2024, 00:55:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:55:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:55:30 [info]: Database connection established
+17.12.2024, 00:58:37 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:58:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:58:38 [info]: Database connection established
+17.12.2024, 00:58:40 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:58:40 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:58:41 [info]: Database connection established
+17.12.2024, 00:58:46 [info]: validateLogin matiisaltSELECT salt FROM users WHERE username = ?
+17.12.2024, 00:58:46 [error]: Error during session generation: dbConnection is not defined
+17.12.2024, 00:59:04 [info]: Server is running on http://localhost:3000
+17.12.2024, 00:59:04 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 00:59:05 [info]: Database connection established
+17.12.2024, 01:00:25 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:00:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:00:26 [info]: Database connection established
+17.12.2024, 01:00:33 [info]: validateLogin admin@123.comsaltSELECT salt FROM users WHERE username = ?
+17.12.2024, 01:00:33 [info]: User existiert nichtadmin@123.com
+17.12.2024, 01:02:03 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:02:03 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:02:03 [info]: Database connection established
+17.12.2024, 01:03:10 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:03:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:03:10 [info]: Database connection established
+17.12.2024, 01:03:24 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:03:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:03:25 [info]: Database connection established
+17.12.2024, 01:03:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:03:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:03:30 [info]: Database connection established
+17.12.2024, 01:03:38 [info]: validateLogin admin@123.comsaltSELECT salt FROM users WHERE username = ?
+17.12.2024, 01:03:38 [info]: User existiert nichtadmin@123.com
+17.12.2024, 01:04:00 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:04:00 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:04:01 [info]: Database connection established
+17.12.2024, 01:04:42 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:04:42 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:04:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:04:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:04:43 [info]: Database connection established
+17.12.2024, 01:04:48 [info]: validateLogin admin@123.comsaltSELECT salt FROM users WHERE username = ?
+17.12.2024, 01:04:48 [info]: User existiert nichtadmin@123.com
+17.12.2024, 01:04:48 [info]: Session ID: 
+17.12.2024, 01:06:47 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:06:47 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:06:47 [info]: Database connection established
+17.12.2024, 01:08:11 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:08:11 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:08:11 [info]: Database connection established
+17.12.2024, 01:09:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:09:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:09:47 [info]: Database connection established
+17.12.2024, 01:11:06 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:11:06 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:11:07 [info]: Database connection established
+17.12.2024, 01:11:10 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:11:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:11:10 [info]: Database connection established
+17.12.2024, 01:11:16 [info]: validateLogin admin@123.comsaltSELECT salt FROM users WHERE username = ?
+17.12.2024, 01:11:16 [info]: User existiert nichtadmin@123.com
+17.12.2024, 01:11:52 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:11:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:11:52 [info]: Database connection established
+17.12.2024, 01:12:06 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:12:06 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:12:07 [info]: Database connection established
+17.12.2024, 01:12:10 [error]: Error during login validation: Cannot read properties of undefined (reading 'salt')
+17.12.2024, 01:13:54 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:13:54 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:13:55 [info]: Database connection established
+17.12.2024, 01:14:00 [error]: Error during login validation: Cannot read properties of undefined (reading 'salt')
+17.12.2024, 01:15:49 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:15:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:15:50 [info]: Database connection established
+17.12.2024, 01:16:12 [info]: User existiert nichtadmin@123.com
+17.12.2024, 01:16:27 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:16:27 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:16:28 [info]: Database connection established
+17.12.2024, 01:16:51 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:18:39 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:18:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:18:40 [info]: Database connection established
+17.12.2024, 01:18:47 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:18:47 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:18:48 [info]: Database connection established
+17.12.2024, 01:18:50 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:18:50 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:18:51 [info]: Database connection established
+17.12.2024, 01:18:52 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:18:53 [info]: Passwort falsch: [object Object]
+17.12.2024, 01:19:19 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:19:19 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:19:20 [info]: Database connection established
+17.12.2024, 01:19:22 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:19:22 [info]: Passwort falsch: [object Object]
+17.12.2024, 01:19:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:19:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:19:32 [info]: Database connection established
+17.12.2024, 01:19:34 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:19:34 [info]: Login Credentials Correct formatii
+17.12.2024, 01:19:34 [error]: Error inserting session into database: Data too long for column 'session_id' at row 1
+17.12.2024, 01:19:34 [error]: Error during session generation: Data too long for column 'session_id' at row 1
+17.12.2024, 01:20:18 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:20:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:20:19 [info]: Database connection established
+17.12.2024, 01:20:23 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:20:23 [info]: Login Credentials Correct formatii
+17.12.2024, 01:20:23 [error]: Error inserting session into database: Data too long for column 'session_id' at row 1
+17.12.2024, 01:20:23 [error]: Error during session generation: Data too long for column 'session_id' at row 1
+17.12.2024, 01:20:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:20:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:20:33 [info]: Database connection established
+17.12.2024, 01:26:41 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:26:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:26:42 [info]: Database connection established
+17.12.2024, 01:27:21 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:27:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:27:22 [info]: Database connection established
+17.12.2024, 01:27:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:27:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:27:33 [info]: Database connection established
+17.12.2024, 01:27:39 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:27:39 [info]: Login Credentials Correct formatii
+17.12.2024, 01:27:39 [error]: Error during session generation: dbConnection.execute is not a function
+17.12.2024, 01:28:12 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:28:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:28:13 [info]: Database connection established
+17.12.2024, 01:28:14 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:28:15 [info]: Login Credentials Correct formatii
+17.12.2024, 01:28:15 [info]: Session inserted with ID:
+17.12.2024, 01:28:15 [error]: Session storing failed
+17.12.2024, 01:28:15 [error]: Error during session generation: Session storing failed
+17.12.2024, 01:28:37 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:28:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:28:37 [info]: Database connection established
+17.12.2024, 01:31:57 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:31:57 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:31:57 [info]: Database connection established
+17.12.2024, 01:32:06 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:32:06 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:32:07 [info]: Database connection established
+17.12.2024, 01:32:09 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:32:10 [info]: Login Credentials Correct formatii
+17.12.2024, 01:32:10 [error]: Error during session generation: Unknown column 'user_id' in 'field list'
+17.12.2024, 01:32:39 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:32:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:32:40 [info]: Database connection established
+17.12.2024, 01:34:57 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:34:57 [info]: Login Credentials Correct formatii
+17.12.2024, 01:34:58 [error]: Error during session generation: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 01:35:51 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:35:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:35:52 [info]: Database connection established
+17.12.2024, 01:35:56 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:35:57 [info]: Login Credentials Correct formatii
+17.12.2024, 01:35:57 [info]: Session inserted with ID:
+17.12.2024, 01:36:33 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:36:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:36:33 [info]: Database connection established
+17.12.2024, 01:36:38 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:36:39 [info]: Login Credentials Correct formatii
+17.12.2024, 01:36:39 [info]: Session inserted with ID:
+17.12.2024, 01:43:32 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:43:33 [info]: Login Credentials Correct formatii
+17.12.2024, 01:43:33 [info]: Session inserted with ID:
+17.12.2024, 01:45:22 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:45:22 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:45:22 [info]: Database connection established
+17.12.2024, 01:45:29 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:45:29 [info]: Login Credentials Correct formatii
+17.12.2024, 01:45:30 [info]: Session inserted with ID: %s
+17.12.2024, 01:45:36 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:45:36 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:45:37 [info]: Database connection established
+17.12.2024, 01:46:15 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:46:15 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:46:15 [info]: Database connection established
+17.12.2024, 01:49:15 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:49:15 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:49:16 [info]: Database connection established
+17.12.2024, 01:49:25 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:49:25 [info]: Login Credentials Correct formatii
+17.12.2024, 01:49:25 [info]: Deleted 2 session(s) for user ID: 6
+17.12.2024, 01:49:47 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:49:47 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:49:48 [info]: Database connection established
+17.12.2024, 01:49:53 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:49:53 [info]: Login Credentials Correct formatii
+17.12.2024, 01:49:53 [info]: Deleted 0 session(s) for user ID: 6
+17.12.2024, 01:49:54 [info]: Session inserted with ID:
+17.12.2024, 01:55:13 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:55:13 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:55:14 [info]: Database connection established
+17.12.2024, 01:55:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 01:55:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 01:55:47 [info]: Database connection established
+17.12.2024, 01:57:18 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:57:19 [info]: Login Credentials Correct formatii
+17.12.2024, 01:57:19 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 01:57:19 [info]: Session inserted with ID:
+17.12.2024, 01:57:31 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 01:57:31 [info]: Login Credentials Correct formatii
+17.12.2024, 01:57:32 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 01:57:32 [info]: Session inserted with ID:
+17.12.2024, 02:01:39 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:01:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:01:40 [info]: Database connection established
+17.12.2024, 02:02:26 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:02:26 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:02:27 [info]: Database connection established
+17.12.2024, 02:02:31 [info]: validateLogin: matii salt: $2a$10$cc9gW3KCSQcYkRVYB3GBT.
+17.12.2024, 02:02:32 [info]: Login Credentials Correct formatii
+17.12.2024, 02:02:32 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:02:32 [info]: Session inserted with ID:
+17.12.2024, 02:03:48 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:03:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:03:49 [info]: Database connection established
+17.12.2024, 02:05:48 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:05:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:05:50 [info]: Database connection established
+17.12.2024, 02:19:10 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:19:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:19:10 [info]: Database connection established
+17.12.2024, 02:21:07 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:21:07 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:21:08 [info]: Database connection established
+17.12.2024, 02:21:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:21:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:21:47 [info]: Database connection established
+17.12.2024, 02:22:51 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:22:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:22:52 [info]: Database connection established
+17.12.2024, 02:23:04 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:23:04 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:23:04 [info]: Session inserted with ID:
+17.12.2024, 02:23:07 [info]: Session not found or already expired: f9a018eb-97ba-4f9a-861a-2a25b060c9bc
+17.12.2024, 02:24:08 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:24:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:24:09 [info]: Database connection established
+17.12.2024, 02:24:13 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:24:13 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:24:13 [info]: Database connection established
+17.12.2024, 02:24:18 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:24:19 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:24:19 [info]: Session inserted with ID:
+17.12.2024, 02:24:31 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:24:31 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:24:35 [error]: Error during login validation: Cannot read properties of undefined (reading 'execute')
+17.12.2024, 02:24:37 [info]: Database connection established
+17.12.2024, 02:24:41 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:24:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:24:42 [info]: Database connection established
+17.12.2024, 02:24:53 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:24:53 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:24:53 [info]: Session inserted with ID:
+17.12.2024, 02:24:53 [info]: LOGIN - sende folgende session an FE: a2ec472c-dab3-4936-ab72-8cf0c848d8b0
+17.12.2024, 02:27:05 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:27:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:27:06 [info]: Database connection established
+17.12.2024, 02:27:18 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:27:18 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:27:18 [info]: Session inserted with ID:
+17.12.2024, 02:27:18 [info]: LOGIN - sende folgende session an FE: f66e2dac-56cc-4a67-ab22-8e90f142561d
+17.12.2024, 02:28:44 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:28:45 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:28:45 [info]: Session inserted with ID:
+17.12.2024, 02:28:45 [info]: LOGIN - sende folgende session an FE: 17559285-5a5f-47cf-ab5b-ec5481a7642a
+17.12.2024, 02:29:11 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:29:11 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:29:11 [info]: Session inserted with ID:
+17.12.2024, 02:29:11 [info]: LOGIN - sende folgende session an FE: c8d2ce8a-6529-4d71-bc3d-7148b7721bf0
+17.12.2024, 02:29:27 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:29:28 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:29:28 [info]: Session inserted with ID:
+17.12.2024, 02:29:28 [info]: LOGIN - sende folgende session an FE: 05b9d6eb-7574-4d3a-93c6-a4bfbf4b8870
+17.12.2024, 02:31:32 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:31:32 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:31:32 [info]: Session inserted with ID:
+17.12.2024, 02:31:32 [info]: LOGIN - sende folgende session an FE: 8de4bc8b-6e8b-43ba-bb16-79a515100c65
+17.12.2024, 02:33:18 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:33:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:33:19 [info]: Database connection established
+17.12.2024, 02:33:31 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:33:31 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:33:31 [info]: Session inserted with ID:
+17.12.2024, 02:33:31 [info]: LOGIN - sende folgende session an FE: 221f5db4-1c4c-4299-8090-2a351adc1426
+17.12.2024, 02:33:39 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:33:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:33:40 [info]: Database connection established
+17.12.2024, 02:33:57 [info]: Session updated successfully: 221f5db4-1c4c-4299-8090-2a351adc1426
+17.12.2024, 02:35:39 [info]: Session not found or already expired: 221f5db4-1c4c-4299-80x0-2a351adc1426
+17.12.2024, 02:36:16 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:36:16 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:36:17 [info]: Database connection established
+17.12.2024, 02:36:21 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:36:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:36:22 [info]: Database connection established
+17.12.2024, 02:37:04 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:37:04 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:37:05 [info]: Database connection established
+17.12.2024, 02:38:22 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:38:22 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:38:23 [info]: Database connection established
+17.12.2024, 02:39:28 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:39:28 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:39:30 [info]: Database connection established
+17.12.2024, 02:39:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:39:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:39:48 [info]: Database connection established
+17.12.2024, 02:40:06 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:40:06 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:40:07 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:40:07 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:40:08 [info]: Database connection established
+17.12.2024, 02:40:45 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:40:45 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:40:46 [info]: Database connection established
+17.12.2024, 02:41:07 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:41:07 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:41:07 [info]: Database connection established
+17.12.2024, 02:41:41 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:41:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:41:42 [info]: Database connection established
+17.12.2024, 02:42:09 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:42:09 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:42:10 [info]: Database connection established
+17.12.2024, 02:42:21 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:42:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:42:22 [info]: Database connection established
+17.12.2024, 02:42:48 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:42:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:42:49 [info]: Database connection established
+17.12.2024, 02:43:48 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:43:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:43:49 [info]: Database connection established
+17.12.2024, 02:44:17 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:44:17 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:44:18 [info]: Database connection established
+17.12.2024, 02:44:24 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:44:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:44:24 [info]: Database connection established
+17.12.2024, 02:44:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 02:44:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 02:44:44 [info]: Database connection established
+17.12.2024, 02:48:21 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:48:22 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:48:22 [info]: Session inserted with ID:
+17.12.2024, 02:48:22 [info]: LOGIN - sende folgende session an FE: d5249de5-257c-4ac7-8e32-3a7291b0f42b
+17.12.2024, 02:48:22 [info]: Login Credentials Correct for: matii
+17.12.2024, 02:48:23 [info]: Deleted 1 session(s) for user ID: 6
+17.12.2024, 02:48:23 [info]: Session inserted with ID:
+17.12.2024, 02:48:23 [info]: LOGIN - sende folgende session an FE: 60735fa7-41cc-410b-b696-35e14fd0c79a
+17.12.2024, 02:48:24 [info]: Session updated successfully: 60735fa7-41cc-410b-b696-35e14fd0c79a
+17.12.2024, 02:48:25 [info]: Session updated successfully: 60735fa7-41cc-410b-b696-35e14fd0c79a
+17.12.2024, 02:48:25 [info]: Session deleted successfully: 60735fa7-41cc-410b-b696-35e14fd0c79a
+17.12.2024, 03:05:52 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:05:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:05:53 [info]: Database connection established
+17.12.2024, 03:06:44 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:06:44 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:06:45 [info]: Database connection established
+17.12.2024, 03:07:36 [info]: Login Credentials Correct for: matii
+17.12.2024, 03:07:37 [info]: Deleted 0 session(s) for user ID: 6
+17.12.2024, 03:07:37 [info]: Session inserted with ID:
+17.12.2024, 03:07:37 [info]: LOGIN - sende folgende session an FE: b016e674-5faa-4560-9608-e6227b89d33b
+17.12.2024, 03:07:39 [info]: Session updated successfully: b016e674-5faa-4560-9608-e6227b89d33b
+17.12.2024, 03:07:40 [info]: Session updated successfully: b016e674-5faa-4560-9608-e6227b89d33b
+17.12.2024, 03:07:40 [info]: Session deleted successfully: b016e674-5faa-4560-9608-e6227b89d33b
+17.12.2024, 03:09:10 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:09:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:09:11 [info]: Database connection established
+17.12.2024, 03:11:25 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:11:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:11:26 [info]: Database connection established
+17.12.2024, 03:11:35 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 03:11:35 [info]: Deleted 0 session(s) for user ID: 6
+17.12.2024, 03:11:35 [info]: Session inserted with ID:
+17.12.2024, 03:11:35 [info]: LOGIN - Sending session to frontend: 9ab2d693-8086-4e61-9f50-1a0e8a26a6b5
+17.12.2024, 03:11:36 [info]: Session updated successfully: 9ab2d693-8086-4e61-9f50-1a0e8a26a6b5
+17.12.2024, 03:11:37 [info]: Session updated successfully: 9ab2d693-8086-4e61-9f50-1a0e8a26a6b5
+17.12.2024, 03:11:38 [info]: [deleteSession] Session deleted: ID=9ab2d693-8086-4e61-9f50-1a0e8a26a6b5
+17.12.2024, 03:14:30 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:14:30 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:14:31 [info]: Database connection established
+17.12.2024, 03:14:45 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 03:14:45 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 03:14:45 [info]: [generateUUID] Generated UUID: 6d8c9230-a2e7-4b80-b739-ff1a2b7cf769
+17.12.2024, 03:14:45 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 03:14:46 [info]: [generateSession] Deleted 0 session(s) for user ID: 6
+17.12.2024, 03:14:46 [info]: [generateSession] Session created: ID=6d8c9230-a2e7-4b80-b739-ff1a2b7cf769, user=matii
+17.12.2024, 03:14:46 [info]: LOGIN - Sending session to frontend: 6d8c9230-a2e7-4b80-b739-ff1a2b7cf769
+17.12.2024, 03:14:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=6d8c9230-a2e7-4b80-b739-ff1a2b7cf769
+17.12.2024, 03:14:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=6d8c9230-a2e7-4b80-b739-ff1a2b7cf769
+17.12.2024, 03:14:50 [info]: [deleteSession] Session deleted: ID=6d8c9230-a2e7-4b80-b739-ff1a2b7cf769
+17.12.2024, 03:17:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:17:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:17:33 [info]: Database connection established
+17.12.2024, 03:26:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:26:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:26:44 [info]: Database connection established
+17.12.2024, 03:27:05 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:27:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:27:06 [info]: Database connection established
+17.12.2024, 03:27:33 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:27:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:27:33 [info]: Database connection established
+17.12.2024, 03:28:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:28:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:28:33 [info]: Database connection established
+17.12.2024, 03:28:48 [info]: Server is running on http://localhost:3000
+17.12.2024, 03:28:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 03:28:49 [info]: Database connection established
+17.12.2024, 10:53:19 [info]: Server is running on http://localhost:3000
+17.12.2024, 10:53:19 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 10:53:20 [info]: Database connection established
+17.12.2024, 10:53:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 10:53:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 10:53:30 [info]: Database connection established
+17.12.2024, 10:53:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 10:53:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 10:53:47 [info]: Database connection established
+17.12.2024, 10:56:37 [error]: [validateLogin] Error validating login: Cannot find module '/home/matthias/Projects/FH Campus Wien/WFP2/node_backend/logic/functions'
+Require stack:
+- /home/matthias/Projects/FH Campus Wien/WFP2/node_backend/db/db_account_management.js
+- /home/matthias/Projects/FH Campus Wien/WFP2/node_backend/routes/route_account_management.js
+- /home/matthias/Projects/FH Campus Wien/WFP2/node_backend/server.js
+17.12.2024, 10:56:37 [error]: [login] Error during login: Cannot find module '/home/matthias/Projects/FH Campus Wien/WFP2/node_backend/logic/functions'
+Require stack:
+- /home/matthias/Projects/FH Campus Wien/WFP2/node_backend/db/db_account_management.js
+- /home/matthias/Projects/FH Campus Wien/WFP2/node_backend/routes/route_account_management.js
+- /home/matthias/Projects/FH Campus Wien/WFP2/node_backend/server.js
+17.12.2024, 10:58:19 [info]: Server is running on http://localhost:3000
+17.12.2024, 10:58:19 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 10:58:19 [info]: Database connection established
+17.12.2024, 10:58:25 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 10:58:25 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 10:58:25 [info]: [generateUUID] Generated UUID: 58178350-17ac-4cfc-8089-0c7feb6432b1
+17.12.2024, 10:58:25 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 10:58:25 [info]: [generateSession] Deleted 0 session(s) for user ID: 6
+17.12.2024, 10:58:26 [info]: [generateSession] Session created: ID=58178350-17ac-4cfc-8089-0c7feb6432b1, user=matii
+17.12.2024, 10:58:26 [info]: [login] Login successful: username=matii, sessionID=58178350-17ac-4cfc-8089-0c7feb6432b1
+17.12.2024, 10:58:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=58178350-17ac-4cfc-8089-0c7feb6432b1
+17.12.2024, 10:58:30 [info]: [session_test] Session valid for sessionID=58178350-17ac-4cfc-8089-0c7feb6432b1
+17.12.2024, 10:59:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 10:59:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 10:59:30 [info]: Database connection established
+17.12.2024, 10:59:34 [info]: Server is running on http://localhost:3000
+17.12.2024, 10:59:34 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 10:59:35 [info]: Database connection established
+17.12.2024, 11:00:49 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:00:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:00:50 [info]: Database connection established
+17.12.2024, 11:00:51 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:00:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:00:52 [info]: Database connection established
+17.12.2024, 11:05:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:05:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:05:30 [info]: Database connection established
+17.12.2024, 11:05:45 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:05:45 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:05:45 [info]: Database connection established
+17.12.2024, 11:06:45 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:06:45 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:06:45 [info]: Database connection established
+17.12.2024, 11:16:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:16:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:16:30 [info]: Database connection established
+17.12.2024, 11:17:19 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:17:20 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:17:20 [info]: Database connection established
+17.12.2024, 11:17:28 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:17:28 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:17:28 [info]: Database connection established
+17.12.2024, 11:18:07 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:18:07 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:18:08 [info]: Database connection established
+17.12.2024, 11:18:15 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:18:15 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:18:16 [info]: Database connection established
+17.12.2024, 11:20:11 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:20:11 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:20:11 [info]: Database connection established
+17.12.2024, 11:20:17 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:20:17 [info]: Loading route file: route_blog.js
+17.12.2024, 11:20:17 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:20:17 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:20:18 [info]: Database connection established
+17.12.2024, 11:21:51 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:21:51 [info]: Loading route file: route_blog.js
+17.12.2024, 11:21:51 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:21:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:21:52 [info]: Database connection established
+17.12.2024, 11:22:28 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:22:28 [info]: Loading route file: route_blog.js
+17.12.2024, 11:22:28 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:22:28 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:22:29 [info]: Database connection established
+17.12.2024, 11:22:34 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:22:34 [info]: Loading route file: route_blog.js
+17.12.2024, 11:22:34 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:22:34 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:22:35 [info]: Database connection established
+17.12.2024, 11:23:14 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:23:14 [info]: Loading route file: route_blog.js
+17.12.2024, 11:23:14 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:23:14 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:23:15 [info]: Database connection established
+17.12.2024, 11:24:27 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:24:27 [info]: Loading route file: route_blog.js
+17.12.2024, 11:24:27 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:24:27 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:24:28 [info]: Database connection established
+17.12.2024, 11:25:18 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:25:18 [info]: Loading route file: route_blog.js
+17.12.2024, 11:25:18 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:25:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:25:19 [info]: Database connection established
+17.12.2024, 11:25:25 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:25:25 [info]: Loading route file: route_blog.js
+17.12.2024, 11:25:25 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:25:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:25:25 [info]: Database connection established
+17.12.2024, 11:27:43 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:27:43 [info]: Loading route file: route_blog.js
+17.12.2024, 11:27:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:27:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:27:44 [info]: Database connection established
+17.12.2024, 11:27:59 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:27:59 [info]: Loading route file: route_blog.js
+17.12.2024, 11:27:59 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:27:59 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:28:00 [info]: Database connection established
+17.12.2024, 11:28:43 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:28:43 [info]: Loading route file: route_blog.js
+17.12.2024, 11:28:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:28:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:28:44 [info]: Database connection established
+17.12.2024, 11:29:00 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:29:00 [info]: Loading route file: route_blog.js
+17.12.2024, 11:29:00 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:29:00 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:29:01 [info]: Database connection established
+17.12.2024, 11:29:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=58178350-17ac-4cfc-8089-0c7feb6432b1
+17.12.2024, 11:29:16 [error]: Error creating post: Field 'author_id' doesn't have a default value
+17.12.2024, 11:33:42 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:33:42 [info]: Loading route file: route_blog.js
+17.12.2024, 11:33:42 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:33:42 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:33:42 [info]: Database connection established
+17.12.2024, 11:33:55 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:33:55 [info]: Loading route file: route_blog.js
+17.12.2024, 11:33:55 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:33:55 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:33:56 [info]: Database connection established
+17.12.2024, 11:34:06 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:34:06 [info]: Loading route file: route_blog.js
+17.12.2024, 11:34:06 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:34:06 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:34:07 [info]: Database connection established
+17.12.2024, 11:34:24 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:34:24 [info]: Loading route file: route_blog.js
+17.12.2024, 11:34:24 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:34:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:34:25 [info]: Database connection established
+17.12.2024, 11:34:35 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:34:35 [info]: Loading route file: route_blog.js
+17.12.2024, 11:34:35 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:34:35 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:34:36 [info]: Database connection established
+17.12.2024, 11:34:39 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:34:39 [info]: Loading route file: route_blog.js
+17.12.2024, 11:34:39 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:34:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:34:40 [info]: Database connection established
+17.12.2024, 11:34:48 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:34:48 [info]: Loading route file: route_blog.js
+17.12.2024, 11:34:48 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:34:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:34:49 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:34:49 [info]: Loading route file: route_blog.js
+17.12.2024, 11:34:49 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:34:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:34:50 [info]: Database connection established
+17.12.2024, 11:35:13 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:35:13 [info]: Loading route file: route_blog.js
+17.12.2024, 11:35:13 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:35:13 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:35:14 [info]: Database connection established
+17.12.2024, 11:35:15 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:35:15 [info]: Loading route file: route_blog.js
+17.12.2024, 11:35:15 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:35:15 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:35:16 [info]: Database connection established
+17.12.2024, 11:35:25 [info]: Loading route file: route_account_management.js
+17.12.2024, 11:35:25 [info]: Loading route file: route_blog.js
+17.12.2024, 11:35:25 [info]: Server is running on http://localhost:3000
+17.12.2024, 11:35:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 11:35:26 [info]: Database connection established
+17.12.2024, 11:35:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=58178350-17ac-4cfc-8089-0c7feb6432b1
+17.12.2024, 11:35:28 [info]: Post created successfully with ID: 1
+17.12.2024, 12:42:18 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:42:18 [info]: Loading route file: route_blog.js
+17.12.2024, 12:42:18 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:42:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:42:18 [info]: Database connection established
+17.12.2024, 12:42:33 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:42:33 [info]: Loading route file: route_blog.js
+17.12.2024, 12:42:33 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:42:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:42:34 [info]: Database connection established
+17.12.2024, 12:45:08 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:45:08 [info]: Loading route file: route_blog.js
+17.12.2024, 12:45:08 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:45:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:45:08 [info]: Database connection established
+17.12.2024, 12:45:23 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:45:23 [info]: Loading route file: route_blog.js
+17.12.2024, 12:45:23 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:45:23 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:45:24 [info]: Database connection established
+17.12.2024, 12:45:55 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:45:55 [info]: Loading route file: route_blog.js
+17.12.2024, 12:45:55 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:45:55 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:45:56 [info]: Database connection established
+17.12.2024, 12:46:23 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:46:23 [info]: Loading route file: route_blog.js
+17.12.2024, 12:46:23 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:46:23 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:46:24 [info]: Database connection established
+17.12.2024, 12:46:32 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:46:32 [info]: Loading route file: route_blog.js
+17.12.2024, 12:46:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:46:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:46:33 [info]: Database connection established
+17.12.2024, 12:47:00 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:47:01 [info]: Loading route file: route_blog.js
+17.12.2024, 12:47:01 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:47:01 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:47:01 [info]: Database connection established
+17.12.2024, 12:47:25 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:47:25 [info]: Loading route file: route_blog.js
+17.12.2024, 12:47:26 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:47:26 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:47:26 [info]: Database connection established
+17.12.2024, 12:47:32 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:47:32 [info]: Loading route file: route_blog.js
+17.12.2024, 12:47:32 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:47:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:47:33 [info]: Database connection established
+17.12.2024, 12:47:58 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:47:58 [info]: Loading route file: route_blog.js
+17.12.2024, 12:47:58 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:47:58 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:47:58 [info]: Database connection established
+17.12.2024, 12:48:26 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:48:26 [info]: Loading route file: route_blog.js
+17.12.2024, 12:48:26 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:48:26 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:48:27 [info]: Database connection established
+17.12.2024, 12:48:33 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:48:33 [info]: Loading route file: route_blog.js
+17.12.2024, 12:48:33 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:48:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:48:34 [info]: Database connection established
+17.12.2024, 12:48:38 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:48:39 [info]: Loading route file: route_blog.js
+17.12.2024, 12:48:39 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:48:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:48:39 [info]: Database connection established
+17.12.2024, 12:48:43 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:48:43 [info]: Loading route file: route_blog.js
+17.12.2024, 12:48:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:48:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:48:44 [info]: Database connection established
+17.12.2024, 12:50:29 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:50:29 [info]: Loading route file: route_blog.js
+17.12.2024, 12:50:29 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:50:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:50:29 [info]: Database connection established
+17.12.2024, 12:50:35 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:50:35 [info]: Loading route file: route_blog.js
+17.12.2024, 12:50:35 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:50:35 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:50:36 [info]: Database connection established
+17.12.2024, 12:50:49 [info]: Loading route file: route_account_management.js
+17.12.2024, 12:50:49 [info]: Loading route file: route_blog.js
+17.12.2024, 12:50:49 [info]: Server is running on http://localhost:3000
+17.12.2024, 12:50:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 12:50:49 [info]: Database connection established
+17.12.2024, 12:56:06 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 12:56:06 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 12:56:06 [info]: [generateUUID] Generated UUID: d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 12:56:06 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 12:56:07 [info]: [generateSession] Deleted 1 session(s) for user ID: 6
+17.12.2024, 12:56:07 [info]: [generateSession] Session created: ID=d41a7aec-8d08-4729-aade-c5656869b686, user=matii
+17.12.2024, 12:56:07 [info]: [login] Login successful: username=matii, sessionID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 12:56:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 12:56:10 [info]: [session_test] Session valid for sessionID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 13:05:04 [info]: Loading route file: route_account_management.js
+17.12.2024, 13:05:04 [info]: Loading route file: route_blog.js
+17.12.2024, 13:05:04 [info]: Server is running on http://localhost:3000
+17.12.2024, 13:05:04 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 13:05:05 [info]: Database connection established
+17.12.2024, 13:06:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 13:06:10 [info]: Comment created successfully with ID: 1
+17.12.2024, 14:15:58 [info]: Loading route file: route_account_management.js
+17.12.2024, 14:15:58 [info]: Loading route file: route_blog.js
+17.12.2024, 14:15:58 [info]: Server is running on http://localhost:3000
+17.12.2024, 14:15:58 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 14:15:59 [info]: Database connection established
+17.12.2024, 14:18:58 [info]: Loading route file: route_account_management.js
+17.12.2024, 14:18:58 [info]: Loading route file: route_blog.js
+17.12.2024, 14:18:58 [info]: Server is running on http://localhost:3000
+17.12.2024, 14:18:58 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 14:18:59 [info]: Database connection established
+17.12.2024, 14:24:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 14:24:59 [info]: Comment created successfully with ID: 2
+17.12.2024, 14:25:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 14:25:27 [info]: Post created successfully with ID: 2
+17.12.2024, 14:30:42 [info]: Loading route file: route_account_management.js
+17.12.2024, 14:30:42 [info]: Loading route file: route_blog.js
+17.12.2024, 14:30:42 [info]: Server is running on http://localhost:3000
+17.12.2024, 14:30:42 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 14:30:42 [info]: Database connection established
+17.12.2024, 14:31:55 [info]: [validateAndUpdateSession] Session updated successfully: ID=d41a7aec-8d08-4729-aade-c5656869b686
+17.12.2024, 14:31:55 [info]: Comment created successfully with ID: 3
+17.12.2024, 22:21:27 [info]: Loading route file: route_account_management.js
+17.12.2024, 22:21:27 [info]: Loading route file: route_blog.js
+17.12.2024, 22:21:27 [info]: Server is running on http://localhost:3000
+17.12.2024, 22:21:27 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 22:21:28 [info]: Database connection established
+17.12.2024, 22:42:55 [info]: Loading route file: route_account_management.js
+17.12.2024, 22:42:56 [info]: Loading route file: route_blog.js
+17.12.2024, 22:42:56 [info]: Server is running on http://localhost:3000
+17.12.2024, 22:42:56 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 22:42:56 [info]: Database connection established
+17.12.2024, 22:44:49 [info]: [validateLogin] User not found: username=sdas
+17.12.2024, 22:44:49 [info]: [login] Unauthorized login attempt: username=sdas
+17.12.2024, 22:44:58 [info]: [validateLogin] User not found: username=sdas
+17.12.2024, 22:44:58 [info]: [login] Unauthorized login attempt: username=sdas
+17.12.2024, 22:45:23 [info]: [validateLogin] User not found: username=sdas
+17.12.2024, 22:45:23 [info]: [login] Unauthorized login attempt: username=sdas
+17.12.2024, 22:45:39 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 22:45:39 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 22:45:39 [info]: [generateUUID] Generated UUID: 4f6c96ff-0174-4926-a6b8-4799f3a9deb3
+17.12.2024, 22:45:39 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 22:45:40 [info]: [generateSession] Deleted 1 session(s) for user ID: 6
+17.12.2024, 22:45:40 [info]: [generateSession] Session created: ID=4f6c96ff-0174-4926-a6b8-4799f3a9deb3, user=matii
+17.12.2024, 22:45:40 [info]: [login] Login successful: username=matii, sessionID=4f6c96ff-0174-4926-a6b8-4799f3a9deb3
+17.12.2024, 22:45:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=4f6c96ff-0174-4926-a6b8-4799f3a9deb3
+17.12.2024, 22:45:41 [info]: [session_test] Session valid for sessionID=4f6c96ff-0174-4926-a6b8-4799f3a9deb3
+17.12.2024, 22:45:57 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 22:45:57 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 22:45:57 [info]: [generateUUID] Generated UUID: 232fc4d0-f412-4d92-91cd-4c6948851c3b
+17.12.2024, 22:45:57 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 22:45:57 [info]: [generateSession] Deleted 1 session(s) for user ID: 6
+17.12.2024, 22:45:57 [info]: [generateSession] Session created: ID=232fc4d0-f412-4d92-91cd-4c6948851c3b, user=matii
+17.12.2024, 22:45:57 [info]: [login] Login successful: username=matii, sessionID=232fc4d0-f412-4d92-91cd-4c6948851c3b
+17.12.2024, 22:49:17 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 22:49:17 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 22:49:17 [info]: [generateUUID] Generated UUID: a8c4849c-b127-4d01-b221-7274ad75467d
+17.12.2024, 22:49:17 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 22:49:17 [info]: [generateSession] Deleted 1 session(s) for user ID: 6
+17.12.2024, 22:49:17 [info]: [generateSession] Session created: ID=a8c4849c-b127-4d01-b221-7274ad75467d, user=matii
+17.12.2024, 22:49:17 [info]: [login] Login successful: username=matii, sessionID=a8c4849c-b127-4d01-b221-7274ad75467d
+17.12.2024, 23:26:47 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:26:47 [info]: Loading route file: route_blog.js
+17.12.2024, 23:26:47 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:26:47 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:26:47 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:26:49 [info]: Database connection established
+17.12.2024, 23:26:59 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:26:59 [info]: Loading route file: route_blog.js
+17.12.2024, 23:26:59 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:26:59 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:26:59 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:27:01 [info]: Database connection established
+17.12.2024, 23:29:47 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:29:47 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 23:29:47 [info]: [generateUUID] Generated UUID: f5fd00b6-b20f-4f5c-a20c-3e60417cab23
+17.12.2024, 23:29:47 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 23:29:48 [info]: [generateSession] Deleted 1 session(s) for user ID: 6
+17.12.2024, 23:29:48 [info]: [generateSession] Session created: ID=f5fd00b6-b20f-4f5c-a20c-3e60417cab23, user=matii
+17.12.2024, 23:29:48 [info]: [login] Login successful: username=matii, sessionID=f5fd00b6-b20f-4f5c-a20c-3e60417cab23
+17.12.2024, 23:30:42 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:30:42 [info]: [validateLogin] Login successful: username=matii
+17.12.2024, 23:30:42 [info]: [generateUUID] Generated UUID: 6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:30:42 [info]: [generateSession] Starting session creation for user: matii
+17.12.2024, 23:30:42 [info]: [generateSession] Deleted 1 session(s) for user ID: 6
+17.12.2024, 23:30:42 [info]: [generateSession] Session created: ID=6f3cf373-b152-46c1-82ee-d5294b5e075e, user=matii
+17.12.2024, 23:30:42 [info]: [login] Login successful: username=matii, sessionID=6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:30:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:30:46 [info]: [session_test] Session valid for sessionID=6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:30:48 [info]: [validateAndUpdateSession] Session updated successfully: ID=6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:30:49 [info]: [deleteSession] Session deleted: ID=6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:30:49 [info]: [logout] Session deleted successfully: sessionID=6f3cf373-b152-46c1-82ee-d5294b5e075e
+17.12.2024, 23:33:24 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:33:24 [info]: Loading route file: route_blog.js
+17.12.2024, 23:33:24 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:33:24 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:33:24 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:33:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:33:24 [info]: Database connection established
+17.12.2024, 23:33:36 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:33:36 [info]: Loading route file: route_blog.js
+17.12.2024, 23:33:36 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:33:36 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:33:36 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:33:36 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:33:37 [info]: Database connection established
+17.12.2024, 23:34:31 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:34:31 [info]: Loading route file: route_blog.js
+17.12.2024, 23:34:31 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:34:31 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:34:31 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:34:31 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:34:31 [info]: Database connection established
+17.12.2024, 23:34:48 [info]: [encryptPassword] New salt generated: $2a$10$fP.o8b.LRqMz/BznGhaoGu
+17.12.2024, 23:34:48 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:34:48 [error]: [createUser] Error inserting user: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:34:48 [error]: [register] Error during registration: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:36:55 [info]: [encryptPassword] New salt generated: $2a$10$XK2/dPqxYIpF3Z.eidtXbu
+17.12.2024, 23:36:55 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:36:55 [error]: [createUser] Error inserting user: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:36:55 [error]: [register] Error during registration: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:37:05 [info]: [encryptPassword] New salt generated: $2a$10$dnOvRuO8QLTK5rhwVk.s8u
+17.12.2024, 23:37:06 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:37:06 [error]: [createUser] Error inserting user: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:37:06 [error]: [register] Error during registration: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:38:15 [info]: [encryptPassword] New salt generated: $2a$10$mQlrMyrFxi7ym7rItzseJe
+17.12.2024, 23:38:15 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:38:15 [error]: [createUser] Error inserting user: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:38:15 [error]: [register] Error during registration: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:40:59 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:40:59 [info]: Loading route file: route_blog.js
+17.12.2024, 23:40:59 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:40:59 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:40:59 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:40:59 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:41:00 [info]: Database connection established
+17.12.2024, 23:41:33 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:41:33 [info]: Loading route file: route_blog.js
+17.12.2024, 23:41:33 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:41:33 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:41:33 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:41:33 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:41:34 [info]: Database connection established
+17.12.2024, 23:41:40 [info]: [encryptPassword] New salt generated: $2a$10$9IqJ4VMoYuMvjpZU3np/A.
+17.12.2024, 23:41:40 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:41:40 [error]: [register] Password encryption failed: hash or salt is null/undefined
+17.12.2024, 23:41:53 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:41:53 [info]: Loading route file: route_blog.js
+17.12.2024, 23:41:53 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:41:53 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:41:53 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:41:53 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:41:54 [info]: Database connection established
+17.12.2024, 23:42:22 [info]: [encryptPassword] New salt generated: $2a$10$eec9re1e6wrWv0Kf9cuiKO
+17.12.2024, 23:42:22 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:42:22 [error]: [register] Password encryption failed: hash or salt is null/undefined
+17.12.2024, 23:42:31 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:42:31 [info]: Loading route file: route_blog.js
+17.12.2024, 23:42:31 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:42:31 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:42:31 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:42:31 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:42:32 [info]: Database connection established
+17.12.2024, 23:42:36 [info]: [encryptPassword] New salt generated: $2a$10$RCR3yQlloxzlv0rX4DEftu
+17.12.2024, 23:42:36 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:42:36 [error]: [register] Password encryption failed: hash or salt is null/undefined
+17.12.2024, 23:42:43 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:42:43 [info]: Loading route file: route_blog.js
+17.12.2024, 23:42:43 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:42:43 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:42:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:42:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:42:44 [info]: Database connection established
+17.12.2024, 23:43:42 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:43:43 [info]: Loading route file: route_blog.js
+17.12.2024, 23:43:43 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:43:43 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:43:43 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:43:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:43:43 [info]: Database connection established
+17.12.2024, 23:44:19 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:44:19 [info]: Loading route file: route_blog.js
+17.12.2024, 23:44:19 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:44:19 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:44:19 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:44:19 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:44:20 [info]: Database connection established
+17.12.2024, 23:47:28 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:47:28 [info]: Loading route file: route_blog.js
+17.12.2024, 23:47:28 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:47:28 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:47:28 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:47:28 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:47:29 [info]: Database connection established
+17.12.2024, 23:47:31 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:47:31 [info]: Loading route file: route_blog.js
+17.12.2024, 23:47:31 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:47:31 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:47:31 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:47:31 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:47:31 [info]: Database connection established
+17.12.2024, 23:47:49 [info]: [encryptPassword] New salt generated: $2a$10$2.CS3av.0BKElJq4faZsaO
+17.12.2024, 23:47:49 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:47:50 [info]: [createUser] User successfully created: ID=7
+17.12.2024, 23:47:50 [info]: [register] User registered successfully: username=1234, userId=7
+17.12.2024, 23:47:56 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:47:56 [info]: [validateLogin] Login successful: username=1234
+17.12.2024, 23:47:56 [info]: [generateUUID] Generated UUID: 9d723dc9-80f7-4e99-84bc-3a815b2852cf
+17.12.2024, 23:47:56 [info]: [generateSession] Starting session creation for user: 1234
+17.12.2024, 23:47:57 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+17.12.2024, 23:47:57 [info]: [generateSession] Session created: ID=9d723dc9-80f7-4e99-84bc-3a815b2852cf, user=1234
+17.12.2024, 23:47:57 [info]: [login] Login successful: username=1234, sessionID=9d723dc9-80f7-4e99-84bc-3a815b2852cf
+17.12.2024, 23:48:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=9d723dc9-80f7-4e99-84bc-3a815b2852cf
+17.12.2024, 23:48:07 [info]: [deleteSession] Session deleted: ID=9d723dc9-80f7-4e99-84bc-3a815b2852cf
+17.12.2024, 23:48:07 [info]: [logout] Session deleted successfully: sessionID=9d723dc9-80f7-4e99-84bc-3a815b2852cf
+17.12.2024, 23:48:41 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:48:41 [info]: Loading route file: route_blog.js
+17.12.2024, 23:48:41 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:48:41 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:48:41 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:48:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:48:42 [info]: Database connection established
+17.12.2024, 23:49:12 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:49:12 [info]: Loading route file: route_blog.js
+17.12.2024, 23:49:12 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:49:12 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:49:12 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:49:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:49:12 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:49:12 [info]: Loading route file: route_blog.js
+17.12.2024, 23:49:12 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:49:12 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:49:12 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:49:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:49:13 [info]: Database connection established
+17.12.2024, 23:49:35 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:49:35 [info]: Loading route file: route_blog.js
+17.12.2024, 23:49:35 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:49:35 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:49:35 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:49:35 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:49:36 [info]: Database connection established
+17.12.2024, 23:54:44 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:54:44 [error]: [validateLogin] Error validating login: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:54:44 [error]: [login] Error during login: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:56:46 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:56:46 [info]: Loading route file: route_blog.js
+17.12.2024, 23:56:46 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:56:46 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:56:46 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:56:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:56:47 [info]: Database connection established
+17.12.2024, 23:56:59 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:56:59 [info]: Loading route file: route_blog.js
+17.12.2024, 23:56:59 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:56:59 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:56:59 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:56:59 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:57:00 [info]: Database connection established
+17.12.2024, 23:57:00 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:57:00 [info]: Loading route file: route_blog.js
+17.12.2024, 23:57:00 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:57:00 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:57:00 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:57:00 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:57:01 [info]: Database connection established
+17.12.2024, 23:57:17 [info]: [login] Retrieved salt: $2a$10$2.CS3av.0BKElJq4faZsaO
+17.12.2024, 23:57:17 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:57:17 [info]: [validateLogin] Login successful: username=1234
+17.12.2024, 23:57:17 [info]: [generateUUID] Generated UUID: f2f76094-4eab-41e3-b7ed-6e43ff2a20c3
+17.12.2024, 23:57:17 [info]: [generateSession] Starting session creation for user: 1234
+17.12.2024, 23:57:17 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+17.12.2024, 23:57:18 [info]: [generateSession] Session created: ID=f2f76094-4eab-41e3-b7ed-6e43ff2a20c3, user=1234
+17.12.2024, 23:57:18 [info]: [login] Login successful: username=1234, sessionID=f2f76094-4eab-41e3-b7ed-6e43ff2a20c3
+17.12.2024, 23:57:25 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:57:25 [info]: Loading route file: route_blog.js
+17.12.2024, 23:57:25 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:57:25 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:57:25 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:57:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:57:26 [info]: Database connection established
+17.12.2024, 23:57:44 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:57:44 [info]: Loading route file: route_blog.js
+17.12.2024, 23:57:44 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:57:44 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:57:44 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:57:44 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:57:45 [info]: Database connection established
+17.12.2024, 23:57:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=f2f76094-4eab-41e3-b7ed-6e43ff2a20c3
+17.12.2024, 23:57:50 [info]: [deleteSession] Session deleted: ID=f2f76094-4eab-41e3-b7ed-6e43ff2a20c3
+17.12.2024, 23:57:50 [info]: [logout] Session deleted successfully: sessionID=f2f76094-4eab-41e3-b7ed-6e43ff2a20c3
+17.12.2024, 23:57:58 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:57:58 [error]: [validateLogin] Error validating login: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:57:58 [error]: [login] Error during login: Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+17.12.2024, 23:58:37 [info]: Loading route file: route_account_management.js
+17.12.2024, 23:58:37 [info]: Loading route file: route_blog.js
+17.12.2024, 23:58:37 [info]: Loading route file: unsafe_route_account_management.js
+17.12.2024, 23:58:37 [info]: Loading route file: unsafe_route_blog.js
+17.12.2024, 23:58:37 [info]: Server is running on http://localhost:3000
+17.12.2024, 23:58:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+17.12.2024, 23:58:38 [info]: Database connection established
+17.12.2024, 23:58:40 [info]: [encryptPassword] Password encrypted successfully
+17.12.2024, 23:58:41 [info]: [validateLogin] Login successful: username=1234
+17.12.2024, 23:58:41 [info]: [generateUUID] Generated UUID: 07860952-b77b-40a4-84d9-a8cf41498fe0
+17.12.2024, 23:58:41 [info]: [generateSession] Starting session creation for user: 1234
+17.12.2024, 23:58:41 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+17.12.2024, 23:58:41 [info]: [generateSession] Session created: ID=07860952-b77b-40a4-84d9-a8cf41498fe0, user=1234
+17.12.2024, 23:58:41 [info]: [login] Login successful: username=1234, sessionID=07860952-b77b-40a4-84d9-a8cf41498fe0
+17.12.2024, 23:58:45 [info]: [validateAndUpdateSession] Session updated successfully: ID=07860952-b77b-40a4-84d9-a8cf41498fe0
+17.12.2024, 23:58:45 [info]: [session_test] Session valid for sessionID=07860952-b77b-40a4-84d9-a8cf41498fe0
+17.12.2024, 23:58:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=07860952-b77b-40a4-84d9-a8cf41498fe0
+17.12.2024, 23:58:55 [info]: Post created successfully with ID: 3
+18.12.2024, 00:01:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=07860952-b77b-40a4-84d9-a8cf41498fe0
+18.12.2024, 00:01:21 [info]: [deleteSession] Session deleted: ID=07860952-b77b-40a4-84d9-a8cf41498fe0
+18.12.2024, 00:01:21 [info]: [logout] Session deleted successfully: sessionID=07860952-b77b-40a4-84d9-a8cf41498fe0
+18.12.2024, 00:01:30 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:01:31 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:01:31 [info]: [generateUUID] Generated UUID: e4d82e24-6f21-419b-a34d-5d563f2c00c0
+18.12.2024, 00:01:31 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:01:31 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:01:31 [info]: [generateSession] Session created: ID=e4d82e24-6f21-419b-a34d-5d563f2c00c0, user=1234
+18.12.2024, 00:01:31 [info]: [login] Login successful: username=1234, sessionID=e4d82e24-6f21-419b-a34d-5d563f2c00c0
+18.12.2024, 00:02:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=e4d82e24-6f21-419b-a34d-5d563f2c00c0
+18.12.2024, 00:02:12 [info]: [deleteSession] Session deleted: ID=e4d82e24-6f21-419b-a34d-5d563f2c00c0
+18.12.2024, 00:02:12 [info]: [logout] Session deleted successfully: sessionID=e4d82e24-6f21-419b-a34d-5d563f2c00c0
+18.12.2024, 00:03:13 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:03:13 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:03:13 [info]: [generateUUID] Generated UUID: f5289314-8e01-4617-a450-8a2613eb0dba
+18.12.2024, 00:03:13 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:03:14 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:03:14 [info]: [generateSession] Session created: ID=f5289314-8e01-4617-a450-8a2613eb0dba, user=1234
+18.12.2024, 00:03:14 [info]: [login] Login successful: username=1234, sessionID=f5289314-8e01-4617-a450-8a2613eb0dba

@@ -20,6 +20,9 @@
     <button type="submit">Login</button>
 </form>
 
+<button onclick="window.location.href='/account_management/register.html';">Register</button>
+<button onclick="window.location.href='/account_management/unsafe_login.html';">Unsafe Mode</button>
+
 <p id="responseMessage"></p>
 
 <script>
@@ -43,6 +46,9 @@
             if (response.ok) {
                 const data = await response.json();
                 document.getElementById('responseMessage').innerText = data.message;
+
+                window.location.href = '/account_management/sessionTest.html'
+
             } else {
                 const errorData = await response.json();
                 document.getElementById('responseMessage').innerText = errorData.message;

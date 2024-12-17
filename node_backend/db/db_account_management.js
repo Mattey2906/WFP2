@@ -1,116 +1,158 @@
 const mysql = require('mysql');
 const path = require("path");
 const { logger } = require(path.join(process.cwd(), '/logging/logging'));
-const { encryptPassword, authenticateUser, generateSession } = require(path.join(process.cwd(), '/logic/functions'));
+const { getConnection } = require('./db_connector'); // Verbindungsabruf
 
-const dbConnection = require('./db_connector');
+// ---------------------------------------------------------------------------------------
+// ----------------------------------- USER MANAGEMENT -----------------------------------
+// ---------------------------------------------------------------------------------------
 
-
-// ----------------------------------- REGISTER -----------------------------------
+/**
+ * Erstelle einen neuen Benutzer in der Datenbank.
+ * @param {string} username
+ * @param {string} password
+ * @param {string} salt
+ * @returns {number} Insert ID des erstellten Benutzers
+ */
 async function createUser(username, password, salt) {
     try {
+        const dbConnection = getConnection();
 
         if (!dbConnection) {
             throw new Error('No database connection available');
         }
 
-        const [results] = await dbConnection.execute('INSERT INTO users (username, password, salt) VALUES (?, ?, ?)', [username, password, salt]);
-        logger.info('User inserted');
+        const [results] = await dbConnection.execute(
+            'INSERT INTO users (username, password, salt) VALUES (?, ?, ?)',
+            [username, password, salt]
+        );
+
+        logger.info(`[createUser] User successfully created: ID=${results.insertId}`);
         return results.insertId;
     } catch (err) {
-        logger.error('Error inserting user into database:', err);
+        logger.error(`[createUser] Error inserting user: ${err.message}`);
         throw err;
     }
 }
 
-// ----------------------------------- LOGIN -----------------------------------
+/**
+ * Hole Benutzerdaten basierend auf Benutzername und Passwort.
+ * @param {string} username
+ * @param {string} password
+ * @returns {Object|null} Benutzerdaten oder null
+ */
+async function getUser(username, password) {
+    try {
+        const dbConnection = getConnection();
+        const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
+        const [results] = await dbConnection.execute(query);
+
+        logger.info(`[getUser] User fetch attempt: username=${username}`);
+        return results.length > 0 ? results[0] : null;
+    } catch (err) {
+        logger.error(`[getUser] Error fetching user: ${err.message}`);
+        throw err;
+    }
+}
+
+/**
+ * Validiere Benutzer-Login und überprüfe Passwort-Hash.
+ * @param {string} username
+ * @param {string} password
+ * @returns {boolean} true bei erfolgreicher Validierung, sonst false
+ */
 async function validateLogin(username, password) {
     try {
-        // Hole den Salt-Wert aus der Datenbank
+        const dbConnection = getConnection();
+        const { encryptPassword } = require(path.join(process.cwd(), '/logic/logic_account_management'));
+
         const querySalt = `SELECT salt FROM users WHERE username = ?`;
         const [results1] = await dbConnection.execute(querySalt, [username]);
 
         if (results1.length === 0) {
-            // Benutzername existiert nicht
+            logger.info(`[validateLogin] User not found: username=${username}`);
             return false;
         }
 
-        const salt = results1[0].salt;
-        const hash = encryptPassword(password, salt);
+        const salt = results1[0]?.salt; // Verhindert TypeError bei undefined
+        const { hash } = encryptPassword(password, salt); // Nur den Hash extrahieren
 
-        const [results2] = await dbConnection.execute(`SELECT * FROM users WHERE username = ? AND password = ?`, [username, hash]);
+        const [results2] = await dbConnection.execute(
+            `SELECT * FROM users WHERE username = ? AND password = ?`,
+            [username, hash]
+        );
 
         if (results2.length > 0) {
-            return true; // Benutzer erfolgreich validiert
+            logger.info(`[validateLogin] Login successful: username=${username}`);
+            return true;
         } else {
-            return false; // Falsches Passwort
+            logger.info(`[validateLogin] Incorrect password: username=${username}`);
+            return false;
         }
     } catch (err) {
-        logger.error('Error during login validation:', err);
+        logger.error(`[validateLogin] Error validating login: ${err.message}`);
         throw err;
     }
 }
 
+// ---------------------------------------------------------------------------------------
+// ----------------------------------- SESSION MANAGEMENT --------------------------------
+// ---------------------------------------------------------------------------------------
 
-
-async function getUser(username, password) {
+/**
+ * Erstelle eine neue Session in der Datenbank.
+ * @param {string} username
+ * @param {string} sessionID
+ * @param {string} expireDate
+ * @returns {number} Insert ID der erstellten Session
+ */
+async function createSession(username, sessionID, expireDate) {
     try {
-        const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
-        const [results] = await dbConnection.execute(query);
+        const dbConnection = getConnection();
+        const query = 'INSERT INTO sessions (session_id, user_id, expire_date) VALUES (?, ?, ?)';
 
-        if (results.length > 0) {
-            return results[0];
-        } else {
-            return null;
-        }
+        const [results] = await dbConnection.execute(query, [sessionID, username, expireDate]);
+
+        logger.info(`[createSession] Session created: ID=${sessionID} for user=${username}`);
+        return results.insertId;
     } catch (err) {
-        logger.error('Error getting user from database:', err);
+        logger.error(`[createSession] Error creating session: ${err.message}`);
         throw err;
     }
 }
-// ----------------------------------- SESSION -----------------------------------
-function createSession(username, sessionID, expireDate) {
-    return new Promise((resolve, reject) => {
-        const query = 'INSERT INTO sessions (username, sessionID, expireDate) VALUES (?, ?, ?)';
-        dbConnection.execute(query, [username, sessionID, expireDate], (err, results) => {
-            if (err) {
-                logger.error('Error inserting user into database:', err);
-                return reject(err);
-            }
-            logger.info('Session inserted with ID:', results.insertId);
-            resolve(results.insertId);
-        });
-    });
-}
 
-async function validateAndUpdateSession(req, res, next) {
-    const sessionID = req.cookies.id;
-    if (!sessionID) {
-        return res.status(401).json({ message: 'Unauthorized: No session' });
-    }
-
+/**
+ * Löscht eine bestehende Session anhand der sessionID aus der Datenbank.
+ * @param {string} sessionID
+ * @returns {boolean}
+ */
+async function deleteSession(sessionID) {
     try {
-        const query = `
-            UPDATE sessions 
-            SET expire_date = DATE_ADD(NOW(), INTERVAL 2 HOUR)
-            WHERE session_id = ? AND expire_date > NOW()
-        `;
+        const dbConnection = getConnection();
+        const query = 'DELETE FROM sessions WHERE session_id = ?';
 
         const [results] = await dbConnection.execute(query, [sessionID]);
 
         if (results.affectedRows > 0) {
-            logger.info('Session updated successfully:', sessionID);
-            next(); // weiter zur Route oder nächsten Middleware
+            logger.info(`[deleteSession] Session deleted: ID=${sessionID}`);
+            return true;
         } else {
-            logger.info('Session not found or already expired:', sessionID);
-            res.status(401).json({ message: 'Unauthorized: Session expired or invalid' });
+            logger.info(`[deleteSession] No session found to delete: ID=${sessionID}`);
+            return false;
         }
     } catch (err) {
-        logger.error('Error updating session in database:', err);
-        res.status(500).json({ message: 'Error updating session' });
+        logger.error(`[deleteSession] Error deleting session: ${err.message}`);
+        throw err;
     }
 }
 
-
-
-module.exports = { createUser, getUser, createSession, validateAndUpdateSession };
+// ---------------------------------------------------------------------------------------
+// -------------------------------------- EXPORTS ----------------------------------------
+// ---------------------------------------------------------------------------------------
+module.exports = {
+    createUser,
+    getUser,
+    validateLogin,
+    createSession,
+    deleteSession,
+};

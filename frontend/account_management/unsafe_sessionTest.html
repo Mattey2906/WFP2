@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSAFE Session Test</title>
+</head>
+<body>
+<h1>UNSAFE Session Test</h1>
+<button id="testSessionButton">Test Session</button>
+<button id="logoutButton">Logout</button>
+<button onclick="window.location.href='/blog/unsafe_createPost.html';">create Post</button>
+<button onclick="window.location.href='/blog/unsafe_posts.html';">show all Posts</button>
+
+<button onclick="window.location.href='/account_management/sessionTest.html';">Safe Mode</button>
+<p id="responseMessage"></p>
+
+<script>
+    document.getElementById('testSessionButton').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/acc_man/unsafe_session_test', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include'
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('responseMessage').innerText = data.message;
+            } else {
+                const errorData = await response.json();
+                document.getElementById('responseMessage').innerText = errorData.message;
+            }
+        } catch (error) {
+            document.getElementById('responseMessage').innerText = 'An error occurred: ' + error.message;
+        }
+    });
+
+    document.getElementById('logoutButton').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/acc_man/unsafe_logout', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include'
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('responseMessage').innerText = data.message;
+                window.location.href = '/account_management/unsafe_logout.html'
+            } else {
+                const errorData = await response.json();
+                document.getElementById('responseMessage').innerText = errorData.message;
+            }
+        } catch (error) {
+            document.getElementById('responseMessage').innerText = 'An error occurred: ' + error.message;
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Test</title>
+</head>
+<body>
+<h1>Session Test</h1>
+<button id="testSessionButton">Test Session</button>
+<button id="logoutButton">Logout</button>
+<button onclick="window.location.href='/blog/createPost.html';">create Post</button>
+<button onclick="window.location.href='/blog/posts.html';">show all Posts</button>
+<button onclick="window.location.href='/account_management/unsafe_sessionTest.html';">Unsafe Mode</button>
+<p id="responseMessage"></p>
+
+<script>
+    document.getElementById('testSessionButton').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/acc_man/session_test', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include'
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('responseMessage').innerText = data.message;
+            } else {
+                const errorData = await response.json();
+                document.getElementById('responseMessage').innerText = errorData.message;
+            }
+        } catch (error) {
+            document.getElementById('responseMessage').innerText = 'An error occurred: ' + error.message;
+        }
+    });
+
+    document.getElementById('logoutButton').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/acc_man/logout', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include'
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('responseMessage').innerText = data.message;
+                window.location.href = '/account_management/logout.html'
+            } else {
+                const errorData = await response.json();
+                document.getElementById('responseMessage').innerText = errorData.message;
+            }
+        } catch (error) {
+            document.getElementById('responseMessage').innerText = 'An error occurred: ' + error.message;
+        }
+    });
+</script>
+</body>
+</html>

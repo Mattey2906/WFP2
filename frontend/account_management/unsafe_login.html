@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNSAFE Login</title>
+</head>
+<body>
+<h2>UNSAFE Login</h2>
+<form id="registerForm">
+  <!-- E-Mail-Feld -->
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" required><br><br>
+
+  <!-- Passwort-Feld -->
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <!-- Submit-Button -->
+  <button type="submit">Login</button>
+</form>
+
+<button onclick="window.location.href='/account_management/unsafe_register.html';">Register</button>
+<button onclick="window.location.href='/account_management/login.html';">Safe Mode</button>
+
+<p id="responseMessage"></p>
+
+<script>
+  document.getElementById('registerForm').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Verhindert das Neuladen der Seite
+
+    // Formulardaten sammeln
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    try {
+      // Asynchrone Anfrage an den Server senden
+      const response = await fetch('/api/acc_man/unsafe_login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username: username, password: password })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        document.getElementById('responseMessage').innerText = data.message;
+
+        window.location.href = '/account_management/unsafe_sessionTest.html'
+
+      } else {
+        const errorData = await response.json();
+        document.getElementById('responseMessage').innerText = errorData.message;
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      document.getElementById('responseMessage').innerText = 'An error occurred. Please try again.';
+    }
+  });
+</script>
+</body>
+</html>
