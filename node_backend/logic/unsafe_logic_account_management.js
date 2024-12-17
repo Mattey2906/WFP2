@@ -100,13 +100,15 @@ async function validateAndUpdateSession(req, res, next) {
 
     try {
         const dbConnection = getConnection();
+
+        // UNSICHER: Dynamische SQL-Query ohne Parameterized Queries
         const query = `
             UPDATE sessions 
             SET expire_date = DATE_ADD(NOW(), INTERVAL 2 HOUR)
-            WHERE session_id = ? AND expire_date > NOW()
+            WHERE session_id = '${sessionID}' AND expire_date > NOW()
         `;
 
-        const [results] = await dbConnection.execute(query, [sessionID]);
+        const [results] = await dbConnection.query(query);
 
         if (results.affectedRows > 0) {
             logger.info(`[validateAndUpdateSession] Session updated successfully: ID=${sessionID}`);

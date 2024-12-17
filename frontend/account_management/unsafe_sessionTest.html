@@ -6,7 +6,9 @@
     <title>UNSAFE Session Test</title>
 </head>
 <body>
-<h1>UNSAFE Session Test</h1>
+<h1>UNSAFE Navigator Site</h1>
+<p id="usernameDisplay">Loading username...</p> <!-- Username-Anzeige -->
+
 <button id="testSessionButton">Test Session</button>
 <button id="logoutButton">Logout</button>
 <button onclick="window.location.href='/blog/unsafe_createPost.html';">create Post</button>
@@ -16,6 +18,33 @@
 <p id="responseMessage"></p>
 
 <script>
+    // Funktion zum Laden des Benutzernamens
+    async function fetchUsername() {
+        try {
+            const response = await fetch('/api/acc_man/unsafe_getUser', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                credentials: 'include' // Sendet Cookies mit
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.getElementById('usernameDisplay').innerText = `Welcome, ${data.username}!`;
+            } else {
+                const errorData = await response.json();
+                document.getElementById('usernameDisplay').innerText = 'Session expired. Please log in.';
+            }
+        } catch (error) {
+            document.getElementById('usernameDisplay').innerText = 'Error loading username.';
+            console.error('Error fetching username:', error);
+        }
+    }
+
+    // Ruft den Benutzernamen direkt beim Laden der Seite ab
+    window.addEventListener('DOMContentLoaded', fetchUsername);
+
     document.getElementById('testSessionButton').addEventListener('click', async () => {
         try {
             const response = await fetch('/api/acc_man/unsafe_session_test', {

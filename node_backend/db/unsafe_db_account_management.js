@@ -22,10 +22,11 @@ async function createUser(username, password, salt) {
             throw new Error('No database connection available');
         }
 
-        const [results] = await dbConnection.execute(
-            'INSERT INTO users (username, password, salt) VALUES (?, ?, ?)',
-            [username, password, salt]
-        );
+        // UNSICHER: Dynamische SQL-Query ohne Parameterized Queries
+        const query = `INSERT INTO users (username, password, salt) 
+                       VALUES ('${username}', '${password}', '${salt}')`;
+
+        const [results] = await dbConnection.query(query);
 
         logger.info(`[createUser] User successfully created: ID=${results.insertId}`);
         return results.insertId;
@@ -44,8 +45,14 @@ async function createUser(username, password, salt) {
 async function getUser(username, password) {
     try {
         const dbConnection = getConnection();
+
+        if (!dbConnection) {
+            throw new Error('No database connection available');
+        }
+
+        // UNSICHER: Dynamische SQL-Query mit direkter Einbindung der Parameter
         const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
-        const [results] = await dbConnection.execute(query);
+        const [results] = await dbConnection.query(query);
 
         logger.info(`[getUser] User fetch attempt: username=${username}`);
         return results.length > 0 ? results[0] : null;
@@ -66,8 +73,9 @@ async function validateLogin(username, password) {
         const dbConnection = getConnection();
         const { encryptPassword } = require(path.join(process.cwd(), '/logic/unsafe_logic_account_management'));
 
-        const querySalt = `SELECT salt FROM users WHERE username = ?`;
-        const [results1] = await dbConnection.execute(querySalt, [username]);
+        // UNSICHER: Dynamische SQL-Query ohne Parameterized Queries
+        const querySalt = `SELECT salt FROM users WHERE username = '${username}'`;
+        const [results1] = await dbConnection.query(querySalt);
 
         if (results1.length === 0) {
             logger.info(`[validateLogin] User not found: username=${username}`);
@@ -77,10 +85,9 @@ async function validateLogin(username, password) {
         const salt = results1[0]?.salt; // Verhindert TypeError bei undefined
         const { hash } = encryptPassword(password, salt); // Nur den Hash extrahieren
 
-        const [results2] = await dbConnection.execute(
-            `SELECT * FROM users WHERE username = ? AND password = ?`,
-            [username, hash]
-        );
+        // UNSICHER: Dynamische SQL-Query ohne Parameterized Queries
+        const queryLogin = `SELECT * FROM users WHERE username = '${username}' AND password = '${hash}'`;
+        const [results2] = await dbConnection.query(queryLogin);
 
         if (results2.length > 0) {
             logger.info(`[validateLogin] Login successful: username=${username}`);
@@ -94,6 +101,7 @@ async function validateLogin(username, password) {
         throw err;
     }
 }
+
 
 // ---------------------------------------------------------------------------------------
 // ----------------------------------- SESSION MANAGEMENT --------------------------------
@@ -109,9 +117,16 @@ async function validateLogin(username, password) {
 async function createSession(username, sessionID, expireDate) {
     try {
         const dbConnection = getConnection();
-        const query = 'INSERT INTO sessions (session_id, user_id, expire_date) VALUES (?, ?, ?)';
 
-        const [results] = await dbConnection.execute(query, [sessionID, username, expireDate]);
+        if (!dbConnection) {
+            throw new Error('No database connection available');
+        }
+
+        // UNSICHER: Dynamische SQL-Query mit direkter String-Konkatenation
+        const query = `INSERT INTO sessions (session_id, user_id, expire_date) 
+                       VALUES ('${sessionID}', '${username}', '${expireDate}')`;
+
+        const [results] = await dbConnection.query(query);
 
         logger.info(`[createSession] Session created: ID=${sessionID} for user=${username}`);
         return results.insertId;
@@ -129,9 +144,15 @@ async function createSession(username, sessionID, expireDate) {
 async function deleteSession(sessionID) {
     try {
         const dbConnection = getConnection();
-        const query = 'DELETE FROM sessions WHERE session_id = ?';
 
-        const [results] = await dbConnection.execute(query, [sessionID]);
+        if (!dbConnection) {
+            throw new Error('No database connection available');
+        }
+
+        // UNSICHER: Dynamische SQL-Query mit direkter String-Konkatenation
+        const query = `DELETE FROM sessions WHERE session_id = '${sessionID}'`;
+
+        const [results] = await dbConnection.query(query);
 
         if (results.affectedRows > 0) {
             logger.info(`[deleteSession] Session deleted: ID=${sessionID}`);
@@ -145,6 +166,7 @@ async function deleteSession(sessionID) {
         throw err;
     }
 }
+
 
 // ---------------------------------------------------------------------------------------
 // -------------------------------------- EXPORTS ----------------------------------------

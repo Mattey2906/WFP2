@@ -1439,3 +1439,243 @@ Require stack:
 18.12.2024, 00:03:14 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
 18.12.2024, 00:03:14 [info]: [generateSession] Session created: ID=f5289314-8e01-4617-a450-8a2613eb0dba, user=1234
 18.12.2024, 00:03:14 [info]: [login] Login successful: username=1234, sessionID=f5289314-8e01-4617-a450-8a2613eb0dba
+18.12.2024, 00:05:10 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:05:10 [info]: Loading route file: route_blog.js
+18.12.2024, 00:05:10 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:05:10 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:05:10 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:05:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:05:10 [info]: Database connection established
+18.12.2024, 00:05:39 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:05:39 [info]: Loading route file: route_blog.js
+18.12.2024, 00:05:39 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:05:39 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:05:39 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:05:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:05:40 [info]: Database connection established
+18.12.2024, 00:05:41 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:05:42 [info]: Loading route file: route_blog.js
+18.12.2024, 00:05:42 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:05:42 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:05:42 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:05:42 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:05:42 [info]: Database connection established
+18.12.2024, 00:06:08 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:06:08 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:06:08 [info]: [generateUUID] Generated UUID: 8b3326e3-c298-4c40-937b-3bff28904249
+18.12.2024, 00:06:08 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:06:08 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 00:06:09 [info]: [generateSession] Session created: ID=8b3326e3-c298-4c40-937b-3bff28904249, user=1234
+18.12.2024, 00:06:09 [info]: [login] Login successful: username=1234, sessionID=8b3326e3-c298-4c40-937b-3bff28904249
+18.12.2024, 00:06:18 [info]: [encryptPassword] New salt generated: $2a$10$BpgQV2ihxcK7Un9Vdesq/e
+18.12.2024, 00:06:18 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:06:18 [info]: [createUser] User successfully created: ID=8
+18.12.2024, 00:06:18 [info]: [register] User registered successfully: username=unsafe, userId=8
+18.12.2024, 00:07:48 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:07:48 [info]: Loading route file: route_blog.js
+18.12.2024, 00:07:48 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:07:48 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:07:48 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:07:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:07:49 [info]: Database connection established
+18.12.2024, 00:08:13 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:08:13 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:08:13 [info]: [generateUUID] Generated UUID: 38d6de37-8028-4b9a-bbd4-bffbe93fc5b0
+18.12.2024, 00:08:13 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:08:13 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 00:08:13 [info]: [generateSession] Session created: ID=38d6de37-8028-4b9a-bbd4-bffbe93fc5b0, user=1234
+18.12.2024, 00:08:13 [info]: [login] Login successful: username=1234, sessionID=38d6de37-8028-4b9a-bbd4-bffbe93fc5b0
+18.12.2024, 00:08:32 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:08:32 [info]: Loading route file: route_blog.js
+18.12.2024, 00:08:32 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:08:32 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:08:32 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:08:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:08:32 [info]: Database connection established
+18.12.2024, 00:08:38 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:08:38 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:08:38 [info]: [generateUUID] Generated UUID: 866e6d5f-8450-4a08-9b9a-84f662a67d69
+18.12.2024, 00:08:38 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:08:38 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 00:08:39 [info]: [generateSession] Session created: ID=866e6d5f-8450-4a08-9b9a-84f662a67d69, user=1234
+18.12.2024, 00:08:39 [info]: [login] Login successful: username=1234, sessionID=866e6d5f-8450-4a08-9b9a-84f662a67d69
+18.12.2024, 00:09:08 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:09:08 [info]: Loading route file: route_blog.js
+18.12.2024, 00:09:08 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:09:08 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:09:08 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:09:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:09:08 [info]: Database connection established
+18.12.2024, 00:10:09 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:10:09 [info]: Loading route file: route_blog.js
+18.12.2024, 00:10:09 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:10:09 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:10:09 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:10:09 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:10:09 [info]: Database connection established
+18.12.2024, 00:10:47 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:10:47 [info]: Loading route file: route_blog.js
+18.12.2024, 00:10:47 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:10:47 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:10:47 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:10:47 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:10:47 [info]: Database connection established
+18.12.2024, 00:10:57 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:10:57 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:10:57 [info]: [generateUUID] Generated UUID: 8128cfe3-0824-4e1a-a35b-9597f05f9ed7
+18.12.2024, 00:10:57 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:10:58 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 00:10:58 [error]: [generateSession] Error creating session for user: 1234 - Incorrect datetime value: '2024-12-18T01:10:57.713Z' for column 'expire_date' at row 1
+18.12.2024, 00:10:58 [error]: [login] Error during login: Incorrect datetime value: '2024-12-18T01:10:57.713Z' for column 'expire_date' at row 1
+18.12.2024, 00:11:08 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:11:08 [info]: Loading route file: route_blog.js
+18.12.2024, 00:11:08 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:11:08 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:11:08 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:11:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:11:09 [info]: Database connection established
+18.12.2024, 00:11:13 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:11:13 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:11:13 [info]: [generateUUID] Generated UUID: 1c5093ca-4fc4-4d92-b00d-8ac488adc210
+18.12.2024, 00:11:13 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:11:13 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:11:13 [error]: [generateSession] Error creating session for user: 1234 - Incorrect datetime value: '2024-12-18T01:11:13.481Z' for column 'expire_date' at row 1
+18.12.2024, 00:11:13 [error]: [login] Error during login: Incorrect datetime value: '2024-12-18T01:11:13.481Z' for column 'expire_date' at row 1
+18.12.2024, 00:11:17 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:11:17 [info]: Loading route file: route_blog.js
+18.12.2024, 00:11:17 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:11:17 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:11:17 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:11:17 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:11:18 [info]: Database connection established
+18.12.2024, 00:11:26 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:11:27 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:11:27 [info]: [generateUUID] Generated UUID: 8773a10b-7ae1-468d-9d41-1e664610f65f
+18.12.2024, 00:11:27 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:11:27 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:11:27 [info]: [generateSession] Session created: ID=8773a10b-7ae1-468d-9d41-1e664610f65f, user=1234
+18.12.2024, 00:11:27 [info]: [login] Login successful: username=1234, sessionID=8773a10b-7ae1-468d-9d41-1e664610f65f
+18.12.2024, 00:13:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=8773a10b-7ae1-468d-9d41-1e664610f65f
+18.12.2024, 00:13:11 [info]: [deleteSession] Session deleted: ID=8773a10b-7ae1-468d-9d41-1e664610f65f
+18.12.2024, 00:13:11 [info]: [logout] Session deleted successfully: sessionID=8773a10b-7ae1-468d-9d41-1e664610f65f
+18.12.2024, 00:13:17 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:13:17 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:13:17 [info]: [generateUUID] Generated UUID: c02dfb18-9a34-40c0-b0db-33b99bc119d4
+18.12.2024, 00:13:17 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:13:17 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:13:17 [info]: [generateSession] Session created: ID=c02dfb18-9a34-40c0-b0db-33b99bc119d4, user=1234
+18.12.2024, 00:13:17 [info]: [login] Login successful: username=1234, sessionID=c02dfb18-9a34-40c0-b0db-33b99bc119d4
+18.12.2024, 00:14:10 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:14:10 [info]: Loading route file: route_blog.js
+18.12.2024, 00:14:10 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:14:10 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:14:10 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:14:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:14:11 [info]: Database connection established
+18.12.2024, 00:14:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=c02dfb18-9a34-40c0-b0db-33b99bc119d4
+18.12.2024, 00:14:21 [info]: [deleteSession] Session deleted: ID=c02dfb18-9a34-40c0-b0db-33b99bc119d4
+18.12.2024, 00:14:21 [info]: [logout] Session deleted successfully: sessionID=c02dfb18-9a34-40c0-b0db-33b99bc119d4
+18.12.2024, 00:14:27 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:14:27 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:14:27 [info]: [generateUUID] Generated UUID: c0a965b9-d0d8-42c2-bc56-e719af03bad9
+18.12.2024, 00:14:27 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:14:27 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:14:27 [info]: [generateSession] Session created: ID=c0a965b9-d0d8-42c2-bc56-e719af03bad9, user=1234
+18.12.2024, 00:14:27 [info]: [login] Login successful: username=1234, sessionID=c0a965b9-d0d8-42c2-bc56-e719af03bad9
+18.12.2024, 00:18:34 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:18:34 [info]: Loading route file: route_blog.js
+18.12.2024, 00:18:34 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:18:34 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:18:34 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:18:34 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:18:35 [info]: Database connection established
+18.12.2024, 00:21:56 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:21:56 [info]: Loading route file: route_blog.js
+18.12.2024, 00:21:56 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:21:56 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:21:56 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:21:56 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:21:56 [info]: Database connection established
+18.12.2024, 00:23:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=c0a965b9-d0d8-42c2-bc56-e719af03bad9
+18.12.2024, 00:23:51 [info]: [deleteSession] Session deleted: ID=c0a965b9-d0d8-42c2-bc56-e719af03bad9
+18.12.2024, 00:23:51 [info]: [logout] Session deleted successfully: sessionID=c0a965b9-d0d8-42c2-bc56-e719af03bad9
+18.12.2024, 00:23:56 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:23:57 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:23:57 [info]: [generateUUID] Generated UUID: 4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:23:57 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:23:57 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:23:57 [info]: [generateSession] Session created: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85, user=1234
+18.12.2024, 00:23:57 [info]: [login] Login successful: username=1234, sessionID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:23:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:23:58 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:24:00 [info]: [validateAndUpdateSession] Session updated successfully: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:00 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:24:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:01 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:24:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:02 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:24:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:02 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:24:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:04 [info]: [deleteSession] Session deleted: ID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:04 [info]: [logout] Session deleted successfully: sessionID=4640960d-b58e-4d39-8298-8ef2ef39bc85
+18.12.2024, 00:24:11 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:24:11 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:24:11 [info]: [generateUUID] Generated UUID: b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:24:11 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:24:11 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:24:12 [info]: [generateSession] Session created: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c, user=1234
+18.12.2024, 00:24:12 [info]: [login] Login successful: username=1234, sessionID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:24:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:24:12 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:25:08 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:25:08 [info]: Loading route file: route_blog.js
+18.12.2024, 00:25:08 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:25:08 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:25:08 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:25:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:25:08 [info]: Database connection established
+18.12.2024, 00:25:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:25:46 [error]: [getUser] Error: Unknown column 'user_id' in 'where clause'
+18.12.2024, 00:26:17 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:26:17 [info]: Loading route file: route_blog.js
+18.12.2024, 00:26:17 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:26:17 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:26:17 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:26:17 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:26:17 [info]: Database connection established
+18.12.2024, 00:26:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:26:22 [info]: [getUser] Retrieved username: 1234 for session ID: b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:28:39 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:28:39 [info]: Loading route file: route_blog.js
+18.12.2024, 00:28:39 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:28:39 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:28:39 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:28:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:28:39 [info]: Database connection established
+18.12.2024, 00:28:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:28:54 [info]: [getUser] Retrieved username: 1234 for session ID: b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:28:55 [info]: [validateAndUpdateSession] Session updated successfully: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:28:55 [info]: [deleteSession] Session deleted: ID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:28:55 [info]: [logout] Session deleted successfully: sessionID=b5ae07e2-8c6c-4fc0-a570-246863c15a6c
+18.12.2024, 00:29:03 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:29:03 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:29:03 [info]: [generateUUID] Generated UUID: 212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:03 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:29:03 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:29:04 [info]: [generateSession] Session created: ID=212a514d-3363-4ee6-85e3-730185169adc, user=1234
+18.12.2024, 00:29:04 [info]: [login] Login successful: username=1234, sessionID=212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:04 [error]: [getUser] Error: getConnection is not defined
+18.12.2024, 00:29:40 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:29:40 [info]: Loading route file: route_blog.js
+18.12.2024, 00:29:40 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:29:40 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:29:40 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:29:40 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:29:41 [info]: Database connection established
+18.12.2024, 00:29:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:44 [info]: [getUser] Retrieved username: 1234 for session ID: 212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:46 [info]: [deleteSession] Session deleted: ID=212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:29:46 [info]: [logout] Session deleted successfully: sessionID=212a514d-3363-4ee6-85e3-730185169adc
