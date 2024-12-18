@@ -10,11 +10,11 @@
 <form id="registerForm">
   <!-- E-Mail-Feld -->
   <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br><br>
+  <input type="text" id="username" name="username" style="width: 800px;"><br><br>
 
   <!-- Passwort-Feld -->
   <label for="password">Password:</label><br>
-  <input type="password" id="password" name="password"><br><br>
+  <input type="password" id="password" name="password" style="width: 800px;"><br><br>
 
   <!-- Submit-Button -->
   <button type="submit">Login</button>
@@ -24,6 +24,8 @@
 <button onclick="window.location.href='/account_management/login.html';">Safe Mode</button>
 
 <p id="responseMessage"></p>
+</body>
+</html>
 
 <script>
   document.getElementById('registerForm').addEventListener('submit', async (event) => {

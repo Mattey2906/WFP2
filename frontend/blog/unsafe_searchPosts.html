@@ -18,13 +18,15 @@
 <h1>Search Blog Posts</h1>
 <form id="search-form">
   <label for="title">Enter a Title or Keyword:</label>
-  <input type="text" id="title" name="title" placeholder="e.g., SQL Injection" required>
+  <input type="text" id="title" name="title" placeholder="e.g., SQL Injection" required style="width: 800px;">
   <button type="submit">Search</button>
 </form>
 <h2>Results</h2>
 <div id="results">No search has been performed yet.</div>
 
 <button onclick="window.location.href='/account_management/unsafe_sessionTest.html';">Navigator Site</button>
+</body>
+</html>
 
 <script>
   document.getElementById('search-form').addEventListener('submit', async (e) => {
