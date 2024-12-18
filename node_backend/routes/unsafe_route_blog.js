@@ -97,7 +97,7 @@ router.get('/blog/unsafe_posts', async (req, res) => {
 
         res.status(200).json(rows);
     } catch (err) {
-        console.error('Error fetching posts:', err.message);
+        logger.error('Error fetching posts:', err.message);
         res.status(500).json({ message: 'Internal server error' });
     }
 });
@@ -122,7 +122,7 @@ router.get('/blog/unsafe_comments', async (req, res) => {
 
         res.status(200).json(comments);
     } catch (err) {
-        console.error(`Error fetching comments: ${err.message}`);
+        logger.error(`Error fetching comments: ${err.message}`);
         res.status(500).json({ message: 'Internal server error' });
     }
 });
@@ -137,10 +137,41 @@ router.get('/blog/unsafe_categories', async (req, res) => {
 
         res.status(200).json(rows);
     } catch (err) {
-        console.error('Error fetching categories:', err.message);
+        logger.error('Error fetching categories:', err.message);
         res.status(500).json({ message: 'Internal server error' });
     }
 });
+
+
+
+router.get('/blog/unsafe_searchPosts', async (req, res) => {
+    const { title } = req.query; // Input aus der URL-Query
+    const dbConnection = getConnection();
+
+    try {
+        if (!title) {
+            logger.info(`[unsafe_searchPosts] No title parameter provided`);
+            return res.status(400).json({ error: 'Title parameter is required' });
+        }
+
+        // SQL-Query debuggen
+        const query = `
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%${title}%'
+        `;
+        logger.info(`[unsafe_searchPosts] Executing query: ${query}`);
+
+        const [results] = await dbConnection.query(query);
+
+        logger.info(`[unsafe_searchPosts] Query executed successfully, returned ${results.length} result(s)`);
+        res.json(results); // Ergebnisse als JSON zurückgeben
+    } catch (error) {
+        logger.error(`[unsafe_searchPosts] Error executing query: ${error.message}`);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
 
 // ---------------------------------------------------------------------------------------
 // -------------------------------------- EXPORTS ----------------------------------------

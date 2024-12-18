@@ -47,6 +47,21 @@ function generateUUID() {
  * @param {string} username - Benutzername, für den die Session generiert wird.
  * @returns {string} - Die generierte Session-ID.
  */
+
+// Hilfsfunktion, um das Datum ins MySQL-Format zu bringen
+function formatDateToMySQL(date) {
+    const pad = (n) => (n < 10 ? '0' + n : n);
+    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ` +
+        `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+}
+
+// Hilfsfunktion zur Formatierung des Datums im MySQL-Format
+function formatDateToMySQL(date) {
+    const pad = (n) => (n < 10 ? '0' + n : n);
+    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ` +
+        `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+}
+
 async function generateSession(username) {
     try {
         const dbConnection = getConnection();
@@ -54,11 +69,13 @@ async function generateSession(username) {
         const expireDate = new Date();
         expireDate.setHours(expireDate.getHours() + 2);
 
+        const formattedExpireDate = formatDateToMySQL(expireDate);
+
         logger.info(`[generateSession] Starting session creation for user: ${username}`);
 
-        // Hole die Benutzer-ID
-        const queryUserId = 'SELECT id FROM users WHERE username = ?';
-        const [userResults] = await dbConnection.execute(queryUserId, [username]);
+        // UNSICHER: Benutzer-ID abrufen
+        const queryUserId = `SELECT id FROM users WHERE username = '${username}'`;
+        const [userResults] = await dbConnection.query(queryUserId);
 
         if (userResults.length === 0) {
             logger.info(`[generateSession] User not found: ${username}`);
@@ -66,14 +83,16 @@ async function generateSession(username) {
         }
         const userId = userResults[0].id;
 
-        // Lösche bestehende Sessions
-        const queryDelete = 'DELETE FROM sessions WHERE user_id = ?';
-        const [sessionCheckResult] = await dbConnection.execute(queryDelete, [userId]);
+        // UNSICHER: Bestehende Sessions löschen
+        const queryDelete = `DELETE FROM sessions WHERE user_id = '${userId}'`;
+        const [sessionCheckResult] = await dbConnection.query(queryDelete);
         logger.info(`[generateSession] Deleted ${sessionCheckResult.affectedRows} session(s) for user ID: ${userId}`);
 
-        // Erstelle eine neue Session
-        const queryInsert = 'INSERT INTO sessions (session_id, user_id, expire_date) VALUES (?, ?, ?)';
-        const [results] = await dbConnection.execute(queryInsert, [sessionID, userId, expireDate]);
+        // UNSICHER: Neue Session erstellen
+        const queryInsert = `
+            INSERT INTO sessions (session_id, user_id, expire_date) 
+            VALUES ('${sessionID}', '${userId}', '${formattedExpireDate}')`;
+        const [results] = await dbConnection.query(queryInsert);
 
         logger.info(`[generateSession] Session created: ID=${sessionID}, user=${username}`);
         return sessionID;
@@ -83,6 +102,7 @@ async function generateSession(username) {
         throw error;
     }
 }
+
 
 /**
  * Middleware zur Validierung und Aktualisierung von Sessions.
@@ -101,7 +121,7 @@ async function validateAndUpdateSession(req, res, next) {
     try {
         const dbConnection = getConnection();
 
-        // UNSICHER: Dynamische SQL-Query ohne Parameterized Queries
+        // UNSICHER: Dynamische SQL-Query mit direkter Einbindung des sessionID
         const query = `
             UPDATE sessions 
             SET expire_date = DATE_ADD(NOW(), INTERVAL 2 HOUR)
