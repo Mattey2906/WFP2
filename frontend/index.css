@@ -1,0 +1,11 @@
+#safeModeText {
+    border: 2px solid #007BFF; /* Rahmenfarbe */
+    padding: 10px; /* Innenabstand */
+    margin: 10px 0; /* Abstand nach oben und unten */
+    background-color: #f0f8ff; /* Hintergrundfarbe */
+    color: #333; /* Textfarbe */
+    font-weight: bold; /* Fettschrift */
+    text-align: left; /* Zentrierter Text */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Schatteneffekt */
+}

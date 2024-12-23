@@ -1,30 +1,35 @@
 # TODO
-* Safe / Unsafe Mode switch Button
-  * nur ein endpunkt für safe/unsafe
-  * nur eine site für jede page
-
 
 * main.css machen
 * individuelle css auslagern
-
-
-* admin und user accounts differenzierbar machen
+* JAVASCRIPT AUSLAGERN
+* JAVASCRIPT besser machen
+  * komprimieren
+  * logischere aufrufketten
 
 
 * searchPosts erweiterm:
-  * datum filterung
-  * kategorie filterung
-
-
-* posts.html erweitern
-  * kategorie filterung
-
-
-* content management
-  * nur admins können posts bearbeiten
-  * kommentare können alle bearbeiten
+  * sortieren nach datum
 
 
 * Eingabevalidierung
-  * nicht für SQLi, sondern für zB usernamen keine sonderzeichen
-  * also mehr für usability
+  * BACKEND: Überprüfen
+  * Frontend: Instructions
+
+
+* ANZEIGE der SQLis
+  * senden der SQLis ans Frontend, wenn unsafe Mode
+  * evtl. mit ChatGPT anbindung für kurze erklärungen
+
+
+* ML anbindung
+  * senden der SQL Querys an Uvicorn Server
+  * Endpunkte am Uvicorn server machen
+
+
+* Modellauswahl via Cookie (ähnlich zu Safemode)
+  * evtl gleich mit safeMode Funktionen implementieren
+
+
+# INJECTIONS
+* session stealing über cookie in unsafe mode

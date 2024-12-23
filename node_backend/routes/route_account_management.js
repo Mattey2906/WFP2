@@ -4,7 +4,9 @@ const path = require('path');
 
 // ---------------------------------- IMPORTS ----------------------------------
 const { encryptPassword, generateSession, validateAndUpdateSession } = require(path.join(process.cwd(), '/logic/logic_account_management'));
+const { unsafeGenerateSession, unsafeValidateAndUpdateSession } = require(path.join(process.cwd(), '/logic/unsafe_logic_account_management'));
 const { createUser, validateLogin, deleteSession } = require(path.join(process.cwd(), 'db/db_account_management'));
+const { unsafeCreateUser, unsafeValidateLogin, unsafeDeleteSession } = require(path.join(process.cwd(), 'db/unsafe_db_account_management'));
 const { logger } = require(path.join(process.cwd(), '/logging/logging'));
 const {getConnection} = require("../db/db_connector");
 
@@ -13,11 +15,14 @@ const {getConnection} = require("../db/db_connector");
  * Route zum Registrieren eines neuen Benutzers.
  */
 router.post('/acc_man/register', async (req, res) => {
-    const { username, password } = req.body;
+    const { username, password, safeMode } = req.body;
 
     if (!username || !password) {
-        logger.info(`[register] Missing username or password`);
-        return res.status(400).json({ message: 'Email and password are required' });
+        logger.info(`[login] Missing input`);
+        return res.status(400).json({ message: 'username, password are required' });
+    }
+    if (safeMode === undefined || safeMode === null) {
+        return res.status(400).json({ message: 'Mode is required' });
     }
 
     try {
@@ -27,10 +32,30 @@ router.post('/acc_man/register', async (req, res) => {
             return res.status(500).json({ message: 'Internal server error during password encryption' });
         }
 
-        const userId = await createUser(username, result.hash, result.salt);
+        if(safeMode){
+            // Regex für Username
+            const whitelistRegexUsername = /^[a-zA-Z0-9]+$/;
 
-        logger.info(`[register] User registered successfully: username=${username}, userId=${userId}`);
-        res.status(201).json({ message: 'User created', userId });
+            // Regex für Passwort
+            const whitelistRegexPassword = /^[a-zA-Z0-9.!@#$%&*_\-]{4,}$/;
+
+            // Validierung
+            if (!whitelistRegexUsername.test(username) || !whitelistRegexPassword.test(password)) {
+                return res.status(400).json({ message: 'Invalid input. Username must be alphanumeric. Password must be at least 4 characters long and contain only valid characters.' });
+            }
+
+
+            const userId = await createUser(username, result.hash, result.salt);
+
+            logger.info(`[register] User registered successfully: username=${username}, userId=${userId}`);
+            res.status(201).json({ message: 'User created', userId });
+        }
+        else if(!safeMode){
+            const userId = await unsafeCreateUser(username, result.hash, result.salt);
+
+            logger.info(`[unsafeRegister] User registered successfully: username=${username}, userId=${userId}`);
+            res.status(201).json({ message: 'User created', userId });
+        }
     } catch (err) {
         logger.error(`[register] Error during registration: ${err.message}`);
         res.status(500).json({ message: 'Internal server error' });
@@ -42,30 +67,65 @@ router.post('/acc_man/register', async (req, res) => {
  * Route für Benutzer-Login und Session-Erstellung.
  */
 router.post('/acc_man/login', async (req, res) => {
-    const { username, password } = req.body;
+    const { username, password, safeMode } = req.body;
 
     if (!username || !password) {
-        logger.info(`[login] Missing username or password`);
-        return res.status(400).json({ message: 'Email and password are required' });
+        logger.info(`[login] Missing input`);
+        return res.status(400).json({ message: 'username, password are required' });
+    }
+    if (safeMode === undefined || safeMode === null) {
+        return res.status(400).json({ message: 'Mode is required' });
     }
 
     try {
-        const login = await validateLogin(username, password);
+        if(safeMode){
+            // Regex für Username
+            const whitelistRegexUsername = /^[a-zA-Z0-9]+$/;
 
-        if (login) {
-            const sessionID = await generateSession(username);
+            // Regex für Passwort
+            const whitelistRegexPassword = /^[a-zA-Z0-9.!@#$%&*_\-]{4,}$/;
 
-            logger.info(`[login] Login successful: username=${username}, sessionID=${sessionID}`);
+            // Validierung
+            if (!whitelistRegexUsername.test(username) || !whitelistRegexPassword.test(password)) {
+                return res.status(400).json({ message: 'Invalid input. Username must be alphanumeric. Password must be at least 4 characters long and contain only valid characters.' });
+            }
 
-            res.cookie('id', sessionID, {
-                httpOnly: true,
-                sameSite: 'Strict',
-                maxAge: 2 * 60 * 60 * 1000 // 2 Stunden
-            });
-            res.status(200).json({ message: 'Login successful' });
-        } else {
-            logger.info(`[login] Unauthorized login attempt: username=${username}`);
-            res.status(401).json({ message: 'Unauthorized: No login' });
+
+            const login = await validateLogin(username, password);
+            if (login) {
+                const sessionID = await generateSession(username);
+
+                logger.info(`[login] Login successful: username=${username}, sessionID=${sessionID}`);
+
+                res.cookie('id', sessionID, {
+                    httpOnly: true,
+                    sameSite: 'Strict',
+                    maxAge: 2 * 60 * 60 * 1000 // 2 Stunden
+                });
+                res.status(200).json({ message: 'Login successful' });
+            } else {
+                logger.info(`[login] Unauthorized login attempt: username=${username}`);
+                res.status(401).json({ message: 'Unauthorized: No login' });
+            }
+        }
+
+        else if(!safeMode){
+            const login = await unsafeValidateLogin(username, password);
+            if (login) {
+                const sessionID = await unsafeGenerateSession(username);
+
+                logger.info(`[unsafeLogin] Login successful: username=${username}, sessionID=${sessionID}`);
+
+                res.cookie('id', sessionID, {
+                    httpOnly: true,
+                    sameSite: 'Strict',
+                    maxAge: 2 * 60 * 60 * 1000 // 2 Stunden
+                });
+                res.status(200).json({ message: 'Login successful' });
+            } else {
+                logger.info(`[unsafeLogin] Unauthorized login attempt: username=${username}`);
+                res.status(401).json({ message: 'Unauthorized: No login' });
+            }
         }
     } catch (error) {
         logger.error(`[login] Error during login: ${error.message}`);
@@ -86,29 +146,56 @@ router.get('/acc_man/session_test', validateAndUpdateSession, async (req, res) =
 /**
  * Route zum Löschen einer Session (Logout).
  */
-router.get('/acc_man/logout', validateAndUpdateSession, async (req, res) => {
+router.get('/acc_man/logout', async (req, res) => {
     try {
         const sessionID = req.cookies.id;
+        const safeMode = req.cookies.safeMode;
 
         if (!sessionID) {
             logger.info(`[logout] No session ID provided`);
-            return res.status(400).json({ message: 'No session ID provided.' });
+            return res.redirect('/account_management/login.html'); // Redirect auf die Login-Seite
         }
 
-        const isDeleted = await deleteSession(sessionID);
+        if (safeMode === undefined){
+            logger.info(`[logout] safeMode undefined`);
+            return res.status(400).json({ message: 'safeMode undefined.' });
+        }
 
-        if (isDeleted) {
-            res.cookie('id', '', {
-                httpOnly: true,
-                sameSite: 'Strict',
-                maxAge: 0 // Löscht das Cookie sofort
-            });
+        if(safeMode){
+            const isDeleted = await deleteSession(sessionID);
 
-            logger.info(`[logout] Session deleted successfully: sessionID=${sessionID}`);
-            res.status(200).json({ message: 'Session deleted successfully.' });
-        } else {
-            logger.info(`[logout] Session not found: sessionID=${sessionID}`);
-            res.status(404).json({ message: 'Session not found.' });
+            if (isDeleted) {
+                res.cookie('id', '', {
+                    httpOnly: true,
+                    sameSite: 'Strict',
+                    maxAge: 0 // Löscht das Cookie sofort
+                });
+
+                logger.info(`[logout] Session deleted successfully: sessionID=${sessionID}`);
+                res.status(200).json({ message: 'Session deleted successfully.' });
+            } else {
+                logger.info(`[logout] Session not found: sessionID=${sessionID}`);
+                res.status(404).json({ message: 'Session not found.' });
+            }
+        }
+
+        else if(!safeMode){
+            const isDeleted = await unsafeDeleteSession(sessionID);
+
+            if (isDeleted) {
+                res.cookie('id', '', {
+                    httpOnly: true,
+                    sameSite: 'Strict',
+                    maxAge: 0 // Löscht das Cookie sofort
+                });
+
+                logger.info(`[unsafeLogout] Session deleted successfully: sessionID=${sessionID}`);
+                res.status(200).json({ message: 'Session deleted successfully.' });
+            } else {
+                logger.info(`[unsafeLogout] Session not found: sessionID=${sessionID}`);
+                res.status(404).json({ message: 'Session not found.' });
+            }
+
         }
     } catch (err) {
         logger.error(`[logout] Error during logout: ${err.message}`);
@@ -153,6 +240,10 @@ router.get('/acc_man/getUser', validateAndUpdateSession, async (req, res) => {
         }
 
         const username = userResult[0].username;
+
+        res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+        res.set('Pragma', 'no-cache');
+        res.set('Expires', '0');
 
         logger.info(`[getUser] Retrieved username: ${username} for session ID: ${sessionID}`);
         res.status(200).json({ username });

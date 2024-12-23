@@ -14,7 +14,7 @@ const { getConnection } = require('./db_connector'); // Verbindungsabruf
  * @param {string} salt
  * @returns {number} Insert ID des erstellten Benutzers
  */
-async function createUser(username, password, salt) {
+async function unsafeCreateUser(username, password, salt) {
     try {
         const dbConnection = getConnection();
 
@@ -28,10 +28,10 @@ async function createUser(username, password, salt) {
 
         const [results] = await dbConnection.query(query);
 
-        logger.info(`[createUser] User successfully created: ID=${results.insertId}`);
+        logger.info(`[unsafeCreateUser] User successfully created: ID=${results.insertId}`);
         return results.insertId;
     } catch (err) {
-        logger.error(`[createUser] Error inserting user: ${err.message}`);
+        logger.error(`[unsafeCreateUser] Error inserting user: ${err.message}`);
         throw err;
     }
 }
@@ -42,7 +42,7 @@ async function createUser(username, password, salt) {
  * @param {string} password
  * @returns {Object|null} Benutzerdaten oder null
  */
-async function getUser(username, password) {
+async function unsafeGetUser(username, password) {
     try {
         const dbConnection = getConnection();
 
@@ -54,10 +54,10 @@ async function getUser(username, password) {
         const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
         const [results] = await dbConnection.query(query);
 
-        logger.info(`[getUser] User fetch attempt: username=${username}`);
+        logger.info(`[unsafeGetUser] User fetch attempt: username=${username}`);
         return results.length > 0 ? results[0] : null;
     } catch (err) {
-        logger.error(`[getUser] Error fetching user: ${err.message}`);
+        logger.error(`[unsafeGetUser] Error fetching user: ${err.message}`);
         throw err;
     }
 }
@@ -68,17 +68,17 @@ async function getUser(username, password) {
  * @param {string} password
  * @returns {boolean} true bei erfolgreicher Validierung, sonst false
  */
-async function validateLogin(username, password) {
+async function unsafeValidateLogin(username, password) {
     try {
         const dbConnection = getConnection();
-        const { encryptPassword } = require(path.join(process.cwd(), '/logic/unsafe_logic_account_management'));
+        const { encryptPassword } = require(path.join(process.cwd(), '/logic/logic_account_management'));
 
         // UNSICHER: Dynamische SQL-Query ohne Parameterized Queries
         const querySalt = `SELECT salt FROM users WHERE username = '${username}'`;
         const [results1] = await dbConnection.query(querySalt);
 
         if (results1.length === 0) {
-            logger.info(`[validateLogin] User not found: username=${username}`);
+            logger.info(`[unsafeValidateLogin] User not found: username=${username}`);
             return false;
         }
 
@@ -90,14 +90,14 @@ async function validateLogin(username, password) {
         const [results2] = await dbConnection.query(queryLogin);
 
         if (results2.length > 0) {
-            logger.info(`[validateLogin] Login successful: username=${username}`);
+            logger.info(`[unsafeValidateLogin] Login successful: username=${username}`);
             return true;
         } else {
-            logger.info(`[validateLogin] Incorrect password: username=${username}`);
+            logger.info(`[unsafeValidateLogin] Incorrect password: username=${username}`);
             return false;
         }
     } catch (err) {
-        logger.error(`[validateLogin] Error validating login: ${err.message}`);
+        logger.error(`[unsafeValidateLogin] Error validating login: ${err.message}`);
         throw err;
     }
 }
@@ -114,7 +114,7 @@ async function validateLogin(username, password) {
  * @param {string} expireDate
  * @returns {number} Insert ID der erstellten Session
  */
-async function createSession(username, sessionID, expireDate) {
+async function unsafeCreateSession(username, sessionID, expireDate) {
     try {
         const dbConnection = getConnection();
 
@@ -128,10 +128,10 @@ async function createSession(username, sessionID, expireDate) {
 
         const [results] = await dbConnection.query(query);
 
-        logger.info(`[createSession] Session created: ID=${sessionID} for user=${username}`);
+        logger.info(`[unsafeCreateSession] Session created: ID=${sessionID} for user=${username}`);
         return results.insertId;
     } catch (err) {
-        logger.error(`[createSession] Error creating session: ${err.message}`);
+        logger.error(`[unsafeCreateSession] Error creating session: ${err.message}`);
         throw err;
     }
 }
@@ -141,7 +141,7 @@ async function createSession(username, sessionID, expireDate) {
  * @param {string} sessionID
  * @returns {boolean}
  */
-async function deleteSession(sessionID) {
+async function unsafeDeleteSession(sessionID) {
     try {
         const dbConnection = getConnection();
 
@@ -155,14 +155,14 @@ async function deleteSession(sessionID) {
         const [results] = await dbConnection.query(query);
 
         if (results.affectedRows > 0) {
-            logger.info(`[deleteSession] Session deleted: ID=${sessionID}`);
+            logger.info(`[unsafeDeleteSession] Session deleted: ID=${sessionID}`);
             return true;
         } else {
-            logger.info(`[deleteSession] No session found to delete: ID=${sessionID}`);
+            logger.info(`[unsafeDeleteSession] No session found to delete: ID=${sessionID}`);
             return false;
         }
     } catch (err) {
-        logger.error(`[deleteSession] Error deleting session: ${err.message}`);
+        logger.error(`[unsafeDeleteSession] Error deleting session: ${err.message}`);
         throw err;
     }
 }
@@ -172,9 +172,9 @@ async function deleteSession(sessionID) {
 // -------------------------------------- EXPORTS ----------------------------------------
 // ---------------------------------------------------------------------------------------
 module.exports = {
-    createUser,
-    getUser,
-    validateLogin,
-    createSession,
-    deleteSession,
+    unsafeValidateLogin,
+    unsafeCreateSession,
+    unsafeDeleteSession,
+    unsafeGetUser,
+    unsafeCreateUser
 };

@@ -22,11 +22,42 @@
 
 
 <button onclick="window.location.href='/account_management/login.html';">go to Login Site</button>
-<button onclick="window.location.href='/account_management/unsafe_register.html';">Unsafe Mode</button>
+<button id="modeToggle" onclick="toggleMode()">Switch to Safe Mode</button>
 
 <p id="responseMessage"></p>
 
 <script>
+    // Safe Mode Status aus Cookies laden
+    function getCookie(name) {
+        const cookies = document.cookie.split(';');
+        for (const cookie of cookies) {
+            const [key, value] = cookie.trim().split('=');
+            if (key === name) return value;
+        }
+        return null;
+    }
+
+    function setCookie(name, value) {
+        document.cookie = `${name}=${value}; path=/;`;
+    }
+
+    // Safe Mode initialisieren
+    let isSafeMode = getCookie('safeMode');
+    if (isSafeMode === null) {
+        isSafeMode = true; // Standardwert setzen
+        setCookie('safeMode', isSafeMode);
+    } else {
+        isSafeMode = isSafeMode === 'true';
+    }
+
+    document.getElementById('modeToggle').innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+
+    function toggleMode() {
+        isSafeMode = !isSafeMode;
+        setCookie('safeMode', isSafeMode);
+        document.getElementById('modeToggle').innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+    }}
+
     document.getElementById('registerForm').addEventListener('submit', async (event) => {
         event.preventDefault(); // Verhindert das Neuladen der Seite
 
@@ -41,7 +72,11 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ username: username, password: password })
+                body: JSON.stringify({
+                    username: username,
+                    password: password,
+                    safeMode: isSafeMode
+                })
             });
 
             if (response.ok) {

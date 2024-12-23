@@ -7,26 +7,58 @@
 </head>
 <body>
 <h2>Login</h2>
-<form id="registerForm">
+<form id="loginForm" action="/your-login-endpoint" method="POST">
     <!-- E-Mail-Feld -->
     <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" required><br><br>
+    <input type="text" id="username" name="username"><br><br>
 
     <!-- Passwort-Feld -->
     <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
+    <input type="password" id="password" name="password"><br><br>
 
     <!-- Submit-Button -->
     <button type="submit">Login</button>
 </form>
 
-<button onclick="window.location.href='/account_management/register.html';">go to Register Site</button>
-<button onclick="window.location.href='/account_management/unsafe_login.html';">Unsafe Mode</button>
+<button onclick="window.location.href='/index.html';">index</button>
+<button onclick="window.location.href='/account_management/register.html';">Go to Register Site</button>
+<button id="modeToggle">Switch to Safe Mode</button>
+
 
 <p id="responseMessage"></p>
-
 <script>
-    document.getElementById('registerForm').addEventListener('submit', async (event) => {
+    // Safe Mode Status aus Cookies laden
+    function getCookie(name) {
+        const cookies = document.cookie.split(';');
+        for (const cookie of cookies) {
+            const [key, value] = cookie.trim().split('=');
+            if (key === name) return value;
+        }
+        return null;
+    }
+
+    function setCookie(name, value) {
+        document.cookie = `${name}=${value}; path=/;`;
+    }
+
+    // Safe Mode initialisieren
+    let isSafeMode = getCookie('safeMode');
+    if (isSafeMode === null) {
+        isSafeMode = true; // Standardwert setzen
+        setCookie('safeMode', isSafeMode);
+    } else {
+        isSafeMode = isSafeMode === 'true';
+    }
+
+    document.getElementById('modeToggle').innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+
+    function toggleMode() {
+        isSafeMode = !isSafeMode;
+        setCookie('safeMode', isSafeMode);
+        document.getElementById('modeToggle').innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', async (event) => {
         event.preventDefault(); // Verhindert das Neuladen der Seite
 
         // Formulardaten sammeln
@@ -40,14 +72,18 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ username: username, password: password })
+                body: JSON.stringify({
+                    username: username,
+                    password: password,
+                    safeMode: isSafeMode // Safe Mode-Status mitsenden
+                })
             });
 
             if (response.ok) {
                 const data = await response.json();
                 document.getElementById('responseMessage').innerText = data.message;
 
-                window.location.href = '/account_management/sessionTest.html'
+                window.location.href = '/index.html';
 
             } else {
                 const errorData = await response.json();

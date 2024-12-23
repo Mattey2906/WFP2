@@ -92,29 +92,47 @@ async function generateSession(username) {
  */
 async function validateAndUpdateSession(req, res, next) {
     const sessionID = req.cookies.id;
+    const safeMode  = req.cookies.safeMode;
 
     if (!sessionID) {
         logger.info(`[validateAndUpdateSession] No session ID provided`);
         return res.status(401).json({ message: 'Unauthorized: No session' });
     }
 
+    logger.info(`[validateAndUpdateSession] Safe Mode: ${safeMode}`);
+
     try {
         const dbConnection = getConnection();
-        const query = `
-            UPDATE sessions 
-            SET expire_date = DATE_ADD(NOW(), INTERVAL 2 HOUR)
-            WHERE session_id = ? AND expire_date > NOW()
-        `;
 
-        const [results] = await dbConnection.execute(query, [sessionID]);
+        if(safeMode){
+            const query = `UPDATE sessions SET expire_date = DATE_ADD(NOW(), INTERVAL 2 HOUR) WHERE session_id = ? AND expire_date > NOW()`;
+            const [results] = await dbConnection.execute(query, [sessionID]);
 
-        if (results.affectedRows > 0) {
-            logger.info(`[validateAndUpdateSession] Session updated successfully: ID=${sessionID}`);
-            next();
-        } else {
-            logger.info(`[validateAndUpdateSession] Session not found or expired: ID=${sessionID}`);
-            res.status(401).json({ message: 'Unauthorized: Session expired or invalid' });
+            if (results.affectedRows > 0) {
+                logger.info(`[validateAndUpdateSession] Session updated successfully: ID=${sessionID}`);
+                next();
+            } else {
+                logger.info(`[validateAndUpdateSession] Session not found or expired: ID=${sessionID}`);
+                res.status(401).json({ message: 'Unauthorized: Session expired or invalid' });
+            }
+
         }
+
+        else if(!safeMode){
+            const query = `UPDATE sessions SET expire_date = DATE_ADD(NOW(), INTERVAL 2 HOUR) WHERE session_id = '${sessionID}' AND expire_date > NOW()`;
+
+            const [results] = await dbConnection.query(query);
+
+            if (results.affectedRows > 0) {
+                logger.info(`[unsafeValidateAndUpdateSession] Session updated successfully: ID=${sessionID}`);
+                next();
+            } else {
+                logger.info(`[unsafeValidateAndUpdateSession] Session not found or expired: ID=${sessionID}`);
+                res.status(401).json({ message: 'Unauthorized: Session expired or invalid' });
+            }
+
+        }
+
     } catch (err) {
         logger.error(`[validateAndUpdateSession] Error updating session: ${err.message}`);
         res.status(500).json({ message: 'Error updating session' });

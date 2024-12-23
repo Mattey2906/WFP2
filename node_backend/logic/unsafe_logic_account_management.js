@@ -48,13 +48,6 @@ function generateUUID() {
  * @returns {string} - Die generierte Session-ID.
  */
 
-// Hilfsfunktion, um das Datum ins MySQL-Format zu bringen
-function formatDateToMySQL(date) {
-    const pad = (n) => (n < 10 ? '0' + n : n);
-    return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ` +
-        `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
-}
-
 // Hilfsfunktion zur Formatierung des Datums im MySQL-Format
 function formatDateToMySQL(date) {
     const pad = (n) => (n < 10 ? '0' + n : n);
@@ -62,7 +55,7 @@ function formatDateToMySQL(date) {
         `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
 }
 
-async function generateSession(username) {
+async function unsafeGenerateSession(username) {
     try {
         const dbConnection = getConnection();
         const sessionID = generateUUID();
@@ -71,14 +64,14 @@ async function generateSession(username) {
 
         const formattedExpireDate = formatDateToMySQL(expireDate);
 
-        logger.info(`[generateSession] Starting session creation for user: ${username}`);
+        logger.info(`[unsafeGenerateSession] Starting session creation for user: ${username}`);
 
         // UNSICHER: Benutzer-ID abrufen
         const queryUserId = `SELECT id FROM users WHERE username = '${username}'`;
         const [userResults] = await dbConnection.query(queryUserId);
 
         if (userResults.length === 0) {
-            logger.info(`[generateSession] User not found: ${username}`);
+            logger.info(`[unsafeGenerateSession] User not found: ${username}`);
             throw new Error('User not found');
         }
         const userId = userResults[0].id;
@@ -86,7 +79,7 @@ async function generateSession(username) {
         // UNSICHER: Bestehende Sessions löschen
         const queryDelete = `DELETE FROM sessions WHERE user_id = '${userId}'`;
         const [sessionCheckResult] = await dbConnection.query(queryDelete);
-        logger.info(`[generateSession] Deleted ${sessionCheckResult.affectedRows} session(s) for user ID: ${userId}`);
+        logger.info(`[unsafeGenerateSession] Deleted ${sessionCheckResult.affectedRows} session(s) for user ID: ${userId}`);
 
         // UNSICHER: Neue Session erstellen
         const queryInsert = `
@@ -94,11 +87,11 @@ async function generateSession(username) {
             VALUES ('${sessionID}', '${userId}', '${formattedExpireDate}')`;
         const [results] = await dbConnection.query(queryInsert);
 
-        logger.info(`[generateSession] Session created: ID=${sessionID}, user=${username}`);
+        logger.info(`[unsafeGenerateSession] Session created: ID=${sessionID}, user=${username}`);
         return sessionID;
 
     } catch (error) {
-        logger.error(`[generateSession] Error creating session for user: ${username} - ${error.message}`);
+        logger.error(`[unsafeGenerateSession] Error creating session for user: ${username} - ${error.message}`);
         throw error;
     }
 }
@@ -110,11 +103,11 @@ async function generateSession(username) {
  * @param {Object} res
  * @param {Function} next
  */
-async function validateAndUpdateSession(req, res, next) {
+async function unsafeValidateAndUpdateSession(req, res, next) {
     const sessionID = req.cookies.id;
 
     if (!sessionID) {
-        logger.info(`[validateAndUpdateSession] No session ID provided`);
+        logger.info(`[unsafeValidateAndUpdateSession] No session ID provided`);
         return res.status(401).json({ message: 'Unauthorized: No session' });
     }
 
@@ -131,21 +124,20 @@ async function validateAndUpdateSession(req, res, next) {
         const [results] = await dbConnection.query(query);
 
         if (results.affectedRows > 0) {
-            logger.info(`[validateAndUpdateSession] Session updated successfully: ID=${sessionID}`);
+            logger.info(`[unsafeValidateAndUpdateSession] Session updated successfully: ID=${sessionID}`);
             next();
         } else {
-            logger.info(`[validateAndUpdateSession] Session not found or expired: ID=${sessionID}`);
+            logger.info(`[unsafeValidateAndUpdateSession] Session not found or expired: ID=${sessionID}`);
             res.status(401).json({ message: 'Unauthorized: Session expired or invalid' });
         }
     } catch (err) {
-        logger.error(`[validateAndUpdateSession] Error updating session: ${err.message}`);
+        logger.error(`[unsafeValidateAndUpdateSession] Error updating session: ${err.message}`);
         res.status(500).json({ message: 'Error updating session' });
     }
 }
 
 // -------------------------------------- EXPORTS -----------------------------------------
 module.exports = {
-    encryptPassword,
-    generateSession,
-    validateAndUpdateSession
+    unsafeValidateAndUpdateSession,
+    unsafeGenerateSession
 };

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Blog Search</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { color: #333; }
+    .post { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
+    .post h2 { margin: 0 0 10px; }
+    .post p { margin: 5px 0; }
+    .post small { color: #777; display: block; margin-top: 10px; }
+    button { cursor: pointer; padding: 5px 10px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+<div id="navbar"></div>
+
+<h1>Search Blog Posts</h1>
+
+<!-- Search Form -->
+<div>
+  <form id="search-form">
+    <fieldset>
+      <legend>Search Criteria</legend>
+      <label for="title">Enter a Title or Keyword:</label><br>
+      <input type="text" id="title" name="title" placeholder="e.g., SQL Injection" style="width: 800px;"><br><br>
+
+      <label for="categoryFilter">Filter by Category:</label><br>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Industry Insights">Industry Insights</option>
+        <option value="Product Updates">Product Updates</option>
+        <option value="Company News">Company News</option>
+      </select><br><br>
+
+      <label for="startDate">Start Date:</label><br>
+      <input type="date" id="startDate" name="startDate"><br><br>
+
+      <label for="endDate">End Date:</label><br>
+      <input type="date" id="endDate" name="endDate"><br><br>
+
+      <button type="submit">Search</button>
+    </fieldset>
+  </form>
+</div>
+
+<h2>Results</h2>
+<div id="results">No search has been performed yet.</div>
+
+<button onclick="window.location.href='/index.html';">Index</button>
+<button id="modeToggle" onclick="toggleMode()">Switch to Safe Mode</button>
+
+<script>
+  function initializeSafeModeButton() {
+    const modeToggle = document.getElementById('modeToggle');
+    if (!modeToggle) {
+      console.error('Mode toggle button not found in the DOM.');
+      return;
+    }
+
+    // Safe Mode Status aus Cookies laden
+    function getCookie(name) {
+      const cookies = document.cookie.split(';');
+      for (const cookie of cookies) {
+        const [key, value] = cookie.trim().split('=');
+        if (key === name) return value;
+      }
+      return null;
+    }
+
+    function setCookie(name, value) {
+      document.cookie = `${name}=${value}; path=/;`;
+    }
+
+    let isSafeMode = getCookie('safeMode');
+    if (isSafeMode === null) {
+      isSafeMode = true; // Standardwert setzen
+      setCookie('safeMode', isSafeMode);
+    } else {
+      isSafeMode = isSafeMode === 'true';
+    }
+
+    function updateModeToggle() {
+      modeToggle.innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+    }
+
+    function toggleMode() {
+      isSafeMode = !isSafeMode;
+      setCookie('safeMode', isSafeMode);
+      updateModeToggle();
+    }
+
+    // Button-Event und initialer Text
+    updateModeToggle();
+    modeToggle.addEventListener('click', toggleMode);
+  }
+
+  async function updatePosts(){
+    // Formular manuell auslösen
+    const searchForm = document.getElementById('search-form');
+    searchForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+  }
+
+  async function deletePost(postId) {
+    try {
+      const response = await fetch(`/api/blog/deletePost/${postId}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include', // Sendet Cookies für die Authentifizierung mit
+      });
+
+      if (response.ok) {
+        alert('Post deleted successfully');
+        updatePosts();
+      } else {
+        const errorData = await response.json();
+        alert(`Failed to delete post: ${errorData.message}`);
+      }
+    } catch (error) {
+      console.error('Error deleting post:', error);
+      alert('An error occurred while deleting the post.');
+    }
+  }
+
+  document.getElementById('search-form').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Verhindert das Standardformularverhalten
+
+    const title = document.getElementById('title').value;
+    const category = document.getElementById('categoryFilter').value;
+    const startDate = document.getElementById('startDate').value;
+    const endDate = document.getElementById('endDate').value;
+
+    const body = {
+      title: title || null,
+      category: category !== 'all' ? category : null,
+      startDate: startDate || null,
+      endDate: endDate || null
+    };
+
+    try {
+      const response = await fetch('/api/blog/searchPosts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+      });
+
+      if (!response.ok) throw new Error('Failed to fetch posts');
+
+      const posts = await response.json();
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = ''; // Vorherige Ergebnisse löschen
+
+      // Prüfen, ob der Benutzer eingeloggt ist
+      const userResponse = await fetch('/api/acc_man/getUser', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+      });
+
+      const isLoggedIn = userResponse.ok;
+
+      // Posts anzeigen
+      if (posts.length > 0) {
+        posts.forEach(post => {
+          const postElement = document.createElement('div');
+          postElement.classList.add('post');
+          postElement.id = `post-${post.id}`; // Füge eine eindeutige ID hinzu
+          postElement.innerHTML = `
+    <h2 class="post-title">${post.title}</h2>
+    <p class="post-content">${post.content}</p>
+    <small>Category: ${post.category_name || 'Uncategorized'}</small><br>
+    <small>Created at: ${new Date(post.creation_date).toLocaleString()}</small><br>
+    ${isLoggedIn ? `
+    <button onclick="editPost(${post.id})">Edit Post</button>
+    <button onclick="deletePost(${post.id})">Delete Post</button>
+    ` : ''}
+  `;
+
+          resultsContainer.appendChild(postElement);
+        });
+
+      } else {
+        resultsContainer.innerHTML = '<p>No posts found matching your query.</p>';
+      }
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+      alert('An error occurred while searching for posts.');
+    }
+  });
+
+  function editPost(postId) {
+    const postElement = document.querySelector(`#post-${postId}`);
+    if (!postElement) {
+      console.error(`Post with ID ${postId} not found.`);
+      return;
+    }
+
+    // Hole Titel und Content
+    const titleElement = postElement.querySelector('.post-title');
+    const contentElement = postElement.querySelector('.post-content');
+
+    // Speichere die Originalwerte
+    const originalTitle = titleElement.innerText;
+    const originalContent = contentElement.innerText;
+
+    // Ersetze durch Eingabeelemente
+    titleElement.innerHTML = `<input type="text" id="edit-title-${postId}" value="${originalTitle}" />`;
+    contentElement.innerHTML = `<textarea id="edit-content-${postId}">${originalContent}</textarea>`;
+
+    // Füge einen "Save Changes"-Button hinzu, falls er nicht existiert
+    let saveButton = postElement.querySelector('.save-changes-button');
+    if (!saveButton) {
+      saveButton = document.createElement('button');
+      saveButton.classList.add('save-changes-button');
+      saveButton.innerText = "Save Changes";
+      saveButton.onclick = () => submitEdit(postId);
+      postElement.appendChild(saveButton);
+    }
+  }
+
+  async function submitEdit(postId) {
+    const newTitle = document.querySelector(`#edit-title-${postId}`).value;
+    const newContent = document.querySelector(`#edit-content-${postId}`).value;
+
+    try {
+      const response = await fetch(`/api/blog/editPost/${postId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title: newTitle, content: newContent }),
+      });
+
+      if (response.ok) {
+        alert('Post updated successfully.');
+
+        // Aktualisiere die Anzeige
+        const postElement = document.querySelector(`#post-${postId}`);
+        postElement.querySelector('.post-title').innerText = newTitle;
+        postElement.querySelector('.post-content').innerText = newContent;
+
+        // Entferne den "Save Changes"-Button
+        const saveButton = postElement.querySelector('button');
+        saveButton.remove();
+      } else {
+        alert('Failed to update post.');
+      }
+    } catch (error) {
+      console.error('Error updating post:', error);
+      alert('An error occurred while updating the post.');
+    }
+  }
+
+
+  async function loadNavbar() {
+    try {
+      const response = await fetch('/navbar.html');
+      if (response.ok) {
+        const navbarHTML = await response.text();
+        document.getElementById('navbar').innerHTML = navbarHTML;
+
+        // Safe Mode Button initialisieren, nachdem die Navbar geladen wurde
+        initializeSafeModeButton();
+
+        // Benutzerstatus abfragen und Posts laden
+        await initDynamicPageContent();
+      } else {
+        console.error('Failed to load navbar');
+      }
+    } catch (error) {
+      console.error('Error loading navbar:', error);
+
+    }
+  }
+
+  async function initDynamicPageContent() {
+    try {
+      const response = await fetch('/api/acc_man/getUser', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        renderLoggedInNavbar(data.username);
+
+
+      } else {
+        renderLoggedOutNavbar();
+      }
+    } catch (error) {
+      console.error('Error determining user status:', error);
+      renderLoggedOutNavbar();
+    }
+  }
+
+  function renderLoggedInNavbar(username) {
+    const usernameDisplay = document.createElement('li');
+    usernameDisplay.innerText = `Welcome, ${username}!`;
+    document.querySelector('nav ul').appendChild(usernameDisplay);
+
+    const logoutButton = document.getElementById('logoutButton');
+    logoutButton.style.display = 'inline'; // Zeige den Logout-Button
+
+    const logoutAction = document.getElementById('logoutAction');
+    logoutAction.addEventListener('click', async () => {
+      try {
+        const response = await fetch('/api/acc_man/logout', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          credentials: 'include'
+        });
+
+        if (response.ok) {
+          window.location.href = '/account_management/logout.html'; // Weiterleitung zur Login-Seite
+        } else {
+          console.error('Logout failed');
+          alert('Logout failed. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error during logout:', error);
+        alert('An error occurred during logout.');
+      }
+    });
+
+    const createPostButton = document.getElementById('createPostButton');
+    createPostButton.style.display = 'inline'; // Zeige den Logout-Button
+
+    const createPostAction = document.getElementById('createPostAction');
+
+    createPostAction.addEventListener('click', async () => {
+      window.location.href = '/blog/createPost.html';
+    });
+  }
+
+  function renderLoggedOutNavbar() {
+    const loginLink = document.createElement('li');
+    loginLink.innerHTML = `<a href="/account_management/login.html">Login</a>`;
+    document.querySelector('nav ul').appendChild(loginLink);
+
+    const logoutButton = document.getElementById('logoutButton');
+    if (logoutButton) {
+      logoutButton.style.display = 'none'; // Verstecke den Logout-Button
+    }
+  }
+
+  loadNavbar()
+
+</script>
+</body>
+</html>

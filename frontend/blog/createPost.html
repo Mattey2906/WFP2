@@ -6,6 +6,7 @@
   <title>Create Post</title>
 </head>
 <body>
+<div id="navbar"></div>
 <h1>Create a New Blog Post</h1>
 <form id="createPostForm">
   <label for="title">Title:</label><br>
@@ -22,10 +23,149 @@
   <button type="submit">Create Post</button>
 </form>
 
-<button onclick="window.location.href='/account_management/sessionTest.html';">Navigator Site</button>
-<button onclick="window.location.href='/blog/unsafe_createPost.html';">Unsafe Mode</button>
+<button onclick="window.location.href='/';">index</button>
+<button id="modeToggle" onclick="toggleMode()">Switch to Safe Mode</button>
 
 <script>
+  function initializeSafeModeButton() {
+    const modeToggle = document.getElementById('modeToggle');
+    if (!modeToggle) {
+      console.error('Mode toggle button not found in the DOM.');
+      return;
+    }
+
+    // Safe Mode Status aus Cookies laden
+    function getCookie(name) {
+      const cookies = document.cookie.split(';');
+      for (const cookie of cookies) {
+        const [key, value] = cookie.trim().split('=');
+        if (key === name) return value;
+      }
+      return null;
+    }
+
+    function setCookie(name, value) {
+      document.cookie = `${name}=${value}; path=/;`;
+    }
+
+    let isSafeMode = getCookie('safeMode');
+    if (isSafeMode === null) {
+      isSafeMode = true; // Standardwert setzen
+      setCookie('safeMode', isSafeMode);
+    } else {
+      isSafeMode = isSafeMode === 'true';
+    }
+
+    function updateModeToggle() {
+      modeToggle.innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+    }
+
+    function toggleMode() {
+      isSafeMode = !isSafeMode;
+      setCookie('safeMode', isSafeMode);
+      updateModeToggle();
+    }
+
+    // Button-Event und initialer Text
+    updateModeToggle();
+    modeToggle.addEventListener('click', toggleMode);
+  }
+
+  function renderLoggedInNavbar(username) {
+    const usernameDisplay = document.createElement('li');
+    usernameDisplay.innerText = `Welcome, ${username}!`;
+    document.querySelector('nav ul').appendChild(usernameDisplay);
+
+    const logoutButton = document.getElementById('logoutButton');
+    logoutButton.style.display = 'inline'; // Zeige den Logout-Button
+
+    const logoutAction = document.getElementById('logoutAction');
+    logoutAction.addEventListener('click', async () => {
+      try {
+        const response = await fetch('/api/acc_man/logout', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          credentials: 'include'
+        });
+
+        if (response.ok) {
+          window.location.href = '/account_management/logout.html'; // Weiterleitung zur Login-Seite
+        } else {
+          console.error('Logout failed');
+          alert('Logout failed. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error during logout:', error);
+        alert('An error occurred during logout.');
+      }
+    });
+
+    const createPostButton = document.getElementById('createPostButton');
+    createPostButton.style.display = 'inline'; // Zeige den Logout-Button
+
+    const createPostAction = document.getElementById('createPostAction');
+
+    createPostAction.addEventListener('click', async () => {
+      window.location.href = '/blog/createPost.html';
+    });
+  }
+
+  function renderLoggedOutNavbar() {
+    const loginLink = document.createElement('li');
+    loginLink.innerHTML = `<a href="/account_management/login.html">Login</a>`;
+    document.querySelector('nav ul').appendChild(loginLink);
+
+    const logoutButton = document.getElementById('logoutButton');
+    if (logoutButton) {
+      logoutButton.style.display = 'none'; // Verstecke den Logout-Button
+    }
+  }
+
+  async function loadNavbar() {
+    try {
+      const response = await fetch('/navbar.html');
+      if (response.ok) {
+        const navbarHTML = await response.text();
+        document.getElementById('navbar').innerHTML = navbarHTML;
+
+        // Safe Mode Button initialisieren, nachdem die Navbar geladen wurde
+        initializeSafeModeButton();
+        await initDynamicPageContent();
+
+        // Benutzerstatus abfragen und Posts laden
+      } else {
+        console.error('Failed to load navbar');
+      }
+    } catch (error) {
+      console.error('Error loading navbar:', error);
+    }
+  }
+
+  async function initDynamicPageContent() {
+    try {
+      const response = await fetch('/api/acc_man/getUser', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include'
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        renderLoggedInNavbar(data.username);
+
+
+      } else {
+        renderLoggedOutNavbar();
+      }
+    } catch (error) {
+      console.error('Error determining user status:', error);
+    }
+  }
+
+
   // Dynamisch Kategorien aus der Datenbank laden
   async function loadCategories() {
     try {
@@ -78,6 +218,9 @@
       alert('An error occurred while creating the post.');
     }
   });
+
+  loadNavbar();
+
 </script>
 </body>
 </html>
