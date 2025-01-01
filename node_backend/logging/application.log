@@ -1124,3 +1124,1707 @@
 23.12.2024, 23:31:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
 23.12.2024, 23:31:06 [info]: Database connection established
 23.12.2024, 23:31:33 [info]: [validateAndUpdateSession] No session ID provided
+23.12.2024, 23:32:52 [info]: Loading route file: route_account_management.js
+23.12.2024, 23:32:52 [info]: Loading route file: route_blog.js
+23.12.2024, 23:32:52 [info]: Server is running on http://localhost:3000
+23.12.2024, 23:32:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+23.12.2024, 23:32:58 [info]: Database connection established
+23.12.2024, 23:57:01 [info]: Loading route file: route_account_management.js
+23.12.2024, 23:57:01 [info]: Loading route file: route_blog.js
+23.12.2024, 23:57:01 [info]: Server is running on http://localhost:3000
+23.12.2024, 23:57:01 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+23.12.2024, 23:57:06 [info]: Database connection established
+23.12.2024, 23:57:26 [info]: Loading route file: route_account_management.js
+23.12.2024, 23:57:26 [info]: Loading route file: route_blog.js
+23.12.2024, 23:57:26 [info]: Server is running on http://localhost:3000
+23.12.2024, 23:57:26 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+23.12.2024, 23:57:27 [info]: Database connection established
+24.12.2024, 00:00:27 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 00:00:32 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 00:00:36 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:00:36 [info]: Loading route file: route_blog.js
+24.12.2024, 00:00:36 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:00:36 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:00:37 [info]: Database connection established
+24.12.2024, 00:00:38 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 00:00:42 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 00:08:13 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 00:08:32 [info]: [encryptPassword] Password encrypted successfully
+24.12.2024, 00:08:32 [info]: [unsafeValidateLogin] Login successful: username=admin
+24.12.2024, 00:08:32 [info]: [generateUUID] Generated UUID: e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:08:32 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+24.12.2024, 00:08:33 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+24.12.2024, 00:08:33 [info]: [unsafeGenerateSession] Session created: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3, user=admin
+24.12.2024, 00:08:33 [info]: [unsafeLogin] Login successful: username=admin, sessionID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:08:33 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:08:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:08:34 [info]: [getUser] Retrieved username: admin for session ID: e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:08:41 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:08:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:08:42 [info]: [getUser] Retrieved username: admin for session ID: e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:09:29 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:09:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:09:29 [info]: [getUser] Retrieved username: admin for session ID: e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:09:52 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:09:52 [info]: [validateAndUpdateSession] Session updated successfully: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:09:52 [info]: [getUser] Retrieved username: admin for session ID: e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:17:19 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:17:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:17:19 [info]: [getUser] Retrieved username: admin for session ID: e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:17:22 [info]: [deleteSession] Session deleted: ID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:17:22 [info]: [logout] Session deleted successfully: sessionID=e5d25e57-d29c-461a-bd23-1d923546d5e3
+24.12.2024, 00:17:28 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 00:17:33 [info]: [encryptPassword] Password encrypted successfully
+24.12.2024, 00:17:33 [info]: [unsafeValidateLogin] Login successful: username=admin
+24.12.2024, 00:17:33 [info]: [generateUUID] Generated UUID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:17:33 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+24.12.2024, 00:17:33 [info]: [unsafeGenerateSession] Deleted 0 session(s) for user ID: 9
+24.12.2024, 00:17:33 [info]: [unsafeGenerateSession] Session created: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d, user=admin
+24.12.2024, 00:17:33 [info]: [unsafeLogin] Login successful: username=admin, sessionID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:17:33 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:17:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:17:34 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:17:37 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:17:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:17:37 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:18:12 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:18:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:18:12 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:19:10 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:19:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:19:11 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:23:26 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:23:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:23:26 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:23:33 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:23:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:23:34 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:25:25 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:25:25 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:25:25 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:34:20 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:34:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:34:20 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:36:24 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:36:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:36:24 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:36:29 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:36:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:36:56 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:36:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:36:59 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:36:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:36:59 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:25 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:26 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:32 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:32 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:32 [info]: Post created successfully with ID: 14
+24.12.2024, 00:42:36 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:37 [info]: Post created successfully with ID: 15
+24.12.2024, 00:42:42 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:42 [info]: Post created successfully with ID: 16
+24.12.2024, 00:42:47 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:47 [info]: Post created successfully with ID: 17
+24.12.2024, 00:42:51 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:51 [info]: Post created successfully with ID: 18
+24.12.2024, 00:42:52 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:42:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:42:53 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:43:00 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:43:00 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:43:00 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:43:12 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:43:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:45:02 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:45:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:45:02 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:45:04 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:45:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:48:19 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:48:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:48:20 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:48:22 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:48:22 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:50:07 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:50:07 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:50:08 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:50:10 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:50:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:50:55 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:50:55 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:00 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:00 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:00 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:02 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:18 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:18 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:27 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:27 [info]: Post created successfully with ID: 19
+24.12.2024, 00:51:29 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:29 [info]: Post created successfully with ID: 20
+24.12.2024, 00:51:30 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:31 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:31 [info]: Post created successfully with ID: 21
+24.12.2024, 00:51:31 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:31 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:32 [info]: Post created successfully with ID: 22
+24.12.2024, 00:51:33 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:33 [info]: Post created successfully with ID: 23
+24.12.2024, 00:51:34 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:34 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:34 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:35 [info]: Post created successfully with ID: 24
+24.12.2024, 00:51:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:35 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:35 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:35 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:35 [info]: Post created successfully with ID: 25
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:36 [info]: Post created successfully with ID: 26
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:37 [info]: Post created successfully with ID: 27
+24.12.2024, 00:51:37 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:38 [info]: Post created successfully with ID: 28
+24.12.2024, 00:51:38 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:38 [info]: Post created successfully with ID: 29
+24.12.2024, 00:51:38 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:38 [info]: Post created successfully with ID: 30
+24.12.2024, 00:51:38 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:39 [info]: Post created successfully with ID: 31
+24.12.2024, 00:51:39 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:39 [info]: Post created successfully with ID: 32
+24.12.2024, 00:51:39 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:40 [info]: Post created successfully with ID: 33
+24.12.2024, 00:51:40 [info]: Post created successfully with ID: 34
+24.12.2024, 00:51:40 [info]: Post created successfully with ID: 35
+24.12.2024, 00:51:40 [info]: Post created successfully with ID: 36
+24.12.2024, 00:51:40 [info]: Post created successfully with ID: 37
+24.12.2024, 00:51:40 [info]: Post created successfully with ID: 38
+24.12.2024, 00:51:44 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:44 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:51:51 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:51:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:52:01 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:52:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:53:32 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:53:32 [info]: Loading route file: route_blog.js
+24.12.2024, 00:53:32 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:53:32 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:53:33 [info]: Database connection established
+24.12.2024, 00:53:35 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:53:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:53:36 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:53:38 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:53:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:53:54 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:53:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:53:54 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:53:57 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:53:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:54:10 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:54:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:54:11 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:55:02 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:55:02 [info]: Loading route file: route_blog.js
+24.12.2024, 00:55:02 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:55:02 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:55:03 [info]: Database connection established
+24.12.2024, 00:55:10 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 00:55:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:55:46 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:55:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:56:04 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:56:04 [info]: Loading route file: route_blog.js
+24.12.2024, 00:56:04 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:56:04 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:56:05 [info]: Database connection established
+24.12.2024, 00:56:39 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:56:39 [info]: Loading route file: route_blog.js
+24.12.2024, 00:56:39 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:56:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:56:40 [info]: Database connection established
+24.12.2024, 00:56:42 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:56:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:56:55 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:56:55 [info]: Loading route file: route_blog.js
+24.12.2024, 00:56:55 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:56:55 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:56:56 [info]: Database connection established
+24.12.2024, 00:57:01 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:57:01 [info]: Loading route file: route_blog.js
+24.12.2024, 00:57:01 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:57:01 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:57:02 [info]: Database connection established
+24.12.2024, 00:57:08 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:57:08 [info]: Loading route file: route_blog.js
+24.12.2024, 00:57:08 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:57:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:57:08 [info]: Database connection established
+24.12.2024, 00:57:16 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:57:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:57:16 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:57:18 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:57:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:57:18 [info]: [deletePost] Safe Mode: false
+24.12.2024, 00:58:20 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:58:20 [info]: Loading route file: route_blog.js
+24.12.2024, 00:58:20 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:58:20 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:58:21 [info]: Database connection established
+24.12.2024, 00:58:22 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:58:23 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:58:23 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:58:27 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:58:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:58:27 [info]: [deletePost] Safe Mode: false
+24.12.2024, 00:58:53 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:58:53 [info]: Loading route file: route_blog.js
+24.12.2024, 00:58:53 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:58:53 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:58:54 [info]: Database connection established
+24.12.2024, 00:58:58 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:58:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:58:58 [info]: [deletePost] Safe Mode: false
+24.12.2024, 00:59:18 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:59:18 [info]: Loading route file: route_blog.js
+24.12.2024, 00:59:18 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:59:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:59:18 [info]: Database connection established
+24.12.2024, 00:59:44 [info]: Loading route file: route_account_management.js
+24.12.2024, 00:59:44 [info]: Loading route file: route_blog.js
+24.12.2024, 00:59:44 [info]: Server is running on http://localhost:3000
+24.12.2024, 00:59:44 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 00:59:45 [info]: Database connection established
+24.12.2024, 00:59:48 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 00:59:48 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 00:59:48 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:01:08 [info]: Loading route file: route_account_management.js
+24.12.2024, 01:01:08 [info]: Loading route file: route_blog.js
+24.12.2024, 01:01:08 [info]: Server is running on http://localhost:3000
+24.12.2024, 01:01:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 01:01:10 [info]: Database connection established
+24.12.2024, 01:01:13 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:01:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:01:13 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:01:16 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:01:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:01:16 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:02:14 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:02:14 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:02:15 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:02:28 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 01:02:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:02:28 [info]: [deletePost] Safe Mode: true.
+24.12.2024, 01:04:05 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 01:04:05 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:04:05 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:04:07 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 01:04:07 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:04:07 [info]: [deletePost] Safe Mode: true.
+24.12.2024, 01:04:29 [info]: [validateAndUpdateSession] Safe Mode: true
+24.12.2024, 01:04:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:04:29 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:04:35 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:04:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:04:35 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:08:21 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:08:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:08:21 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:08:23 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:08:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:08:24 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:09:38 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:09:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:09:38 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:09:40 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:09:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:09:40 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:10:26 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:10:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:10:26 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:10:28 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:10:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:10:28 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:12:38 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:12:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:12:38 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:12:40 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:12:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:12:41 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:14:42 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:14:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:14:42 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:14:53 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:14:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:14:53 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 01:15:38 [info]: Loading route file: route_account_management.js
+24.12.2024, 01:15:38 [info]: Loading route file: route_blog.js
+24.12.2024, 01:15:38 [info]: Server is running on http://localhost:3000
+24.12.2024, 01:15:38 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 01:15:39 [info]: Database connection established
+24.12.2024, 01:15:55 [info]: Loading route file: route_account_management.js
+24.12.2024, 01:15:55 [info]: Loading route file: route_blog.js
+24.12.2024, 01:15:55 [info]: Server is running on http://localhost:3000
+24.12.2024, 01:15:55 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 01:15:56 [info]: Database connection established
+24.12.2024, 01:17:09 [info]: Loading route file: route_account_management.js
+24.12.2024, 01:17:09 [info]: Loading route file: route_blog.js
+24.12.2024, 01:17:09 [info]: Server is running on http://localhost:3000
+24.12.2024, 01:17:09 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 01:17:10 [info]: Database connection established
+24.12.2024, 01:18:11 [info]: Loading route file: route_account_management.js
+24.12.2024, 01:18:11 [info]: Loading route file: route_blog.js
+24.12.2024, 01:18:11 [info]: Server is running on http://localhost:3000
+24.12.2024, 01:18:11 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 01:18:12 [info]: Database connection established
+24.12.2024, 01:19:23 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:19:23 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:19:24 [info]: [getUser] Retrieved username: admin for session ID: aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:19:26 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 01:19:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=aa69adb8-962f-475d-b833-eee2f27e0d8d
+24.12.2024, 01:19:26 [info]: [deletePost] Safe Mode: false.
+24.12.2024, 09:00:24 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:00:24 [info]: Loading route file: route_blog.js
+24.12.2024, 09:00:24 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:00:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:00:25 [info]: Database connection established
+24.12.2024, 09:00:47 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:00:47 [info]: Loading route file: route_blog.js
+24.12.2024, 09:00:47 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:00:47 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:00:48 [info]: Database connection established
+24.12.2024, 09:01:10 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:01:10 [info]: Loading route file: route_blog.js
+24.12.2024, 09:01:10 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:01:10 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:01:10 [info]: Database connection established
+24.12.2024, 09:03:34 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:03:34 [info]: Loading route file: route_blog.js
+24.12.2024, 09:03:34 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:03:34 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:03:34 [info]: Database connection established
+24.12.2024, 09:04:02 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:04:08 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:04:08 [info]: Loading route file: route_blog.js
+24.12.2024, 09:04:08 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:04:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:04:09 [info]: Database connection established
+24.12.2024, 09:04:09 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:04:11 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:04:11 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:04:12 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:06:05 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:06:05 [info]: Loading route file: route_blog.js
+24.12.2024, 09:06:05 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:06:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:06:05 [info]: Database connection established
+24.12.2024, 09:23:22 [info]: Loading route file: route_account_management.js
+24.12.2024, 09:23:22 [info]: Loading route file: route_blog.js
+24.12.2024, 09:23:22 [info]: Server is running on http://localhost:3000
+24.12.2024, 09:23:22 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 09:23:22 [info]: Database connection established
+24.12.2024, 09:28:51 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:29:04 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:31:34 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 09:32:53 [info]: [encryptPassword] Password encrypted successfully
+24.12.2024, 09:32:53 [info]: [unsafeValidateLogin] Login successful: username=admin
+24.12.2024, 09:32:53 [info]: [generateUUID] Generated UUID: 5b7bec81-7f19-402f-afb7-c4f4c1618de0
+24.12.2024, 09:32:53 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+24.12.2024, 09:32:53 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+24.12.2024, 09:32:54 [info]: [unsafeGenerateSession] Session created: ID=5b7bec81-7f19-402f-afb7-c4f4c1618de0, user=admin
+24.12.2024, 09:32:54 [info]: [unsafeLogin] Login successful: username=admin, sessionID=5b7bec81-7f19-402f-afb7-c4f4c1618de0
+24.12.2024, 09:32:54 [info]: [validateAndUpdateSession] Safe Mode: false
+24.12.2024, 09:32:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=5b7bec81-7f19-402f-afb7-c4f4c1618de0
+24.12.2024, 09:32:55 [info]: [getUser] Retrieved username: admin for session ID: 5b7bec81-7f19-402f-afb7-c4f4c1618de0
+24.12.2024, 09:33:10 [info]: [unsafeDeleteSession] Session deleted: ID=5b7bec81-7f19-402f-afb7-c4f4c1618de0
+24.12.2024, 09:33:10 [info]: [unsafeLogout] Session deleted successfully: sessionID=5b7bec81-7f19-402f-afb7-c4f4c1618de0
+24.12.2024, 09:33:12 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 11:54:25 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 11:59:07 [info]: Loading route file: route_account_management.js
+24.12.2024, 11:59:07 [info]: Loading route file: route_blog.js
+24.12.2024, 11:59:07 [info]: Server is running on http://localhost:3000
+24.12.2024, 11:59:07 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 11:59:08 [info]: Database connection established
+24.12.2024, 12:07:48 [info]: [validateAndUpdateSession] No session ID provided
+24.12.2024, 16:07:36 [info]: Loading route file: route_account_management.js
+24.12.2024, 16:07:37 [info]: Loading route file: route_blog.js
+24.12.2024, 16:07:37 [info]: Server is running on http://localhost:3000
+24.12.2024, 16:07:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+24.12.2024, 16:07:38 [info]: Database connection established
+24.12.2024, 16:07:49 [info]: [validateAndUpdateSession] No session ID provided
+31.12.2024, 22:27:56 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:27:56 [info]: Loading route file: route_blog.js
+31.12.2024, 22:27:56 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:27:56 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:27:57 [info]: Database connection established
+31.12.2024, 22:29:51 [info]: [validateAndUpdateSession] No session ID provided
+31.12.2024, 22:29:55 [info]: [encryptPassword] Password encrypted successfully
+31.12.2024, 22:29:56 [info]: [validateLogin] Login successful: username=admin
+31.12.2024, 22:29:56 [info]: [generateUUID] Generated UUID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:29:56 [info]: [generateSession] Starting session creation for user: admin
+31.12.2024, 22:29:56 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+31.12.2024, 22:29:56 [info]: [generateSession] Session created: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14, user=admin
+31.12.2024, 22:29:56 [info]: [login] Login successful: username=admin, sessionID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:29:56 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:29:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:29:57 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:30:15 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:30:15 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:30:34 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:30:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:30:38 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:30:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:30:43 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:30:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:11 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:31:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:11 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:14 [info]: [searchPosts] Executing UNSAFE query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (title LIKE '%123%')
+              
+              
+              ;
+            
+31.12.2024, 22:31:14 [info]: [searchPosts] Query executed successfully, returned 0 result(s)
+31.12.2024, 22:31:14 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:31:14 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:15 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:17 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:31:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:17 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:23 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:31:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:31:24 [info]: [deletePost] Safe Mode: false.
+31.12.2024, 22:33:08 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:08 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:33:26 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:26 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:33 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:33 [info]: Post created successfully with ID: 39
+31.12.2024, 22:33:34 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:34 [info]: Post created successfully with ID: 40
+31.12.2024, 22:33:35 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:36 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:36 [info]: Post created successfully with ID: 41
+31.12.2024, 22:33:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:36 [info]: Post created successfully with ID: 42
+31.12.2024, 22:33:38 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:38 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:38 [info]: Post created successfully with ID: 43
+31.12.2024, 22:33:39 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:39 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:39 [info]: Post created successfully with ID: 44
+31.12.2024, 22:33:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:39 [info]: Post created successfully with ID: 45
+31.12.2024, 22:33:40 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:40 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:40 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:40 [info]: Post created successfully with ID: 46
+31.12.2024, 22:33:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:41 [info]: Post created successfully with ID: 47
+31.12.2024, 22:33:41 [info]: Post created successfully with ID: 48
+31.12.2024, 22:33:41 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:41 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:41 [info]: Post created successfully with ID: 49
+31.12.2024, 22:33:42 [info]: Post created successfully with ID: 50
+31.12.2024, 22:33:44 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:44 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:49 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:49 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:33:51 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:51 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:33:54 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:55 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:57 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:33:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:33:57 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:34:04 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:34:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:34:04 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:34:06 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:34:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:34:06 [info]: [deletePost] Safe Mode: false.
+31.12.2024, 22:34:45 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:34:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:34:46 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:34:54 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:34:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:34:54 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:36:14 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:36:14 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:36:15 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:36:17 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:36:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:36:17 [info]: [deletePost] Safe Mode: true.
+31.12.2024, 22:36:27 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 22:36:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:36:27 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:36:30 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:36:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:36:30 [info]: [deletePost] Safe Mode: false.
+31.12.2024, 22:42:28 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:42:28 [info]: Loading route file: route_blog.js
+31.12.2024, 22:42:29 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:42:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:42:29 [info]: Database connection established
+31.12.2024, 22:42:41 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:42:41 [info]: Loading route file: route_blog.js
+31.12.2024, 22:42:41 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:42:41 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:42:42 [info]: Database connection established
+31.12.2024, 22:44:36 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:44:37 [info]: Loading route file: route_blog.js
+31.12.2024, 22:44:37 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:44:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:44:37 [info]: Database connection established
+31.12.2024, 22:49:52 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:49:52 [info]: Loading route file: route_blog.js
+31.12.2024, 22:49:52 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:49:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:49:53 [info]: Database connection established
+31.12.2024, 22:49:56 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:49:56 [info]: Loading route file: route_blog.js
+31.12.2024, 22:49:56 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:49:56 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:49:57 [info]: Database connection established
+31.12.2024, 22:50:05 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:50:05 [info]: Loading route file: route_blog.js
+31.12.2024, 22:50:05 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:50:05 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:50:06 [info]: Database connection established
+31.12.2024, 22:50:12 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:50:12 [info]: Loading route file: route_blog.js
+31.12.2024, 22:50:12 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:50:12 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:50:13 [info]: Database connection established
+31.12.2024, 22:52:40 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:52:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:52:41 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:52:51 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:52:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:53:46 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:53:46 [info]: Loading route file: route_blog.js
+31.12.2024, 22:53:46 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:53:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:53:47 [info]: Database connection established
+31.12.2024, 22:53:50 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:53:50 [info]: Loading route file: route_blog.js
+31.12.2024, 22:53:50 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:53:50 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:53:51 [info]: Database connection established
+31.12.2024, 22:53:55 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:53:55 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:53:55 [info]: UPDATE posts SET title = ${title}, content = ${content} WHERE id = ${postId}
+31.12.2024, 22:54:48 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:54:48 [info]: Loading route file: route_blog.js
+31.12.2024, 22:54:48 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:54:48 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:54:48 [info]: Database connection established
+31.12.2024, 22:55:42 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:55:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:55:42 [info]: UPDATE posts SET title = Innovation at Our Core, content = Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V3 WHERE id = 4
+31.12.2024, 22:57:54 [info]: Loading route file: route_account_management.js
+31.12.2024, 22:57:54 [info]: Loading route file: route_blog.js
+31.12.2024, 22:57:54 [info]: Server is running on http://localhost:3000
+31.12.2024, 22:57:54 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 22:57:54 [info]: Database connection established
+31.12.2024, 22:57:57 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:57:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:57:58 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:58:04 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:58:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:58:04 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V3' WHERE id = 4
+31.12.2024, 22:58:47 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:58:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:58:48 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:59:30 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:59:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:59:30 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:59:35 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 22:59:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 22:59:35 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V4' WHERE id = 4
+31.12.2024, 23:00:43 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:00:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:00:44 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:00:49 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:00:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:00:49 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V5' WHERE id = 4
+31.12.2024, 23:07:10 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:07:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:07:10 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:07:15 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:07:15 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:07:15 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V1' WHERE id = 4
+31.12.2024, 23:07:45 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:07:45 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:07:45 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V1' WHERE id = 4
+31.12.2024, 23:09:36 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:09:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:09:37 [info]: [deletePost] Safe Mode: false.
+31.12.2024, 23:10:18 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:10:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:10:18 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:10:21 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:10:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:10:21 [info]: [deletePost] Safe Mode: false.
+31.12.2024, 23:10:30 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:10:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:10:30 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V2' WHERE id = 4
+31.12.2024, 23:13:13 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:13:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:13:13 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:13:25 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:13:25 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:13:25 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V3' WHERE id = 4
+31.12.2024, 23:15:06 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:15:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:15:06 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:15:10 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:15:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:15:27 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:15:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:15:27 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:15:33 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:15:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:15:33 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V4' WHERE id = 4
+31.12.2024, 23:17:09 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:17:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:17:10 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:18:49 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:18:49 [info]: Loading route file: route_blog.js
+31.12.2024, 23:18:49 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:18:49 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:18:50 [info]: Database connection established
+31.12.2024, 23:18:50 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:18:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:18:51 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:18:59 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:18:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:19:18 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:19:18 [info]: Loading route file: route_blog.js
+31.12.2024, 23:19:18 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:19:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:19:19 [info]: Database connection established
+31.12.2024, 23:20:22 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:20:22 [info]: Loading route file: route_blog.js
+31.12.2024, 23:20:22 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:20:22 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:20:23 [info]: Database connection established
+31.12.2024, 23:21:28 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:21:28 [info]: Loading route file: route_blog.js
+31.12.2024, 23:21:28 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:21:28 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:21:29 [info]: Database connection established
+31.12.2024, 23:21:34 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:21:34 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:21:35 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:21:39 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:21:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:21:40 [info]: Title matches:
+31.12.2024, 23:21:40 [info]: Content matches:
+31.12.2024, 23:22:08 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:22:08 [info]: Loading route file: route_blog.js
+31.12.2024, 23:22:08 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:22:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:22:09 [info]: Database connection established
+31.12.2024, 23:22:10 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:22:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:22:29 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:22:29 [info]: Loading route file: route_blog.js
+31.12.2024, 23:22:29 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:22:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:22:30 [info]: Database connection established
+31.12.2024, 23:22:36 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:22:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:22:37 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:22:40 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:22:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:23:16 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:23:16 [info]: Loading route file: route_blog.js
+31.12.2024, 23:23:16 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:23:16 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:23:17 [info]: Database connection established
+31.12.2024, 23:23:25 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:23:25 [info]: Loading route file: route_blog.js
+31.12.2024, 23:23:25 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:23:25 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:23:26 [info]: Database connection established
+31.12.2024, 23:23:34 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:23:34 [info]: Loading route file: route_blog.js
+31.12.2024, 23:23:34 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:23:34 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:23:35 [info]: Database connection established
+31.12.2024, 23:23:42 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:23:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:24:01 [info]: [validateAndUpdateSession] Safe Mode: true
+31.12.2024, 23:24:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:24:02 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:24:46 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:24:46 [info]: Loading route file: route_blog.js
+31.12.2024, 23:24:46 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:24:46 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:24:46 [info]: Database connection established
+31.12.2024, 23:25:40 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:25:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:25:41 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:25:45 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:25:45 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:25:45 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:26:14 [info]: Loading route file: route_account_management.js
+31.12.2024, 23:26:14 [info]: Loading route file: route_blog.js
+31.12.2024, 23:26:14 [info]: Server is running on http://localhost:3000
+31.12.2024, 23:26:14 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+31.12.2024, 23:26:15 [info]: Database connection established
+31.12.2024, 23:26:36 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:26:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:26:36 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:27:11 [info]: [validateAndUpdateSession] Safe Mode: false
+31.12.2024, 23:27:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+31.12.2024, 23:27:11 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:13:20 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:13:25 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:13:31 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:13:31 [info]: Loading route file: route_blog.js
+01.01.2025, 00:13:31 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:13:31 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:13:32 [info]: Database connection established
+01.01.2025, 00:13:33 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:13:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:13:34 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:18:44 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:18:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:18:44 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:00 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:20:00 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:00 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:08 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:20:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:08 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:09 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:20:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:09 [info]: [getUser] Retrieved username: admin for session ID: 9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:12 [info]: [unsafeDeleteSession] Session deleted: ID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:12 [info]: [unsafeLogout] Session deleted successfully: sessionID=9aeb00ea-fbad-4e75-8950-f702280a3f14
+01.01.2025, 00:20:14 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:01 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:01 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:03 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:06 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:29 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:31 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:33 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:21:36 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 00:21:36 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 00:21:36 [info]: [generateUUID] Generated UUID: f506f9bf-027d-4ebf-8edd-a5c1abc96839
+01.01.2025, 00:21:36 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 00:21:36 [info]: [unsafeGenerateSession] Deleted 0 session(s) for user ID: 9
+01.01.2025, 00:21:37 [info]: [unsafeGenerateSession] Session created: ID=f506f9bf-027d-4ebf-8edd-a5c1abc96839, user=admin
+01.01.2025, 00:21:37 [info]: [unsafeLogin] Login successful: username=admin, sessionID=f506f9bf-027d-4ebf-8edd-a5c1abc96839
+01.01.2025, 00:21:48 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:21:48 [info]: [validateAndUpdateSession] Session updated successfully: ID=f506f9bf-027d-4ebf-8edd-a5c1abc96839
+01.01.2025, 00:21:48 [info]: [getUser] Retrieved username: admin for session ID: f506f9bf-027d-4ebf-8edd-a5c1abc96839
+01.01.2025, 00:21:51 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 00:21:51 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 00:21:51 [info]: [generateUUID] Generated UUID: e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:21:51 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 00:21:51 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 00:21:51 [info]: [unsafeGenerateSession] Session created: ID=e912224b-5239-4d09-b79b-291be43ad28a, user=admin
+01.01.2025, 00:21:51 [info]: [unsafeLogin] Login successful: username=admin, sessionID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:21:58 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:21:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:21:58 [info]: [getUser] Retrieved username: admin for session ID: e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:01 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:22:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:02 [info]: [getUser] Retrieved username: admin for session ID: e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:03 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:22:03 [info]: [validateAndUpdateSession] Session updated successfully: ID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:03 [info]: [getUser] Retrieved username: admin for session ID: e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:09 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:22:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:09 [info]: [getUser] Retrieved username: admin for session ID: e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:27 [info]: [unsafeDeleteSession] Session deleted: ID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:27 [info]: [unsafeLogout] Session deleted successfully: sessionID=e912224b-5239-4d09-b79b-291be43ad28a
+01.01.2025, 00:22:29 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:22:31 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:22:33 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 00:22:33 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 00:22:33 [info]: [generateUUID] Generated UUID: d7315c4b-ce0e-42f8-b445-fdf2a020f6b2
+01.01.2025, 00:22:33 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 00:22:34 [info]: [unsafeGenerateSession] Deleted 0 session(s) for user ID: 9
+01.01.2025, 00:22:34 [info]: [unsafeGenerateSession] Session created: ID=d7315c4b-ce0e-42f8-b445-fdf2a020f6b2, user=admin
+01.01.2025, 00:22:34 [info]: [unsafeLogin] Login successful: username=admin, sessionID=d7315c4b-ce0e-42f8-b445-fdf2a020f6b2
+01.01.2025, 00:22:38 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 00:22:39 [info]: [validateLogin] Login successful: username=admin
+01.01.2025, 00:22:39 [info]: [generateUUID] Generated UUID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:22:39 [info]: [generateSession] Starting session creation for user: admin
+01.01.2025, 00:22:39 [info]: [generateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 00:22:39 [info]: [generateSession] Session created: ID=ba961085-7f99-45e0-a8ae-f77006561b38, user=admin
+01.01.2025, 00:22:39 [info]: [login] Login successful: username=admin, sessionID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:22:39 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:22:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:22:40 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:22:42 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:22:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:22:42 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:23:01 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%a%, %a%, null, null, null, null, null, null]
+01.01.2025, 00:23:01 [info]: [searchPosts] Query executed successfully, returned 3 result(s)
+01.01.2025, 00:23:01 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:23:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:23:02 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:26:15 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:26:15 [info]: Loading route file: route_blog.js
+01.01.2025, 00:26:15 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:26:15 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:26:15 [info]: Database connection established
+01.01.2025, 00:27:13 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:27:13 [info]: Loading route file: route_blog.js
+01.01.2025, 00:27:13 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:27:13 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:27:14 [info]: Database connection established
+01.01.2025, 00:27:55 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:27:55 [info]: Loading route file: route_blog.js
+01.01.2025, 00:27:55 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:27:55 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:27:55 [info]: Database connection established
+01.01.2025, 00:30:18 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:30:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:30:18 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:30:24 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:30:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:30:24 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:32:40 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:32:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:32:41 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:32:43 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:32:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:32:43 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:06 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:35:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:07 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:08 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:35:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:09 [info]: [getUser] Retrieved username: admin for session ID: ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:45 [info]: [unsafeDeleteSession] Session deleted: ID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:45 [info]: [unsafeLogout] Session deleted successfully: sessionID=ba961085-7f99-45e0-a8ae-f77006561b38
+01.01.2025, 00:35:46 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:35:47 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:35:50 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:35:54 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 00:35:58 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 00:35:59 [info]: [validateLogin] Login successful: username=admin
+01.01.2025, 00:35:59 [info]: [generateUUID] Generated UUID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:35:59 [info]: [generateSession] Starting session creation for user: admin
+01.01.2025, 00:35:59 [info]: [generateSession] Deleted 0 session(s) for user ID: 9
+01.01.2025, 00:35:59 [info]: [generateSession] Session created: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e, user=admin
+01.01.2025, 00:35:59 [info]: [login] Login successful: username=admin, sessionID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:35:59 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:35:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:00 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:01 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:36:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:01 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:05 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%a%, %a%, null, null, null, null, null, null]
+01.01.2025, 00:36:05 [info]: [searchPosts] Query executed successfully, returned 3 result(s)
+01.01.2025, 00:36:06 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:36:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:06 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:20 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%a%, %a%, null, null, null, null, null, null]
+01.01.2025, 00:36:20 [info]: [searchPosts] Query executed successfully, returned 3 result(s)
+01.01.2025, 00:36:20 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:36:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:36:20 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:38:08 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:38:08 [info]: Loading route file: route_blog.js
+01.01.2025, 00:38:08 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:38:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:38:09 [info]: Database connection established
+01.01.2025, 00:38:24 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:38:24 [info]: Loading route file: route_blog.js
+01.01.2025, 00:38:24 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:38:24 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:38:25 [info]: Database connection established
+01.01.2025, 00:38:37 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:38:37 [info]: Loading route file: route_blog.js
+01.01.2025, 00:38:37 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:38:37 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:38:38 [info]: Database connection established
+01.01.2025, 00:38:39 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:38:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:38:40 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:38:42 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%a%, %a%, null, null, null, null, null, null]
+01.01.2025, 00:38:42 [error]: [searchPosts] Error executing query: results is not defined
+01.01.2025, 00:39:01 [info]: Loading route file: route_account_management.js
+01.01.2025, 00:39:01 [info]: Loading route file: route_blog.js
+01.01.2025, 00:39:01 [info]: Server is running on http://localhost:3000
+01.01.2025, 00:39:02 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 00:39:02 [info]: Database connection established
+01.01.2025, 00:39:07 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%a%, %a%, null, null, null, null, null, null]
+01.01.2025, 00:39:07 [info]: [searchPosts] Query executed successfully, returned 3 result(s)
+01.01.2025, 00:39:07 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:39:07 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:39:08 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:31 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:40:31 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:31 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:33 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%a%, %a%, null, null, null, null, null, null]
+01.01.2025, 00:40:33 [info]: [searchPosts] Query executed successfully, returned 3 result(s)
+01.01.2025, 00:40:33 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:40:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:33 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:39 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:40:39 [info]: [searchPosts] Query executed successfully, returned 5 result(s)
+01.01.2025, 00:40:39 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:40:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:39 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:49 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:40:49 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:50 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:52 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:40:52 [info]: [searchPosts] Query executed successfully, returned 5 result(s)
+01.01.2025, 00:40:52 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:40:52 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:40:53 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:36 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:41:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:36 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:39 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:41:39 [info]: [searchPosts] Query executed successfully, returned 5 result(s)
+01.01.2025, 00:41:39 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:41:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:39 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:41 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:41:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:41 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:41:43 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:41:43 [info]: [searchPosts] Query executed successfully, returned 4 result(s)
+01.01.2025, 00:41:43 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:41:44 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:41:44 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:32 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:42:32 [info]: [searchPosts] Query executed successfully, returned 4 result(s)
+01.01.2025, 00:42:32 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:33 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:33 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:35 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:35 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:42:36 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:42:36 [info]: [searchPosts] Query executed successfully, returned 3 result(s)
+01.01.2025, 00:42:36 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:37 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:39 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:40 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:43 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:43 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:53 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:53 [info]: Post created successfully with ID: 51
+01.01.2025, 00:42:55 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:56 [info]: Post created successfully with ID: 52
+01.01.2025, 00:42:57 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:57 [info]: Post created successfully with ID: 53
+01.01.2025, 00:42:58 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:58 [info]: Post created successfully with ID: 54
+01.01.2025, 00:42:59 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:59 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:42:59 [info]: Post created successfully with ID: 55
+01.01.2025, 00:42:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:42:59 [info]: Post created successfully with ID: 56
+01.01.2025, 00:43:02 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:02 [info]: Post created successfully with ID: 57
+01.01.2025, 00:43:03 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:03 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:03 [info]: Post created successfully with ID: 58
+01.01.2025, 00:43:04 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:04 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:04 [info]: Post created successfully with ID: 59
+01.01.2025, 00:43:05 [info]: Post created successfully with ID: 60
+01.01.2025, 00:43:05 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:05 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:05 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:05 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:06 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:06 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:06 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:06 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:07 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:07 [info]: Post created successfully with ID: 61
+01.01.2025, 00:43:07 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:07 [info]: Post created successfully with ID: 62
+01.01.2025, 00:43:07 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:07 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:07 [info]: Post created successfully with ID: 63
+01.01.2025, 00:43:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:08 [info]: Post created successfully with ID: 64
+01.01.2025, 00:43:08 [info]: Post created successfully with ID: 65
+01.01.2025, 00:43:08 [info]: Post created successfully with ID: 66
+01.01.2025, 00:43:08 [info]: Post created successfully with ID: 67
+01.01.2025, 00:43:08 [info]: Post created successfully with ID: 68
+01.01.2025, 00:43:13 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:13 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:15 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:43:15 [info]: [searchPosts] Query executed successfully, returned 21 result(s)
+01.01.2025, 00:43:15 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:15 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:15 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:19 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:19 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:43:20 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:43:20 [info]: [searchPosts] Query executed successfully, returned 20 result(s)
+01.01.2025, 00:43:21 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:43:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:43:21 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:08 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:09 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:11 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:44:11 [info]: [searchPosts] Query executed successfully, returned 20 result(s)
+01.01.2025, 00:44:11 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:11 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:13 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:13 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:44:43 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:43 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:44:47 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:47 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:47 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:44:55 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:55 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:56 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:58 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%r%, %r%, null, null, null, null, null, null]
+01.01.2025, 00:44:58 [info]: [searchPosts] Query executed successfully, returned 2 result(s)
+01.01.2025, 00:44:58 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:44:58 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:44:58 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:00 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:45:01 [info]: [searchPosts] Query executed successfully, returned 18 result(s)
+01.01.2025, 00:45:01 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:45:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:01 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:02 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:45:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:02 [info]: [deletePost] Safe Mode: true.
+01.01.2025, 00:45:16 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:16 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:21 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:21 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:23 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:23 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:23 [info]: [deletePost] Safe Mode: false.
+01.01.2025, 00:45:36 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:37 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:40 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:40 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:51 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:51 [info]: [deletePost] Safe Mode: false.
+01.01.2025, 00:45:54 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:45:54 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:45:54 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:02 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:46:02 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:02 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:04 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:46:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:04 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:09 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:46:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:09 [info]: [deletePost] Safe Mode: false.
+01.01.2025, 00:46:11 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:46:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:11 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:17 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:46:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:46:17 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:48:43 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:48:43 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:48:43 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:48:46 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:48:46 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:48:46 [info]: [deletePost] Safe Mode: false.
+01.01.2025, 00:48:48 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:48:48 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:48:48 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:49:29 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:49:29 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:49:29 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:49:35 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:49:35 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:49:35 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:49:39 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:49:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:49:40 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:51:20 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:51:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:51:21 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:51:38 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:51:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:51:39 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:51:42 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 00:51:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:51:42 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:54:18 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:54:19 [info]: [searchPosts] Query executed successfully, returned 13 result(s)
+01.01.2025, 00:54:19 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:54:19 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:54:19 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:54:24 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:54:24 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:54:25 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:54:27 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 00:54:27 [info]: [searchPosts] Query executed successfully, returned 13 result(s)
+01.01.2025, 00:54:27 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 00:54:27 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 00:54:27 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:41:41 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:41:47 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 01:41:51 [info]: Loading route file: route_account_management.js
+01.01.2025, 01:41:51 [info]: Loading route file: route_blog.js
+01.01.2025, 01:41:51 [info]: Server is running on http://localhost:3000
+01.01.2025, 01:41:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 01:41:52 [info]: Database connection established
+01.01.2025, 01:41:56 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:41:57 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:41:58 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:41:58 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 01:41:59 [info]: [searchPosts] Query executed successfully, returned 13 result(s)
+01.01.2025, 01:41:59 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:41:59 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:41:59 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:42:21 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:42:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:25 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:43:25 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:25 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:28 [info]: [searchPosts] Executing query: SELECT title, content, creation_date, category_name, id
+            FROM posts
+            WHERE 1=1
+              AND (? IS NULL OR title LIKE ?)
+              AND (? IS NULL OR category_name = ?)
+              AND (? IS NULL OR creation_date >= ?)
+              AND (? IS NULL OR creation_date <= ?);
+             with parameters: [%t%, %t%, null, null, null, null, null, null]
+01.01.2025, 01:43:28 [info]: [searchPosts] Query executed successfully, returned 13 result(s)
+01.01.2025, 01:43:28 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:43:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:28 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:36 [info]: [validateAndUpdateSession] Safe Mode: true
+01.01.2025, 01:43:36 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:48 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:43:48 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:49 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:56 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:43:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:43:57 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:01 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:44:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:01 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:09 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:44:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:09 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V3' WHERE id = 4
+01.01.2025, 01:44:26 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:44:26 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:27 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:30 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:44:30 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:44:30 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:48:52 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:48:52 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:48:52 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:48:56 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:48:56 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:48:56 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:49:05 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:49:05 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:49:05 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V4' WHERE id = 4
+01.01.2025, 01:50:51 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:50:51 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:50:51 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:50:53 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:50:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:50:54 [info]: [getUser] Retrieved username: admin for session ID: f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:51:03 [info]: [unsafeDeleteSession] Session deleted: ID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:51:03 [info]: [unsafeLogout] Session deleted successfully: sessionID=f0c6b07c-63f0-44e2-b7f1-d6edf0a6f44e
+01.01.2025, 01:51:04 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 01:51:07 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 01:51:07 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 01:51:07 [info]: [generateUUID] Generated UUID: 14c86d17-2c94-4ef8-b25b-f2c0f89fcf4f
+01.01.2025, 01:51:07 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 01:51:08 [info]: [unsafeGenerateSession] Deleted 0 session(s) for user ID: 9
+01.01.2025, 01:51:08 [info]: [unsafeGenerateSession] Session created: ID=14c86d17-2c94-4ef8-b25b-f2c0f89fcf4f, user=admin
+01.01.2025, 01:51:08 [info]: [unsafeLogin] Login successful: username=admin, sessionID=14c86d17-2c94-4ef8-b25b-f2c0f89fcf4f
+01.01.2025, 01:56:05 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 01:56:05 [info]: [validateAndUpdateSession] Session updated successfully: ID=14c86d17-2c94-4ef8-b25b-f2c0f89fcf4f
+01.01.2025, 01:56:05 [info]: [getUser] Retrieved username: admin for session ID: 14c86d17-2c94-4ef8-b25b-f2c0f89fcf4f
+01.01.2025, 01:56:08 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 01:56:08 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 01:56:08 [info]: [generateUUID] Generated UUID: cda9e9f5-8a0e-496a-9ffb-898b6a902d05
+01.01.2025, 01:56:08 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 01:56:08 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 01:56:08 [info]: [unsafeGenerateSession] Session created: ID=cda9e9f5-8a0e-496a-9ffb-898b6a902d05, user=admin
+01.01.2025, 01:56:08 [info]: [unsafeLogin] Login successful: username=admin, sessionID=cda9e9f5-8a0e-496a-9ffb-898b6a902d05
+01.01.2025, 01:57:28 [info]: Loading route file: route_account_management.js
+01.01.2025, 01:57:29 [info]: Loading route file: route_blog.js
+01.01.2025, 01:57:29 [info]: Server is running on http://localhost:3000
+01.01.2025, 01:57:29 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 01:57:29 [info]: Database connection established
+01.01.2025, 01:58:50 [info]: Loading route file: route_account_management.js
+01.01.2025, 01:58:51 [info]: Loading route file: route_blog.js
+01.01.2025, 01:58:51 [info]: Server is running on http://localhost:3000
+01.01.2025, 01:58:51 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 01:58:51 [info]: Database connection established
+01.01.2025, 01:59:18 [info]: Loading route file: route_account_management.js
+01.01.2025, 01:59:18 [info]: Loading route file: route_blog.js
+01.01.2025, 01:59:18 [info]: Server is running on http://localhost:3000
+01.01.2025, 01:59:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 01:59:19 [info]: Database connection established
+01.01.2025, 01:59:23 [info]: Loading route file: route_account_management.js
+01.01.2025, 01:59:23 [info]: Loading route file: route_blog.js
+01.01.2025, 01:59:23 [info]: Server is running on http://localhost:3000
+01.01.2025, 01:59:23 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 01:59:23 [info]: Database connection established
+01.01.2025, 02:00:18 [info]: Loading route file: route_account_management.js
+01.01.2025, 02:00:18 [info]: Loading route file: route_blog.js
+01.01.2025, 02:00:18 [info]: Server is running on http://localhost:3000
+01.01.2025, 02:00:18 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 02:00:19 [info]: Database connection established
+01.01.2025, 02:00:35 [info]: Loading route file: route_account_management.js
+01.01.2025, 02:00:35 [info]: Loading route file: route_blog.js
+01.01.2025, 02:00:35 [info]: Server is running on http://localhost:3000
+01.01.2025, 02:00:35 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 02:00:36 [info]: Database connection established
+01.01.2025, 02:00:52 [info]: Loading route file: route_account_management.js
+01.01.2025, 02:00:52 [info]: Loading route file: route_blog.js
+01.01.2025, 02:00:52 [info]: Server is running on http://localhost:3000
+01.01.2025, 02:00:52 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 02:00:53 [info]: Database connection established
+01.01.2025, 02:01:08 [info]: Loading route file: route_account_management.js
+01.01.2025, 02:01:08 [info]: Loading route file: route_blog.js
+01.01.2025, 02:01:08 [info]: Server is running on http://localhost:3000
+01.01.2025, 02:01:08 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 02:01:08 [info]: Database connection established
+01.01.2025, 02:01:10 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:01:10 [info]: [validateAndUpdateSession] Session updated successfully: ID=cda9e9f5-8a0e-496a-9ffb-898b6a902d05
+01.01.2025, 02:01:10 [info]: [getUser] Retrieved username: admin for session ID: cda9e9f5-8a0e-496a-9ffb-898b6a902d05
+01.01.2025, 02:01:12 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:01:12 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:01:12 [info]: [generateUUID] Generated UUID: becf4eda-45e6-4929-bccb-f356cf6bc16f
+01.01.2025, 02:01:12 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:01:12 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:01:12 [info]: [unsafeGenerateSession] Session created: ID=becf4eda-45e6-4929-bccb-f356cf6bc16f, user=admin
+01.01.2025, 02:01:12 [info]: [unsafeLogin] Login successful: username=admin, sessionID=becf4eda-45e6-4929-bccb-f356cf6bc16f
+01.01.2025, 02:01:12 [error]: [login] Error during login: postId is not defined
+01.01.2025, 02:01:30 [info]: Loading route file: route_account_management.js
+01.01.2025, 02:01:30 [info]: Loading route file: route_blog.js
+01.01.2025, 02:01:30 [info]: Server is running on http://localhost:3000
+01.01.2025, 02:01:30 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 02:01:30 [info]: Database connection established
+01.01.2025, 02:01:39 [info]: Loading route file: route_account_management.js
+01.01.2025, 02:01:39 [info]: Loading route file: route_blog.js
+01.01.2025, 02:01:39 [info]: Server is running on http://localhost:3000
+01.01.2025, 02:01:39 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 02:01:39 [info]: Database connection established
+01.01.2025, 02:01:40 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:01:40 [info]: [validateAndUpdateSession] Session updated successfully: ID=becf4eda-45e6-4929-bccb-f356cf6bc16f
+01.01.2025, 02:01:41 [info]: [getUser] Retrieved username: admin for session ID: becf4eda-45e6-4929-bccb-f356cf6bc16f
+01.01.2025, 02:01:43 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:01:43 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:01:43 [info]: [generateUUID] Generated UUID: 916a19c3-7446-4881-a2da-bd0942ea47d1
+01.01.2025, 02:01:43 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:01:43 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:01:43 [info]: [unsafeGenerateSession] Session created: ID=916a19c3-7446-4881-a2da-bd0942ea47d1, user=admin
+01.01.2025, 02:01:43 [info]: [unsafeLogin] Login successful: username=admin, sessionID=916a19c3-7446-4881-a2da-bd0942ea47d1
+01.01.2025, 02:01:53 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:01:53 [info]: [validateAndUpdateSession] Session updated successfully: ID=916a19c3-7446-4881-a2da-bd0942ea47d1
+01.01.2025, 02:01:53 [info]: [getUser] Retrieved username: admin for session ID: 916a19c3-7446-4881-a2da-bd0942ea47d1
+01.01.2025, 02:03:37 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:03:37 [info]: [validateAndUpdateSession] Session updated successfully: ID=916a19c3-7446-4881-a2da-bd0942ea47d1
+01.01.2025, 02:03:37 [info]: [getUser] Retrieved username: admin for session ID: 916a19c3-7446-4881-a2da-bd0942ea47d1
+01.01.2025, 02:03:40 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:03:40 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:03:40 [info]: [generateUUID] Generated UUID: e68c4a13-cb04-449c-a55a-36666cbef012
+01.01.2025, 02:03:40 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:03:40 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:03:40 [info]: [unsafeGenerateSession] Session created: ID=e68c4a13-cb04-449c-a55a-36666cbef012, user=admin
+01.01.2025, 02:03:40 [info]: [unsafeLogin] Login successful: username=admin, sessionID=e68c4a13-cb04-449c-a55a-36666cbef012
+01.01.2025, 02:04:13 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:04:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=e68c4a13-cb04-449c-a55a-36666cbef012
+01.01.2025, 02:04:13 [info]: [getUser] Retrieved username: admin for session ID: e68c4a13-cb04-449c-a55a-36666cbef012
+01.01.2025, 02:04:27 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:04:27 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:04:27 [info]: [generateUUID] Generated UUID: 1925f19a-2530-4733-9878-11714839e87f
+01.01.2025, 02:04:27 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:04:27 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:04:27 [info]: [unsafeGenerateSession] Session created: ID=1925f19a-2530-4733-9878-11714839e87f, user=admin
+01.01.2025, 02:04:27 [info]: [unsafeLogin] Login successful: username=admin, sessionID=1925f19a-2530-4733-9878-11714839e87f
+01.01.2025, 02:04:32 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:04:32 [info]: [validateAndUpdateSession] Session updated successfully: ID=1925f19a-2530-4733-9878-11714839e87f
+01.01.2025, 02:04:32 [info]: [getUser] Retrieved username: admin for session ID: 1925f19a-2530-4733-9878-11714839e87f
+01.01.2025, 02:04:35 [info]: [unsafeDeleteSession] Session deleted: ID=1925f19a-2530-4733-9878-11714839e87f
+01.01.2025, 02:04:35 [info]: [unsafeLogout] Session deleted successfully: sessionID=1925f19a-2530-4733-9878-11714839e87f
+01.01.2025, 02:05:03 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 02:05:04 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 02:05:07 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:05:07 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:05:07 [info]: [generateUUID] Generated UUID: dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:07 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:05:07 [info]: [unsafeGenerateSession] Deleted 0 session(s) for user ID: 9
+01.01.2025, 02:05:08 [info]: [unsafeGenerateSession] Session created: ID=dafa9e77-7707-480d-b803-2ff6c57f46e4, user=admin
+01.01.2025, 02:05:08 [info]: [unsafeLogin] Login successful: username=admin, sessionID=dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:17 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:05:17 [info]: [validateAndUpdateSession] Session updated successfully: ID=dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:17 [info]: [getUser] Retrieved username: admin for session ID: dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:20 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:05:20 [info]: [validateAndUpdateSession] Session updated successfully: ID=dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:21 [info]: [getUser] Retrieved username: admin for session ID: dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:40 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:05:41 [info]: [validateAndUpdateSession] Session updated successfully: ID=dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:41 [info]: [getUser] Retrieved username: admin for session ID: dafa9e77-7707-480d-b803-2ff6c57f46e4
+01.01.2025, 02:05:53 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:05:53 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:05:53 [info]: [generateUUID] Generated UUID: 131d7fca-4884-430e-8f1b-aeb9710bbbc1
+01.01.2025, 02:05:53 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:05:53 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:05:53 [info]: [unsafeGenerateSession] Session created: ID=131d7fca-4884-430e-8f1b-aeb9710bbbc1, user=admin
+01.01.2025, 02:05:53 [info]: [unsafeLogin] Login successful: username=admin, sessionID=131d7fca-4884-430e-8f1b-aeb9710bbbc1
+01.01.2025, 02:06:04 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:06:04 [info]: [validateAndUpdateSession] Session updated successfully: ID=131d7fca-4884-430e-8f1b-aeb9710bbbc1
+01.01.2025, 02:06:04 [info]: [getUser] Retrieved username: admin for session ID: 131d7fca-4884-430e-8f1b-aeb9710bbbc1
+01.01.2025, 02:06:07 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:06:07 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:06:07 [info]: [generateUUID] Generated UUID: cbf80636-4c40-4a88-bc3b-fce1b8308e33
+01.01.2025, 02:06:07 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:06:07 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:06:07 [info]: [unsafeGenerateSession] Session created: ID=cbf80636-4c40-4a88-bc3b-fce1b8308e33, user=admin
+01.01.2025, 02:06:07 [info]: [unsafeLogin] Login successful: username=admin, sessionID=cbf80636-4c40-4a88-bc3b-fce1b8308e33
+01.01.2025, 02:07:02 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:07:03 [info]: [validateAndUpdateSession] Session updated successfully: ID=cbf80636-4c40-4a88-bc3b-fce1b8308e33
+01.01.2025, 02:07:03 [info]: [getUser] Retrieved username: admin for session ID: cbf80636-4c40-4a88-bc3b-fce1b8308e33
+01.01.2025, 02:07:05 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:07:05 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:07:05 [info]: [generateUUID] Generated UUID: a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:07:05 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:07:05 [info]: [unsafeGenerateSession] Deleted 1 session(s) for user ID: 9
+01.01.2025, 02:07:05 [info]: [unsafeGenerateSession] Session created: ID=a8e7606e-0126-47d4-8074-56b418940b17, user=admin
+01.01.2025, 02:07:05 [info]: [unsafeLogin] Login successful: username=admin, sessionID=a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:07:08 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:07:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:07:08 [info]: [getUser] Retrieved username: admin for session ID: a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:07:16 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:07:16 [info]: [validateAndUpdateSession] Session updated successfully: ID=a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:07:16 [info]: UPDATE posts SET title = 'Innovation at Our Core', content = 'Our team is dedicated to pushing boundaries and delivering cutting-edge solutions. Every project reflects our passion for excellence and customer focus. Together, we’re building a brighter future! V4' WHERE id = 4
+01.01.2025, 02:10:59 [info]: [unsafeDeleteSession] Session deleted: ID=a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:10:59 [info]: [unsafeLogout] Session deleted successfully: sessionID=a8e7606e-0126-47d4-8074-56b418940b17
+01.01.2025, 02:11:01 [info]: [validateAndUpdateSession] No session ID provided
+01.01.2025, 02:11:08 [info]: [encryptPassword] Password encrypted successfully
+01.01.2025, 02:11:09 [info]: [unsafeValidateLogin] Login successful: username=admin
+01.01.2025, 02:11:09 [info]: [generateUUID] Generated UUID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:11:09 [info]: [unsafeGenerateSession] Starting session creation for user: admin
+01.01.2025, 02:11:09 [info]: [unsafeGenerateSession] Deleted 0 session(s) for user ID: 9
+01.01.2025, 02:11:09 [info]: [unsafeGenerateSession] Session created: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d, user=admin
+01.01.2025, 02:11:09 [info]: [unsafeLogin] Login successful: username=admin, sessionID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:11:13 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:11:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:11:13 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:09 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:12:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:10 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:11 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:12:12 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:12 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:20 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:12:21 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:21 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:51 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:12:52 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:12:52 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:13:08 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:13:09 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:13:09 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:13:13 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:13:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:13:13 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:08 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:14:08 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:08 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:11 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:14:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:11 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:28 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:14:28 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:28 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:31 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:14:31 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:14:31 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:00 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:00 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:00 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:00 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:01 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:01 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:03 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:03 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:03 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:14 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:14 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:14 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:15 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:15 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:16 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:18 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:18 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:18 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:39 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:39 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:39 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:42 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:15:42 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:15:42 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:16:11 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:16:11 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:16:11 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:16:13 [info]: [validateAndUpdateSession] Safe Mode: false
+01.01.2025, 02:16:13 [info]: [validateAndUpdateSession] Session updated successfully: ID=41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 02:16:13 [info]: [getUser] Retrieved username: admin for session ID: 41c60a8a-1d59-4124-8cd4-111e3208ef6d
+01.01.2025, 11:13:21 [info]: Loading route file: route_account_management.js
+01.01.2025, 11:13:21 [info]: Loading route file: route_blog.js
+01.01.2025, 11:13:21 [info]: Server is running on http://localhost:3000
+01.01.2025, 11:13:21 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 11:13:22 [info]: Database connection established
+01.01.2025, 11:19:58 [info]: Loading route file: route_account_management.js
+01.01.2025, 11:19:58 [info]: Loading route file: route_blog.js
+01.01.2025, 11:19:58 [info]: Server is running on http://localhost:3000
+01.01.2025, 11:19:58 [error]: Fehler beim Überprüfen des Uvicorn-Servers: connect ECONNREFUSED 127.0.0.1:8001
+01.01.2025, 11:19:59 [info]: Database connection established
+01.01.2025, 12:50:30 [info]: Loading route file: route_account_management.js
+01.01.2025, 12:50:30 [info]: Loading route file: route_blog.js
+01.01.2025, 12:50:30 [info]: Server is running on http://localhost:3000
+01.01.2025, 12:50:30 [error]: Fehler beim Überprüfen des Uvicorn-Servers: Request failed with status code 404
+01.01.2025, 12:50:31 [info]: Database connection established
+01.01.2025, 12:52:01 [info]: Loading route file: route_account_management.js
+01.01.2025, 12:52:01 [info]: Loading route file: route_blog.js
+01.01.2025, 12:52:01 [info]: Server is running on http://localhost:3000
+01.01.2025, 12:52:01 [info]: Uvicorn Server Status: {"status":"ok","message":"Uvicorn server is running.","uptime":"Health endpoint operational."}
+01.01.2025, 12:52:02 [info]: Database connection established
+01.01.2025, 12:53:19 [info]: Loading route file: route_account_management.js
+01.01.2025, 12:53:19 [info]: Loading route file: route_blog.js
+01.01.2025, 12:53:20 [info]: Server is running on http://localhost:3000
+01.01.2025, 12:53:20 [info]: Uvicorn Server Status: {"status":"ok","message":"Uvicorn server is running.","uptime":"0:00:03.246063"}
+01.01.2025, 12:53:20 [info]: Database connection established
+01.01.2025, 12:55:05 [info]: Loading route file: route_account_management.js
+01.01.2025, 12:55:05 [info]: Loading route file: route_blog.js
+01.01.2025, 12:55:05 [info]: Server is running on http://localhost:3000
+01.01.2025, 12:55:05 [info]: Uvicorn Server Status: {"status":"ok","message":"Uvicorn server is running.","uptime":"0h 0m 3s"}
+01.01.2025, 12:55:05 [info]: Database connection established

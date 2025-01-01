@@ -1,7 +1,8 @@
 # venv aktivieren:
-.\venv\Scripts\Activate
+source ~/Projects/FH\ Campus\ Wien/WFP2/uvicorn_backend/venv-linux/bin/activate
 
-# Server starten: 
+
+# Server starten: in uvicorn_backend
 uvicorn main:app --reload --host 127.0.0.1 --port 8001
 
 # Swagger

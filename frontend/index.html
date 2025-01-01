@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechCompanyXY</title>
     <link rel="stylesheet" href="/blog/css/posts.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/saveModeVis.css">
+    <link rel="stylesheet" href="/css/queryVisualizer.css">
+
 </head>
 <body>
 <div id="navbar"></div>
@@ -22,26 +24,77 @@
     </select>
 </div>
 
+<div id="visualizationContainer" style="display: none;"></div>
 
 <p id="responseMessage"></p>
 
 <div id="postsContainer">Loading...</div>
 <script type="module">
     import { getCookie, setCookie } from '/js/cookieUtils.js';
+    import { visualizeSQLInjection } from '/js/queryVisualizer.js';
+
+    // Die ID des Containers, in dem die Visualisierung angezeigt wird
+    const containerId = 'visualizationContainer';
 
     /*******************************
-     * Safe Mode & Model Selection
+     * Initialisierung der Buttons
      *******************************/
 
     /**
-     * Initialisiert die Safe Mode- und Model Selection-Buttons
-     * und setzt deren Status basierend auf Cookies.
+     * Initialisiert die Buttons für Safe Mode und Model Selection.
+     * @returns {void}
      */
-    function initNavbarCookies() {
-        const modeToggle = document.getElementById('modeToggle');
-        const modelToggle = document.getElementById('modelToggle');
-        const safeModeText = document.getElementById('safeModeText');
+    function initCookieButtons() {
+        const modeToggle = document.getElementById('modeToggle'); // Button für Safe Mode
+        const modelToggle = document.getElementById('modelToggle'); // Button für Model Selection
+        const safeModeText = document.getElementById('safeModeText'); // Anzeige des Safe Mode Status
 
+        // Buttons aktualisieren
+        function safeModeUpdateButton() {
+            modeToggle.innerText = isSafeMode ? "Safe Mode Activated" : "Unsafe Mode Activated";
+            safeModeText.textContent = isSafeMode
+                ? "Safe Mode: Uses Prepared Statements and Input Validation"
+                : "Unsafe Mode: Uses dynamic SQL-Queries.";
+        }
+
+        /**
+         * Aktualisiert den Text des Model-Selection-Buttons.
+         * @returns {void}
+         */
+        function modelSelectionUpdateButton() {
+            if (modelSelection === 1) {
+                modelToggle.innerText = "Model 1";
+            }
+            if (modelSelection === 2) {
+                modelToggle.innerText = "Model 2";
+            }
+        }
+
+        /**
+         * Wechselt den Safe Mode und speichert den neuen Status im Cookie.
+         * @returns {void}
+         */
+        function safeModeToggleCookie() {
+            isSafeMode = !isSafeMode;
+            setCookie('safeMode', isSafeMode);
+            safeModeUpdateButton();
+        }
+
+        /**
+         * Wechselt die Model Selection und speichert die Auswahl im Cookie.
+         * @returns {void}
+         */
+        function modelSelectionToggleCookie() {
+            if (modelSelection === 1) {
+                modelSelection = 2;
+            } else if (modelSelection === 2) {
+                modelSelection = 1;
+            }
+            setCookie('modelSelection', modelSelection);
+            modelSelectionUpdateButton();
+        }
+
+        // Safe Mode und Model Selection laden
         let isSafeMode = getCookie('safeMode');
         if (isSafeMode === null) {
             isSafeMode = true; // Standardwert setzen
@@ -54,35 +107,16 @@
         if (modelSelection === null) {
             modelSelection = 1; // Standardmodell ist 1
             setCookie('modelSelection', modelSelection);
+            modelToggle.innerText = "Model 1";
         } else {
             modelSelection = parseInt(modelSelection, 10);
+            if (isNaN(modelSelection) || modelSelection < 1 || modelSelection > 2) { // Maximal 2 Modelle
+                setCookie('modelSelection', modelSelection);
+                modelToggle.innerText = modelSelection;
+            }
         }
 
-        // Updates für Buttons und Texte
-        function safeModeUpdateButton() {
-            modeToggle.innerText = isSafeMode ? "Safe Mode Activated" : "Unsafe Mode Activated";
-            safeModeText.textContent = isSafeMode
-                ? "Safe Mode: Uses Prepared Statements and Input Validation"
-                : "Unsafe Mode: Uses dynamic SQL-Queries.";
-        }
-
-        function modelSelectionUpdateButton() {
-            modelToggle.innerText = modelSelection === 1 ? "Model 1" : "Model 2";
-        }
-
-        function safeModeToggleCookie() {
-            isSafeMode = !isSafeMode;
-            setCookie('safeMode', isSafeMode);
-            safeModeUpdateButton();
-        }
-
-        function modelSelectionToggleCookie() {
-            modelSelection = modelSelection === 1 ? 2 : 1;
-            setCookie('modelSelection', modelSelection);
-            modelSelectionUpdateButton();
-        }
-
-        // Initialisierungen und Event-Listener
+        // Buttons initialisieren
         safeModeUpdateButton();
         modelSelectionUpdateButton();
         modeToggle.addEventListener('click', safeModeToggleCookie);
@@ -90,84 +124,124 @@
     }
 
     /*******************************
-     * Navbar-Funktionen
+     * Post-Bearbeitungsfunktionen
      *******************************/
 
     /**
-     * Lädt die Navbar und initialisiert die zugehörigen Buttons.
+     * Erlaubt das Bearbeiten eines Posts.
+     * @param {number} postId - Die ID des zu bearbeitenden Posts.
+     * @returns {void}
      */
-    async function loadNavbar() {
-        try {
-            const response = await fetch('/navbar.html');
-            if (response.ok) {
-                const navbarHTML = await response.text();
-                document.getElementById('navbar').innerHTML = navbarHTML;
-                initNavbarCookies();
-            } else {
-                console.error('Failed to load navbar');
-            }
-        } catch (error) {
-            console.error('Error loading navbar:', error);
+    function editPost(postId) {
+        const postElement = document.querySelector(`#post-${postId}`); // Post-Container
+        if (!postElement) {
+            console.error(`Post with ID ${postId} not found.`);
+            return;
         }
+
+        // Titel und Content laden
+        const titleElement = postElement.querySelector('.post-title');
+        const contentElement = postElement.querySelector('.post-content');
+        const originalTitle = titleElement.innerText;
+        const originalContent = contentElement.innerText;
+
+        // Textfelder einfügen
+        titleElement.innerHTML = `<input type="text" id="edit-title-${postId}" value="${originalTitle}" />`;
+        contentElement.innerHTML = `<textarea id="edit-content-${postId}">${originalContent}</textarea>`;
+
+        // Save-Button hinzufügen
+        const saveButton = document.createElement('button');
+        saveButton.innerText = "Save Changes";
+        saveButton.onclick = () => submitEdit(postId);
+        postElement.appendChild(saveButton);
     }
 
     /**
-     * Rendert die Navbar basierend auf dem Login-Status.
-     * @param {boolean} isLoggedIn - Ob der Benutzer eingeloggt ist.
-     * @param {string} username - Der Benutzername, falls eingeloggt.
+     * Sendet die Änderungen eines Posts an das Backend.
+     * @param {number} postId - Die ID des bearbeiteten Posts.
+     * @returns {void}
      */
-    function renderNavbar(isLoggedIn, username = '') {
-        const createPostButton = document.getElementById('createPostButton');
-        const logoutButton = document.getElementById('logoutButton');
-        const loginButton = document.getElementById('loginButton');
+    async function submitEdit(postId) {
+        const newTitle = document.querySelector(`#edit-title-${postId}`).value;
+        const newContent = document.querySelector(`#edit-content-${postId}`).value;
 
-        if (isLoggedIn) {
-            const usernameDisplay = document.createElement('li');
-            usernameDisplay.innerText = `Welcome, ${username}!`;
-            usernameDisplay.id = 'welcomeMessage';
-            if (!document.getElementById('welcomeMessage')) {
-                document.querySelector('nav ul').prepend(usernameDisplay);
+        try {
+            const response = await fetch(`/api/blog/editPost/${postId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ title: newTitle, content: newContent }),
+            });
+
+            const result = await response.json();
+
+            if(getCookie('safeMode') === 'false'){
+                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
             }
 
-            createPostButton.style.display = 'inline';
-            logoutButton.style.display = 'inline';
-            loginButton.style.display = 'none';
-
-            document.getElementById('logoutAction').addEventListener('click', async () => {
-                try {
-                    const response = await fetch('/api/acc_man/logout', {
-                        method: 'GET',
-                        headers: { 'Content-Type': 'application/json' },
-                        credentials: 'include',
-                    });
-
-                    if (response.ok) {
-                        window.location.href = '/account_management/logout.html';
-                    } else {
-                        console.error('Logout failed');
-                    }
-                } catch (error) {
-                    console.error('Error during logout:', error);
-                }
-            });
-        } else {
-            createPostButton.style.display = 'none';
-            logoutButton.style.display = 'none';
-            loginButton.style.display = 'inline';
+            if (response.ok) {
+                alert("post with id " + postId + " updated.")
+                fetchPosts(true);
+            } else {
+                alert('Failed to update post.');
+            }
+        } catch (error) {
+            console.error('Error updating post:', error);
+            alert('An error occurred while updating the post.');
         }
     }
 
     /*******************************
-     * Posts Management
+     * Post-Löschfunktion
      *******************************/
 
     /**
-     * Lädt und rendert Posts basierend auf dem Login-Status.
+     * Löscht einen Post anhand seiner ID.
+     * @param {number} postId - Die ID des zu löschenden Posts.
+     * @returns {void}
+     */
+    async function deletePost(postId) {
+        try {
+            const response = await fetch(`/api/blog/deletePost/${postId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include', // Sendet Cookies für Authentifizierung mit
+            });
+
+            const result = await response.json();
+
+            if(getCookie('safeMode') === 'false'){
+                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+            }
+
+            if (response.ok) {
+                alert("post with id " + postId + " deleted.")
+                fetchPosts(true); // Aktualisiere die Posts nach dem Löschen
+            } else {
+                const errorData = await response.json();
+                alert(`Failed to delete post: ${errorData.message}`);
+            }
+        } catch (error) {
+            console.error('Error deleting post:', error);
+            alert('An error occurred while deleting the post.');
+        }
+    }
+
+
+    /*******************************
+     * Posts abrufen und anzeigen
+     *******************************/
+
+    /**
+     * Ruft Posts vom Backend ab und zeigt sie an.
      * @param {boolean} isLoggedIn - Ob der Benutzer eingeloggt ist.
+     * @returns {void}
      */
     async function fetchPosts(isLoggedIn) {
         const container = document.getElementById('postsContainer');
-        container.innerHTML = 'Loading...';
 
         try {
             const response = await fetch('/api/blog/posts');
@@ -182,6 +256,7 @@
                 return;
             }
 
+            // Posts anzeigen
             posts.forEach(post => {
                 const postElement = document.createElement('div');
                 postElement.classList.add('post');
@@ -192,8 +267,8 @@
                     <small>Category: ${post.category_name || 'Uncategorized'}</small><br>
                     <small>Created at: ${new Date(post.creation_date).toLocaleString()}</small><br>
                     ${isLoggedIn ? `
-                        <button onclick="editPost(${post.id})">Edit Post</button>
-                        <button onclick="deletePost(${post.id})">Delete Post</button>
+                        <button onclick="Index.editPost(${post.id})">Edit Post</button>
+                        <button onclick="Index.deletePost(${post.id})">Delete Post</button>
                     ` : ''}
                 </div>
             `;
@@ -206,18 +281,111 @@
     }
 
     /*******************************
-     * Filter-Funktionen
+     * Navbar laden und initialisieren
      *******************************/
 
     /**
-     * Filtert Posts basierend auf der ausgewählten Kategorie.
-     * @param {Array} posts - Liste der Posts.
-     * @param {string} category - Die gewählte Kategorie.
+     * Lädt die Navbar und initialisiert die Cookie-Buttons.
+     * @returns {void}
+     */
+    async function loadNavbar() {
+        try {
+            const response = await fetch('/navbar.html');
+            if (response.ok) {
+                const navbarHTML = await response.text();
+                document.getElementById('navbar').innerHTML = navbarHTML;
+
+                // Safe Mode Buttons initialisieren
+                initCookieButtons();
+            } else {
+                console.error('Failed to load navbar');
+            }
+        } catch (error) {
+            console.error('Error loading navbar:', error);
+        }
+    }
+
+    /*******************************
+     * Navbar dynamisch anpassen
+     *******************************/
+
+    /**
+     * Passt die Navbar basierend auf dem Benutzerstatus an.
+     * @param {boolean} isLoggedIn - Gibt an, ob der Benutzer eingeloggt ist.
+     * @param {string} username - Der Benutzername des eingeloggten Benutzers (optional).
+     * @returns {void}
+     */
+    function renderNavbar(isLoggedIn, username = '') {
+        const createPostButton = document.getElementById('createPostButton'); // "Post erstellen"-Button
+        const logoutButton = document.getElementById('logoutButton'); // Logout-Button
+        const loginButton = document.getElementById('loginButton'); // Login-Button
+
+        if (isLoggedIn) {
+            // Begrüßung anzeigen
+            const usernameDisplay = document.createElement('li');
+            usernameDisplay.innerText = `Welcome, ${username}!`;
+            usernameDisplay.id = 'welcomeMessage'; // ID hinzufügen, um Duplikate zu vermeiden
+            if (!document.getElementById('welcomeMessage')) {
+                document.querySelector('nav ul').prepend(usernameDisplay);
+            }
+
+            // Buttons anzeigen
+            createPostButton.style.display = 'inline';
+            logoutButton.style.display = 'inline';
+            loginButton.style.display = 'none';
+
+            // Logout-Button mit Funktion belegen
+            document.getElementById('logoutAction').addEventListener('click', async () => {
+                try {
+                    const response = await fetch('/api/acc_man/logout', {
+                        method: 'GET',
+                        headers: { 'Content-Type': 'application/json' },
+                        credentials: 'include',
+                    });
+
+                    if (response.ok) {
+                        window.location.href = '/account_management/logout.html';
+                    } else {
+                        console.error('Logout failed');
+                        alert('Logout failed. Please try again.');
+                    }
+                } catch (error) {
+                    console.error('Error during logout:', error);
+                    alert('An error occurred during logout.');
+                }
+            });
+        } else {
+            // Begrüßung entfernen
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            if (welcomeMessage) welcomeMessage.remove();
+
+            // Buttons für nicht eingeloggte Benutzer
+            createPostButton.style.display = 'none';
+            logoutButton.style.display = 'none';
+            loginButton.style.display = 'inline';
+
+            // Login-Button mit Funktion belegen
+            document.getElementById('loginAction').addEventListener('click', () => {
+                window.location.href = '/account_management/login.html';
+            });
+        }
+    }
+
+    /*******************************
+     * Posts nach Kategorie filtern
+     *******************************/
+
+    /**
+     * Filtert die Posts basierend auf der gewählten Kategorie.
+     * @param {Array} posts - Die Liste der Posts.
+     * @param {string} category - Die Kategorie, nach der gefiltert werden soll.
+     * @returns {void}
      */
     function filterPostsByCategory(posts, category) {
         const container = document.getElementById('postsContainer');
-        container.innerHTML = '';
+        container.innerHTML = ''; // Container leeren
 
+        // Posts filtern
         const filteredPosts = category === 'all' ? posts : posts.filter(post => post.category_name === category);
 
         if (filteredPosts.length === 0) {
@@ -225,6 +393,7 @@
             return;
         }
 
+        // Gefilterte Posts anzeigen
         filteredPosts.forEach(post => {
             const postElement = document.createElement('div');
             postElement.classList.add('post');
@@ -234,8 +403,8 @@
                 <p class="post-content">${post.content}</p>
                 <small>Category: ${post.category_name || 'Uncategorized'}</small><br>
                 <small>Created at: ${new Date(post.creation_date).toLocaleString()}</small><br>
-                <button onclick="editPost(${post.id})">Edit Post</button>
-                <button onclick="deletePost(${post.id})">Delete Post</button>
+                <button onclick="Index.editPost(${post.id})">Edit Post</button>
+                <button onclick="Index.deletePost(${post.id})">Delete Post</button>
             </div>
         `;
             container.appendChild(postElement);
@@ -243,20 +412,21 @@
     }
 
     /*******************************
-     * Initialisierung
+     * Posts nach Auswahl filtern
      *******************************/
 
+    // Event-Listener für Kategorieauswahl
     document.getElementById('categoryFilter').addEventListener('change', async (event) => {
         const selectedCategory = event.target.value;
         const container = document.getElementById('postsContainer');
-        container.innerHTML = 'Loading...';
+        container.innerHTML = 'Loading...'; // Ladeanzeige
 
         try {
-            const response = await fetch('/api/blog/posts');
+            const response = await fetch('/api/blog/posts'); // Alle Posts abrufen
             if (!response.ok) throw new Error('Failed to fetch posts');
 
             const posts = await response.json();
-            filterPostsByCategory(posts, selectedCategory);
+            filterPostsByCategory(posts, selectedCategory); // Nach Kategorie filtern
         } catch (error) {
             console.error('Error fetching posts:', error);
             container.innerHTML = '<p>Error loading posts. Please try again later.</p>';
@@ -289,6 +459,13 @@
             await fetchPosts(false); // Fallback
         }
     })();
+
+    // Registriere die Funktionen im Namespace
+    window.Index = {
+        deletePost,
+        editPost,
+        submitEdit,
+    };
 
 </script>
 </body>

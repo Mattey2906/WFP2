@@ -9,20 +9,18 @@ const { createUser, validateLogin, deleteSession } = require(path.join(process.c
 const { unsafeCreateUser, unsafeValidateLogin, unsafeDeleteSession } = require(path.join(process.cwd(), 'db/unsafe_db_account_management'));
 const { logger } = require(path.join(process.cwd(), '/logging/logging'));
 const {getConnection} = require("../db/db_connector");
+const axios = require('axios');
 
 // ---------------------------------- REGISTER ROUTE ----------------------------------
 /**
  * Route zum Registrieren eines neuen Benutzers.
  */
 router.post('/acc_man/register', async (req, res) => {
-    const { username, password, safeMode } = req.body;
+    const { username, password } = req.body;
 
     if (!username || !password) {
         logger.info(`[login] Missing input`);
         return res.status(400).json({ message: 'username, password are required' });
-    }
-    if (safeMode === undefined || safeMode === null) {
-        return res.status(400).json({ message: 'Mode is required' });
     }
 
     try {
@@ -32,7 +30,7 @@ router.post('/acc_man/register', async (req, res) => {
             return res.status(500).json({ message: 'Internal server error during password encryption' });
         }
 
-        if(safeMode){
+        if(1 === 1){
             // Regex für Username
             const whitelistRegexUsername = /^[a-zA-Z0-9]+$/;
 
@@ -50,7 +48,7 @@ router.post('/acc_man/register', async (req, res) => {
             logger.info(`[register] User registered successfully: username=${username}, userId=${userId}`);
             res.status(201).json({ message: 'User created', userId });
         }
-        else if(!safeMode){
+        else if(1 === 0){
             const userId = await unsafeCreateUser(username, result.hash, result.salt);
 
             logger.info(`[unsafeRegister] User registered successfully: username=${username}, userId=${userId}`);
@@ -67,7 +65,9 @@ router.post('/acc_man/register', async (req, res) => {
  * Route für Benutzer-Login und Session-Erstellung.
  */
 router.post('/acc_man/login', async (req, res) => {
-    const { username, password, safeMode } = req.body;
+    const { username, password } = req.body;
+    const safeMode = req.cookies.safeMode;
+    const modelSelection = req.cookies.modelSelection;
 
     if (!username || !password) {
         logger.info(`[login] Missing input`);
@@ -77,8 +77,12 @@ router.post('/acc_man/login', async (req, res) => {
         return res.status(400).json({ message: 'Mode is required' });
     }
 
+    if (modelSelection === undefined || modelSelection === null) {
+        return res.status(400).json({ message: 'modelSelection is required' });
+    }
+
     try {
-        if(safeMode){
+        if(safeMode === 'true'){
             // Regex für Username
             const whitelistRegexUsername = /^[a-zA-Z0-9]+$/;
 
@@ -109,8 +113,53 @@ router.post('/acc_man/login', async (req, res) => {
             }
         }
 
-        else if(!safeMode){
-            const login = await unsafeValidateLogin(username, password);
+        else if(safeMode === 'false'){
+
+            let login;
+
+            const dbConnection = getConnection();
+            const { encryptPassword } = require(path.join(process.cwd(), '/logic/logic_account_management'));
+
+
+            const querySalt = `SELECT salt FROM users WHERE username = '${username}'`;
+            const [results1] = await dbConnection.query(querySalt);
+
+            const uvicornRequestData = {
+                query: querySalt,
+                model_selection: modelSelection,
+                parameters: [
+                    { username: username, password: password }
+                ],
+            };
+
+            const uvicornResponse = await axios.post('http://localhost:8000/analyze-sql', uvicornRequestData, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            logger.info('Response from FastAPI: ' + uvicornResponse.data);
+
+
+            if (results1.length === 0) {
+                logger.info(`[unsafeValidateLogin] User not found: username=${username}`);
+                login = false;
+            }
+
+            const salt = results1[0]?.salt; // Verhindert TypeError bei undefined
+            const { hash } = encryptPassword(password, salt); // Nur den Hash extrahieren
+
+            const queryLogin = `SELECT * FROM users WHERE username = '${username}' AND password = '${hash}'`;
+            const [results2] = await dbConnection.query(queryLogin);
+
+            if (results2.length > 0) {
+                logger.info(`[unsafeValidateLogin] Login successful: username=${username}`);
+                login = true;
+            } else {
+                logger.info(`[unsafeValidateLogin] Incorrect password: username=${username}`);
+                login = false;
+            }
+
             if (login) {
                 const sessionID = await unsafeGenerateSession(username);
 
@@ -121,7 +170,14 @@ router.post('/acc_man/login', async (req, res) => {
                     sameSite: 'Strict',
                     maxAge: 2 * 60 * 60 * 1000 // 2 Stunden
                 });
-                res.status(200).json({ message: 'Login successful' });
+
+                res.status(200).json({
+                    message: 'Login Succesful',
+                    queries: [querySalt, queryLogin],
+                    dbResponses: [results1, results2], // Beide Antworten zurückgeben (z. B. leere Antwort für DELETE)
+                    userInput: { username, password }
+                });
+
             } else {
                 logger.info(`[unsafeLogin] Unauthorized login attempt: username=${username}`);
                 res.status(401).json({ message: 'Unauthorized: No login' });
@@ -161,7 +217,7 @@ router.get('/acc_man/logout', async (req, res) => {
             return res.status(400).json({ message: 'safeMode undefined.' });
         }
 
-        if(safeMode){
+        if(safeMode === 'true'){
             const isDeleted = await deleteSession(sessionID);
 
             if (isDeleted) {
@@ -179,7 +235,7 @@ router.get('/acc_man/logout', async (req, res) => {
             }
         }
 
-        else if(!safeMode){
+        else if(safeMode === 'false'){
             const isDeleted = await unsafeDeleteSession(sessionID);
 
             if (isDeleted) {

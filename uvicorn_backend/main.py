@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
+from datetime import datetime, timedelta
 
 app = FastAPI()
 
@@ -13,20 +14,57 @@ def health_check():
     return {"status": "ok"}
 
 
-class InputData(BaseModel):
-    field_name: str  # Der Name des Eingabefelds
-    field_value: str  # Der Wert des Eingabefelds
+from pydantic import BaseModel
+from fastapi import FastAPI
+from typing import List, Optional
 
+app = FastAPI()
 
-class DynamicFormData(BaseModel):
-    inputs: List[InputData]  # Eine Liste von InputData-Objekten
+server_start_time = datetime.now()
 
+@app.get("/health")
+def health_check():
+    # Berechne die Uptime
+    current_time = datetime.now()
+    uptime = current_time - server_start_time
+    # Lesbares Format
+    days = uptime.days
+    hours, remainder = divmod(uptime.seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
 
-@app.post("/submit")
-async def handle_dynamic_form_data(form_data: DynamicFormData):
-    processed_data = {}
+    uptime_str = f"{days}d {hours}h {minutes}m {seconds}s" if days > 0 else f"{hours}h {minutes}m {seconds}s"
 
-    for input_item in form_data.inputs:
-        processed_data[input_item.field_name] = f"Received: {input_item.field_value}"
+    return {
+        "status": "ok",
+        "message": "Uvicorn server is running.",
+        "uptime": uptime_str
+    }
 
-    return {"message": "Form data processed successfully!", "processed_data": processed_data}
+class QueryParameter(BaseModel):
+    parameter_name: str
+    parameter_value: str
+
+class SQLAnalysisRequest(BaseModel):
+    query: str  # Die SQL-Query
+    model_selection: str  # Das ausgewählte Modell für die Analyse
+    parameters: Optional[List[QueryParameter]] = None  # Optional: Zusätzliche Parameter der Query
+
+@app.post("/analyze-sql")
+async def analyze_sql_query(request: SQLAnalysisRequest):
+    # Zugriff auf query und model_selection
+    query = request.query
+    model_selection = request.model_selection
+
+    # Verarbeite Parameter, wenn vorhanden
+    processed_parameters = {}
+    if request.parameters:
+        processed_parameters = {
+            param.parameter_name: f"Received: {param.parameter_value}" for param in request.parameters
+        }
+
+    return {
+        "message": "SQL analysis completed successfully!",
+        "query": query,
+        "model_selection": model_selection,
+        "processed_parameters": processed_parameters
+    }

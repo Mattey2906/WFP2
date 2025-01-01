@@ -4,18 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Blog Search</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1, h2 { color: #333; }
-    .post { border: 1px solid #ccc; padding: 15px; margin-bottom: 10px; border-radius: 5px; }
-    .post h2 { margin: 0 0 10px; }
-    .post p { margin: 5px 0; }
-    .post small { color: #777; display: block; margin-top: 10px; }
-    button { cursor: pointer; padding: 5px 10px; margin-top: 10px; }
-  </style>
+  <link rel="stylesheet" href="/blog/css/posts.css">
+  <link rel="stylesheet" href="/css/saveModeVis.css">
+  <link rel="stylesheet" href="/css/queryVisualizer.css">
 </head>
 <body>
 <div id="navbar"></div>
+<p id="safeModeText"></p>
 
 <h1>Search Blog Posts</h1>
 
@@ -46,34 +41,79 @@
   </form>
 </div>
 
+<div id="visualizationContainer" style="display: none;"></div>
+
+<p id="responseMessage"></p>
+
 <h2>Results</h2>
 <div id="results">No search has been performed yet.</div>
 
-<button onclick="window.location.href='/index.html';">Index</button>
-<button id="modeToggle" onclick="toggleMode()">Switch to Safe Mode</button>
+<script type="module">
+  import { getCookie, setCookie } from '../js/cookieUtils.js';
+  import { visualizeSQLInjection } from '../js/queryVisualizer.js';
 
-<script>
-  function initializeSafeModeButton() {
-    const modeToggle = document.getElementById('modeToggle');
-    if (!modeToggle) {
-      console.error('Mode toggle button not found in the DOM.');
-      return;
+  // Die ID des Containers, in dem die Visualisierung angezeigt wird
+  const containerId = 'visualizationContainer';
+
+  /*******************************
+   * Initialisierung der Buttons
+   *******************************/
+
+  /**
+   * Initialisiert die Buttons für Safe Mode und Model Selection.
+   * @returns {void}
+   */
+  function initCookieButtons() {
+    const modeToggle = document.getElementById('modeToggle'); // Button für Safe Mode
+    const modelToggle = document.getElementById('modelToggle'); // Button für Model Selection
+    const safeModeText = document.getElementById('safeModeText'); // Anzeige des Safe Mode Status
+
+    // Buttons aktualisieren
+    function safeModeUpdateButton() {
+      modeToggle.innerText = isSafeMode ? "Safe Mode Activated" : "Unsafe Mode Activated";
+      safeModeText.textContent = isSafeMode
+              ? "Safe Mode: Uses Prepared Statements and Input Validation"
+              : "Unsafe Mode: Uses dynamic SQL-Queries.";
     }
 
-    // Safe Mode Status aus Cookies laden
-    function getCookie(name) {
-      const cookies = document.cookie.split(';');
-      for (const cookie of cookies) {
-        const [key, value] = cookie.trim().split('=');
-        if (key === name) return value;
+    /**
+     * Aktualisiert den Text des Model-Selection-Buttons.
+     * @returns {void}
+     */
+    function modelSelectionUpdateButton() {
+      if (modelSelection === 1) {
+        modelToggle.innerText = "Model 1";
       }
-      return null;
+      if (modelSelection === 2) {
+        modelToggle.innerText = "Model 2";
+      }
     }
 
-    function setCookie(name, value) {
-      document.cookie = `${name}=${value}; path=/;`;
+    /**
+     * Wechselt den Safe Mode und speichert den neuen Status im Cookie.
+     * @returns {void}
+     */
+    function safeModeToggleCookie() {
+      isSafeMode = !isSafeMode;
+      setCookie('safeMode', isSafeMode);
+      safeModeUpdateButton();
     }
 
+    /**
+     * Wechselt die Model Selection und speichert die Auswahl im Cookie.
+     * @returns {void}
+     */
+    function modelSelectionToggleCookie() {
+      if (modelSelection === 1) {
+        modelSelection = 2;
+      } else if (modelSelection === 2) {
+        modelSelection = 1;
+      }
+      setCookie('modelSelection', modelSelection);
+      modelSelectionUpdateButton();
+    }
+
+    // Safe Mode und Model Selection laden
     let isSafeMode = getCookie('safeMode');
     if (isSafeMode === null) {
       isSafeMode = true; // Standardwert setzen
@@ -82,27 +122,44 @@
       isSafeMode = isSafeMode === 'true';
     }
 
-    function updateModeToggle() {
-      modeToggle.innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
+    let modelSelection = getCookie('modelSelection');
+    if (modelSelection === null) {
+      modelSelection = 1; // Standardmodell ist 1
+      setCookie('modelSelection', modelSelection);
+      modelToggle.innerText = "Model 1";
+    } else {
+      modelSelection = parseInt(modelSelection, 10);
+      if (isNaN(modelSelection) || modelSelection < 1 || modelSelection > 2) { // Maximal 2 Modelle
+        setCookie('modelSelection', modelSelection);
+        modelToggle.innerText = modelSelection;
+      }
     }
 
-    function toggleMode() {
-      isSafeMode = !isSafeMode;
-      setCookie('safeMode', isSafeMode);
-      updateModeToggle();
+    // Buttons initialisieren
+    safeModeUpdateButton();
+    modelSelectionUpdateButton();
+    modeToggle.addEventListener('click', safeModeToggleCookie);
+    modelToggle.addEventListener('click', modelSelectionToggleCookie);
+  }
+
+  async function hidePost(){
+    const postElement = document.getElementById(`post-${postId}`);
+    if (postElement) {
+      postElement.style.display = 'none'; // Macht das Element unsichtbar
+    } else {
+      console.log(`Post with ID ${postId} not found.`);
     }
-
-    // Button-Event und initialer Text
-    updateModeToggle();
-    modeToggle.addEventListener('click', toggleMode);
   }
 
-  async function updatePosts(){
-    // Formular manuell auslösen
-    const searchForm = document.getElementById('search-form');
-    searchForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
-  }
+  /*******************************
+   * Post-Löschfunktion
+   *******************************/
 
+  /**
+   * Löscht einen Post anhand seiner ID.
+   * @param {number} postId - Die ID des zu löschenden Posts.
+   * @returns {void}
+   */
   async function deletePost(postId) {
     try {
       const response = await fetch(`/api/blog/deletePost/${postId}`, {
@@ -110,12 +167,18 @@
         headers: {
           'Content-Type': 'application/json',
         },
-        credentials: 'include', // Sendet Cookies für die Authentifizierung mit
+        credentials: 'include', // Sendet Cookies für Authentifizierung mit
       });
 
+      const result = await response.json();
+
+      if(getCookie('safeMode') === 'false'){
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+      }
+
       if (response.ok) {
-        alert('Post deleted successfully');
-        updatePosts();
+        alert("post with id " + postId + " deleted.")
+        hidePost(postId);
       } else {
         const errorData = await response.json();
         alert(`Failed to delete post: ${errorData.message}`);
@@ -152,7 +215,7 @@
 
       if (!response.ok) throw new Error('Failed to fetch posts');
 
-      const posts = await response.json();
+      const result = await response.json();
       const resultsContainer = document.getElementById('results');
       resultsContainer.innerHTML = ''; // Vorherige Ergebnisse löschen
 
@@ -165,24 +228,30 @@
 
       const isLoggedIn = userResponse.ok;
 
+      if(getCookie('safeMode') === 'false'){
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+      }
+
       // Posts anzeigen
-      if (posts.length > 0) {
+      if (result.dbResponses.length > 0) {
+        // Greife auf das erste Array in dbResponses zu
+        const posts = result.dbResponses[0];
+
         posts.forEach(post => {
           const postElement = document.createElement('div');
           postElement.classList.add('post');
           postElement.id = `post-${post.id}`; // Füge eine eindeutige ID hinzu
           postElement.innerHTML = `
-    <h2 class="post-title">${post.title}</h2>
-    <p class="post-content">${post.content}</p>
-    <small>Category: ${post.category_name || 'Uncategorized'}</small><br>
-    <small>Created at: ${new Date(post.creation_date).toLocaleString()}</small><br>
-    ${isLoggedIn ? `
-    <button onclick="editPost(${post.id})">Edit Post</button>
-    <button onclick="deletePost(${post.id})">Delete Post</button>
-    ` : ''}
-  `;
-
-          resultsContainer.appendChild(postElement);
+            <h2 class="post-title">${post.title}</h2>
+            <p class="post-content">${post.content}</p>
+            <small>Category: ${post.category_name || 'Uncategorized'}</small><br>
+            <small>Created at: ${new Date(post.creation_date).toLocaleString()}</small><br>
+            ${isLoggedIn ? `
+            <button onclick="Index.editPost(${post.id})">Edit Post</button>
+            <button onclick="Index.deletePost(${post.id})">Delete Post</button>
+            ` : ''}
+        `;
+          document.body.appendChild(postElement); // Füge den Post zum DOM hinzu
         });
 
       } else {
@@ -218,6 +287,7 @@
     if (!saveButton) {
       saveButton = document.createElement('button');
       saveButton.classList.add('save-changes-button');
+      saveButton.id = `save-changes-${postId}`;
       saveButton.innerText = "Save Changes";
       saveButton.onclick = () => submitEdit(postId);
       postElement.appendChild(saveButton);
@@ -237,6 +307,12 @@
         body: JSON.stringify({ title: newTitle, content: newContent }),
       });
 
+      const result = await response.json();
+
+      if(getCookie('safeMode') === 'false'){
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+      }
+
       if (response.ok) {
         alert('Post updated successfully.');
 
@@ -246,8 +322,10 @@
         postElement.querySelector('.post-content').innerText = newContent;
 
         // Entferne den "Save Changes"-Button
-        const saveButton = postElement.querySelector('button');
-        saveButton.remove();
+        const saveButton = postElement.querySelector(`#save-changes-${postId}`);
+        if (saveButton) {
+          saveButton.remove();
+        }
       } else {
         alert('Failed to update post.');
       }
@@ -257,7 +335,14 @@
     }
   }
 
+  /*******************************
+   * Navbar laden und initialisieren
+   *******************************/
 
+  /**
+   * Lädt die Navbar und initialisiert die Cookie-Buttons.
+   * @returns {void}
+   */
   async function loadNavbar() {
     try {
       const response = await fetch('/navbar.html');
@@ -265,96 +350,110 @@
         const navbarHTML = await response.text();
         document.getElementById('navbar').innerHTML = navbarHTML;
 
-        // Safe Mode Button initialisieren, nachdem die Navbar geladen wurde
-        initializeSafeModeButton();
-
-        // Benutzerstatus abfragen und Posts laden
-        await initDynamicPageContent();
+        // Safe Mode Buttons initialisieren
+        initCookieButtons();
       } else {
         console.error('Failed to load navbar');
       }
     } catch (error) {
       console.error('Error loading navbar:', error);
-
     }
   }
 
-  async function initDynamicPageContent() {
+  /**
+   * Passt die Navbar basierend auf dem Benutzerstatus an.
+   * @param {boolean} isLoggedIn - Gibt an, ob der Benutzer eingeloggt ist.
+   * @param {string} username - Der Benutzername des eingeloggten Benutzers (optional).
+   * @returns {void}
+   */
+  function renderNavbar(isLoggedIn, username = '') {
+    const createPostButton = document.getElementById('createPostButton'); // "Post erstellen"-Button
+    const logoutButton = document.getElementById('logoutButton'); // Logout-Button
+    const loginButton = document.getElementById('loginButton'); // Login-Button
+
+    if (isLoggedIn) {
+      // Begrüßung anzeigen
+      const usernameDisplay = document.createElement('li');
+      usernameDisplay.innerText = `Welcome, ${username}!`;
+      usernameDisplay.id = 'welcomeMessage'; // ID hinzufügen, um Duplikate zu vermeiden
+      if (!document.getElementById('welcomeMessage')) {
+        document.querySelector('nav ul').prepend(usernameDisplay);
+      }
+
+      // Buttons anzeigen
+      createPostButton.style.display = 'inline';
+      logoutButton.style.display = 'inline';
+      loginButton.style.display = 'none';
+
+      // Logout-Button mit Funktion belegen
+      document.getElementById('logoutAction').addEventListener('click', async () => {
+        try {
+          const response = await fetch('/api/acc_man/logout', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+          });
+
+          if (response.ok) {
+            window.location.href = '/account_management/logout.html';
+          } else {
+            console.error('Logout failed');
+            alert('Logout failed. Please try again.');
+          }
+        } catch (error) {
+          console.error('Error during logout:', error);
+          alert('An error occurred during logout.');
+        }
+      });
+    } else {
+      // Begrüßung entfernen
+      const welcomeMessage = document.getElementById('welcomeMessage');
+      if (welcomeMessage) welcomeMessage.remove();
+
+      // Buttons für nicht eingeloggte Benutzer
+      createPostButton.style.display = 'none';
+      logoutButton.style.display = 'none';
+      loginButton.style.display = 'inline';
+
+      // Login-Button mit Funktion belegen
+      document.getElementById('loginAction').addEventListener('click', () => {
+        window.location.href = '/account_management/login.html';
+      });
+    }
+  }
+
+  loadNavbar();
+
+  (async () => {
     try {
       const response = await fetch('/api/acc_man/getUser', {
         method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include'
+        headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-cache' },
+        credentials: 'include',
       });
 
       const data = await response.json();
 
-      if (response.ok) {
-        renderLoggedInNavbar(data.username);
-
+      if (response.ok) { //eingeloggt
+        renderNavbar(true, data.username);
 
       } else {
-        renderLoggedOutNavbar();
+        renderNavbar(false); //ausgeloggt
+
       }
     } catch (error) {
       console.error('Error determining user status:', error);
-      renderLoggedOutNavbar();
+      renderNavbar(false);
+
     }
-  }
+  })();
 
-  function renderLoggedInNavbar(username) {
-    const usernameDisplay = document.createElement('li');
-    usernameDisplay.innerText = `Welcome, ${username}!`;
-    document.querySelector('nav ul').appendChild(usernameDisplay);
-
-    const logoutButton = document.getElementById('logoutButton');
-    logoutButton.style.display = 'inline'; // Zeige den Logout-Button
-
-    const logoutAction = document.getElementById('logoutAction');
-    logoutAction.addEventListener('click', async () => {
-      try {
-        const response = await fetch('/api/acc_man/logout', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          credentials: 'include'
-        });
-
-        if (response.ok) {
-          window.location.href = '/account_management/logout.html'; // Weiterleitung zur Login-Seite
-        } else {
-          console.error('Logout failed');
-          alert('Logout failed. Please try again.');
-        }
-      } catch (error) {
-        console.error('Error during logout:', error);
-        alert('An error occurred during logout.');
-      }
-    });
-
-    const createPostButton = document.getElementById('createPostButton');
-    createPostButton.style.display = 'inline'; // Zeige den Logout-Button
-
-    const createPostAction = document.getElementById('createPostAction');
-
-    createPostAction.addEventListener('click', async () => {
-      window.location.href = '/blog/createPost.html';
-    });
-  }
-
-  function renderLoggedOutNavbar() {
-    const loginLink = document.createElement('li');
-    loginLink.innerHTML = `<a href="/account_management/login.html">Login</a>`;
-    document.querySelector('nav ul').appendChild(loginLink);
-
-    const logoutButton = document.getElementById('logoutButton');
-    if (logoutButton) {
-      logoutButton.style.display = 'none'; // Verstecke den Logout-Button
-    }
-  }
-
-  loadNavbar()
+  // Registriere die Funktionen im Namespace
+  window.Index = {
+    deletePost,
+    editPost,
+    submitEdit,
+  };
 
 </script>
 </body>

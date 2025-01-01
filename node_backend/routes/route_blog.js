@@ -41,7 +41,7 @@ router.post('/blog/createPost', validateAndUpdateSession, async (req, res) => {
     const dbConnection = getConnection();
 
     try {
-        if (safeMode) {
+        if (safeMode === 'true') {
             // Regex für Title und Content
             const textRegex = /^[a-zA-Z0-9.,!?;:'"() -]+$/;
 
@@ -65,7 +65,7 @@ router.post('/blog/createPost', validateAndUpdateSession, async (req, res) => {
 
             logger.info(`Post created successfully with ID: ${insertResult.insertId}`);
             res.status(201).json({message: 'Post created successfully', postId: insertResult.insertId});
-        } else if (!safeMode) {
+        } else if (safeMode === 'false') {
 
             const sessionQuery = `SELECT user_id FROM sessions WHERE session_id = '${sessionID}'`;
             const [sessionResult] = await dbConnection.query(sessionQuery);
@@ -85,44 +85,6 @@ router.post('/blog/createPost', validateAndUpdateSession, async (req, res) => {
 });
 
 /**
- * Route zum Erstellen eines neuen Kommentars.
- */
-router.post('/blog/createComment', validateAndUpdateSession, async (req, res) => {
-    const {post_id, content} = req.body;
-    const sessionID = req.cookies.id;
-
-    // Input validieren
-    if (!post_id || !content) {
-        return res.status(400).json({message: 'Post ID and content are required.'});
-    }
-    if (!sessionID) {
-        return res.status(401).json({message: 'Unauthorized: No session ID provided.'});
-    }
-
-    try {
-        const dbConnection = getConnection();
-        const [sessionResult] = await dbConnection.execute(
-            'SELECT user_id FROM sessions WHERE session_id = ?',
-            [sessionID]
-        );
-
-        if (sessionResult.length === 0) {
-            return res.status(401).json({message: 'Invalid session.'});
-        }
-        const user_id = sessionResult[0].user_id;
-
-        const query = `INSERT INTO comments (post_id, user_id, content) VALUES (?, ?, ?)`;
-        const [insertResult] = await dbConnection.execute(query, [post_id, user_id, content]);
-
-        logger.info(`Comment created successfully with ID: ${insertResult.insertId}`);
-        res.status(201).json({message: 'Comment created successfully', commentId: insertResult.insertId});
-    } catch (err) {
-        logger.error(`Error creating comment: ${err.message}`);
-        res.status(500).json({message: 'Internal server error'});
-    }
-});
-
-/**
  * Route zum Abrufen aller Blogposts.
  */
 router.get('/blog/posts', async (req, res) => {
@@ -133,31 +95,6 @@ router.get('/blog/posts', async (req, res) => {
         res.status(200).json(rows);
     } catch (err) {
         console.error('Error fetching posts:', err.message);
-        res.status(500).json({message: 'Internal server error'});
-    }
-});
-
-/**
- * Route zum Abrufen von Kommentaren zu einem spezifischen Blogpost.
- */
-router.get('/blog/comments', async (req, res) => {
-    const {post_id} = req.query;
-
-    // Input validieren
-    if (!post_id) {
-        return res.status(400).json({message: 'post_id is required as a query parameter.'});
-    }
-
-    try {
-        const dbConnection = getConnection();
-        const [comments] = await dbConnection.execute(
-            'SELECT content, creation_date, user_id FROM comments WHERE post_id = ? ORDER BY creation_date DESC',
-            [post_id]
-        );
-
-        res.status(200).json(comments);
-    } catch (err) {
-        console.error(`Error fetching comments: ${err.message}`);
         res.status(500).json({message: 'Internal server error'});
     }
 });
@@ -184,6 +121,9 @@ router.delete('/blog/deletePost/:post_id', validateAndUpdateSession, async (req,
     try {
         const postId = req.params.post_id; // URL-Parameter abrufen
         const safeMode = req.cookies.safeMode;
+
+        logger.info(`[deletePost] Safe Mode: ${safeMode}.`);
+
         const modelSelection = req.cookies.modelSelection;
 
         if (!postId) {
@@ -200,7 +140,7 @@ router.delete('/blog/deletePost/:post_id', validateAndUpdateSession, async (req,
 
         const dbConnection = getConnection();
 
-        if (safeMode) {
+        if (safeMode === 'true') {
             const [rows] = await dbConnection.execute('SELECT * FROM posts WHERE id = ?', [postId]);
 
             if (rows.length === 0) {
@@ -209,21 +149,32 @@ router.delete('/blog/deletePost/:post_id', validateAndUpdateSession, async (req,
 
             // Post löschen
             await dbConnection.execute('DELETE FROM posts WHERE id = ?', [postId]);
-            res.status(200).json({message: 'Post deleted successfully'});
+            res.status(200).json({message: 'Safe Mode: Post deleted successfully'});
 
-        } else if (!safeMode) {
-            const query1 = 'SELECT * FROM posts WHERE id = ${post_id}';
-            const [rows] = await dbConnection.execute(query1);
+        }
 
-            if (rows.length === 0) {
-                return res.status(404).json({message: 'Post not found'});
+        else if (safeMode === 'false') {
+            const query1 = `SELECT * FROM posts WHERE id = ${postId}`;
+            const [rows1] = await dbConnection.execute(query1);
+
+            if (rows1.length === 0) {
+                return res.status(404).json({
+                    message: 'Post not found',
+                    queries: [query1],
+                    dbResponses: [rows1], // Rückgabe der Datenbankantwort
+                    userInput: { postId }
+                });
             }
 
-            // Post löschen
-            const query2 = 'DELETE FROM posts WHERE id = ${post_id}';
+            const query2 = `DELETE FROM posts WHERE id = ${postId}`;
             await dbConnection.execute(query2);
-            res.status(200).json({message: 'Post deleted successfully'});
 
+            res.status(200).json({
+                message: 'Unsafe Mode: Post deleted successfully',
+                queries: [query1, query2],
+                dbResponses: [rows1, []], // Beide Antworten zurückgeben (z. B. leere Antwort für DELETE)
+                userInput: { postId }
+            });
         }
 
     } catch (err) {
@@ -244,9 +195,9 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
     try {
         const dbConnection = getConnection();
 
-        if (safeMode) {
+        if (safeMode === 'true') {
             // Regex für Title und Content
-            const textRegex = /^[a-zA-Z0-9.,!?;:'"() -]+$/;
+            const textRegex = /^[\p{L}\p{N}\p{P}\p{Zs}]+$/u;
 
             // Eingabe validieren
             if (!textRegex.test(title) || !textRegex.test(content)) {
@@ -258,11 +209,31 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
                 [title, content, postId]
             );
             res.status(200).json({message: 'Post updated successfully'});
-        } else if (!safeMode) {
-            await dbConnection.execute(
-                'UPDATE posts SET title = ${title}, content = ${content} WHERE id = ${postId}'
-            );
-            res.status(200).json({message: 'Post updated successfully'});
+        } else if (safeMode === 'false') {
+
+            const query1 = `UPDATE posts SET title = '${title}', content = '${content}' WHERE id = ${postId}`;
+
+            logger.info(query1)
+
+            const [result1] = await dbConnection.execute(query1);
+
+            if(result1.length === 0) {
+                return res.status(404).json({
+                    message: 'Could not update Post',
+                    queries: [query1],
+                    dbResponses: [result1], // Rückgabe der Datenbankantwort
+                    userInput: { title, content, postId }
+                });
+            }
+
+            else{
+                return res.status(200).json({
+                    message: 'Post updated.',
+                    queries: [query1],
+                    dbResponses: [result1], // Rückgabe der Datenbankantwort
+                    userInput: { title, content, postId }
+                });
+            }
         }
 
     } catch (err) {
@@ -288,7 +259,7 @@ router.post('/blog/searchPosts', async (req, res) => {
     const dbConnection = getConnection();
 
     try {
-        if (safeMode) {
+        if (safeMode === 'true') {
             // Regex für Title und Content
             const textRegex = /^[a-zA-Z0-9.,!?;:'"() -]+$/;
 
@@ -307,7 +278,7 @@ router.post('/blog/searchPosts', async (req, res) => {
             `;
             logger.info(`[searchPosts] Executing query: ${query} with parameters: [${title ? `%${title}%` : null}, ${title ? `%${title}%` : null}, ${category || null}, ${category || null}, ${startDate || null}, ${startDate || null}, ${endDate || null}, ${endDate || null}]`);
 
-            const [results] = await dbConnection.execute(query, [
+            const [result1] = await dbConnection.execute(query, [
                 title ? `%${title}%` : null,
                 title ? `%${title}%` : null,
                 category || null,
@@ -318,12 +289,15 @@ router.post('/blog/searchPosts', async (req, res) => {
                 endDate || null
             ]);
 
-            logger.info(`[searchPosts] Query executed successfully, returned ${results.length} result(s)`);
-            res.json(results); // Ergebnisse als JSON zurückgeben
+            logger.info(`[searchPosts] Query executed successfully, returned ${result1.length} result(s)`);
+            return res.status(200).json({
+                message: 'Posts searched.',
+                dbResponses: [result1], // Rückgabe der Datenbankantwort
+            });
 
-        } else if (!safeMode) {
+        } else if (safeMode === 'false') {
             // SQL-Query debuggen
-            const query = `SELECT title, content, creation_date, category_name, id
+            const query1 = `SELECT title, content, creation_date, category_name, id
             FROM posts
             WHERE 1=1
               ${title ? `AND (title LIKE '%${title}%')` : ''}
@@ -332,12 +306,25 @@ router.post('/blog/searchPosts', async (req, res) => {
               ${endDate ? `AND (creation_date <= '${endDate}')` : ''};
             `;
 
-            logger.info(`[searchPosts] Executing UNSAFE query: ${query}`);
+            const [result1] = await dbConnection.execute(query1);
 
-            const [results] = await dbConnection.query(query);
+            if(result1.length === 0) {
+                return res.status(404).json({
+                    message: 'Could not search Posts',
+                    queries: [query1],
+                    dbResponses: [result1], // Rückgabe der Datenbankantwort
+                    userInput: { title, category, startDate, endDate }
+                });
+            }
 
-            logger.info(`[searchPosts] Query executed successfully, returned ${results.length} result(s)`);
-            res.json(results); // Ergebnisse als JSON zurückgeben
+            else{
+                return res.status(200).json({
+                    message: 'Posts searched.',
+                    queries: [query1],
+                    dbResponses: [result1], // Rückgabe der Datenbankantwort
+                    userInput: { title, category, startDate, endDate }
+                });
+            }
         }
 
     } catch (error) {

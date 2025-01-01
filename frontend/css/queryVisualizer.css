@@ -1,0 +1,54 @@
+/* Grundlegendes Styling für den Container */
+#visualizationContainer {
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding: 10px;
+    border: 2px solid #000; /* Rahmen hinzufügen */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: leichter Schatten */
+}
+
+/* Überschrift Styling */
+#visualizationContainer h3 {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* User Input Styling */
+#visualizationContainer div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+#visualizationContainer div strong {
+    font-weight: bold;
+}
+
+#visualizationContainer pre {
+    margin: 0;
+    padding: 5px;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+/* Liste der Queries */
+#visualizationContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#visualizationContainer ul li {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
