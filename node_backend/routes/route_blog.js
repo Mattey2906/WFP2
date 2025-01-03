@@ -13,6 +13,7 @@ const {
 const {createUser, validateLogin, deleteSession} = require(path.join(process.cwd(), 'db/db_account_management'));
 const {logger} = require(path.join(process.cwd(), '/logging/logging'));
 const {getConnection} = require("../db/db_connector");
+const { escapeSQLQuery, sendSQLQueryToUvicorn } = require(path.join(process.cwd(), '/ml_server/utils'));
 
 // ---------------------------------------------------------------------------------------
 // ------------------------------- CONTENT MANAGEMENT ROUTES -----------------------------
@@ -25,6 +26,7 @@ router.post('/blog/createPost', validateAndUpdateSession, async (req, res) => {
     const {title, content, category_name} = req.body;
     const sessionID = req.cookies.id;
     const safeMode = req.cookies.safeMode;
+    const modelSelection = req.cookies.modelSelection;
 
     // Input validieren
     if (!title || !content || !category_name) {
@@ -36,6 +38,9 @@ router.post('/blog/createPost', validateAndUpdateSession, async (req, res) => {
 
     if (safeMode === undefined) {
         return res.status(401).json({message: 'Unauthorized: No Mode selected.'});
+    }
+    if (modelSelection === undefined || modelSelection === null) {
+        return res.status(400).json({ message: 'modelSelection is required' });
     }
 
     const dbConnection = getConnection();
@@ -65,18 +70,35 @@ router.post('/blog/createPost', validateAndUpdateSession, async (req, res) => {
 
             logger.info(`Post created successfully with ID: ${insertResult.insertId}`);
             res.status(201).json({message: 'Post created successfully', postId: insertResult.insertId});
+
+
         } else if (safeMode === 'false') {
 
             const sessionQuery = `SELECT user_id FROM sessions WHERE session_id = '${sessionID}'`;
+            const mlResponse1 = await sendSQLQueryToUvicorn(sessionQuery, modelSelection);
+            logger.info("[deletePost/unsafe] Response from Uvicorn:", mlResponse1);
+
             const [sessionResult] = await dbConnection.query(sessionQuery);
 
             const author_id = sessionResult[0].user_id;
             const insertQuery = `INSERT INTO posts (title, content, category_name, author_id) VALUES ('${title}', '${content}', '${category_name}', '${author_id}')`;
+            const mlResponse2 = await sendSQLQueryToUvicorn(insertQuery, modelSelection);
+
+            logger.info("[deletePost/unsafe] Response from Uvicorn:", mlResponse2);
 
             const [insertResult] = await dbConnection.query(insertQuery);
 
             logger.info(`Post created successfully with ID: ${insertResult.insertId}`);
-            res.status(201).json({message: 'Post created successfully', postId: insertResult.insertId});
+
+            return res.status(201).json({
+                message: 'Posts created.',
+                postId: insertResult.insertId,
+                queries: [sessionQuery, insertQuery],
+                dbResponses: [sessionResult, insertResult], // Rückgabe der Datenbankantwort
+                userInput: { title, content, category_name },
+                mlResponses: [mlResponse1, mlResponse2]
+            });
+
         }
     } catch (err) {
         logger.error(`Error creating post: ${err.message}`);
@@ -121,10 +143,9 @@ router.delete('/blog/deletePost/:post_id', validateAndUpdateSession, async (req,
     try {
         const postId = req.params.post_id; // URL-Parameter abrufen
         const safeMode = req.cookies.safeMode;
+        const modelSelection = req.cookies.modelSelection;
 
         logger.info(`[deletePost] Safe Mode: ${safeMode}.`);
-
-        const modelSelection = req.cookies.modelSelection;
 
         if (!postId) {
             return res.status(400).json({message: 'PostId is required'});
@@ -133,7 +154,6 @@ router.delete('/blog/deletePost/:post_id', validateAndUpdateSession, async (req,
         if (safeMode === undefined || safeMode === null) {
             return res.status(400).json({message: 'Mode is required'});
         }
-
         if (modelSelection === undefined || modelSelection === null) {
             return res.status(400).json({message: 'Model is required'});
         }
@@ -157,23 +177,31 @@ router.delete('/blog/deletePost/:post_id', validateAndUpdateSession, async (req,
             const query1 = `SELECT * FROM posts WHERE id = ${postId}`;
             const [rows1] = await dbConnection.execute(query1);
 
+            const mlResponse1 = await sendSQLQueryToUvicorn(query1, modelSelection);
+            logger.info("[deletePost/unsafe] Response from Uvicorn:", mlResponse1);
+
             if (rows1.length === 0) {
                 return res.status(404).json({
                     message: 'Post not found',
                     queries: [query1],
                     dbResponses: [rows1], // Rückgabe der Datenbankantwort
-                    userInput: { postId }
+                    userInput: { postId },
+                    mlResponse: [mlResponse1]
                 });
             }
 
             const query2 = `DELETE FROM posts WHERE id = ${postId}`;
+            const mlResponse2 = await sendSQLQueryToUvicorn(query1);
+            logger.info("[deletePost/unsafe] Response from Uvicorn:", mlResponse2);
+
             await dbConnection.execute(query2);
 
             res.status(200).json({
                 message: 'Unsafe Mode: Post deleted successfully',
                 queries: [query1, query2],
                 dbResponses: [rows1, []], // Beide Antworten zurückgeben (z. B. leere Antwort für DELETE)
-                userInput: { postId }
+                userInput: { postId },
+                mlResponses: [mlResponse1, mlResponse2]
             });
         }
 
@@ -187,9 +215,17 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
     const postId = req.params.post_id;
     const {title, content} = req.body;
     const safeMode = req.cookies.safeMode;
+    const modelSelection = req.cookies.modelSelection;
 
     if (!title || !content || !postId) {
         return res.status(400).json({message: 'Title, content and PostID are required'});
+    }
+
+    if (safeMode === undefined || safeMode === null) {
+        return res.status(400).json({message: 'Mode is required'});
+    }
+    if (modelSelection === undefined || modelSelection === null) {
+        return res.status(400).json({message: 'Model is required'});
     }
 
     try {
@@ -213,7 +249,8 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
 
             const query1 = `UPDATE posts SET title = '${title}', content = '${content}' WHERE id = ${postId}`;
 
-            logger.info(query1)
+            const mlResponse1 = await sendSQLQueryToUvicorn(query1, modelSelection);
+            logger.info("[editPost/unsafe] Response from Uvicorn:", mlResponse1);
 
             const [result1] = await dbConnection.execute(query1);
 
@@ -222,7 +259,8 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
                     message: 'Could not update Post',
                     queries: [query1],
                     dbResponses: [result1], // Rückgabe der Datenbankantwort
-                    userInput: { title, content, postId }
+                    userInput: { title, content, postId },
+                    mlResponses: [mlResponse1]
                 });
             }
 
@@ -231,7 +269,8 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
                     message: 'Post updated.',
                     queries: [query1],
                     dbResponses: [result1], // Rückgabe der Datenbankantwort
-                    userInput: { title, content, postId }
+                    userInput: { title, content, postId },
+                    mlResponses: [mlResponse1]
                 });
             }
         }
@@ -245,6 +284,7 @@ router.put('/blog/editPost/:post_id', validateAndUpdateSession, async (req, res)
 router.post('/blog/searchPosts', async (req, res) => {
     const {title, category, startDate, endDate} = req.body;
     const safeMode = req.cookies.safeMode;
+    const modelSelection = req.cookies.modelSelection;
 
     if (!title && !category && !startDate && !endDate) {
         logger.info(`[searchPosts] No Search Parameters provided`);
@@ -254,6 +294,9 @@ router.post('/blog/searchPosts', async (req, res) => {
     if (safeMode === undefined) {
         logger.info(`[searchPosts] No Mode`);
         return res.status(400).json({error: 'No Mode'});
+    }
+    if (modelSelection === undefined || modelSelection === null) {
+        return res.status(400).json({ message: 'modelSelection is required' });
     }
 
     const dbConnection = getConnection();
@@ -306,6 +349,9 @@ router.post('/blog/searchPosts', async (req, res) => {
               ${endDate ? `AND (creation_date <= '${endDate}')` : ''};
             `;
 
+            const mlResponse1 = await sendSQLQueryToUvicorn(query1, modelSelection);
+            logger.info("[searchPosts/unsafe] Response from Uvicorn:", mlResponse1);
+
             const [result1] = await dbConnection.execute(query1);
 
             if(result1.length === 0) {
@@ -322,7 +368,8 @@ router.post('/blog/searchPosts', async (req, res) => {
                     message: 'Posts searched.',
                     queries: [query1],
                     dbResponses: [result1], // Rückgabe der Datenbankantwort
-                    userInput: { title, category, startDate, endDate }
+                    userInput: { title, category, startDate, endDate },
+                    mlResponses: [mlResponse1]
                 });
             }
         }

@@ -1,4 +1,4 @@
-export function visualizeSQLInjection(queries, userInput, dbResponses, containerId = []) {
+export function visualizeSQLInjection(queries, userInput, dbResponses, mlResponses, containerId = []) {
     const container = document.getElementById(containerId);
 
     if (!container) {
@@ -8,7 +8,6 @@ export function visualizeSQLInjection(queries, userInput, dbResponses, container
 
     // Container sichtbar machen
     container.style.display = 'block';
-
 
     container.innerHTML = ''; // Alte Inhalte löschen
 
@@ -49,9 +48,9 @@ export function visualizeSQLInjection(queries, userInput, dbResponses, container
     userInputDiv.innerHTML = `<strong>User Input:</strong><pre>${JSON.stringify(userInput, null, 2)}</pre>`;
     contentContainer.appendChild(userInputDiv);
 
-    // Queries und DB-Responses anzeigen
+    // Queries, DB-Responses und ML-Responses anzeigen
     const queryList = document.createElement('ul');
-    queryList.innerHTML = '<strong>Executed Queries and Responses:</strong>';
+    queryList.innerHTML = '<strong>Executed Queries, Responses, and ML Results:</strong>';
     queries.forEach((query, index) => {
         const listItem = document.createElement('li');
         listItem.textContent = `Query ${index + 1}: ${query}`;
@@ -73,6 +72,24 @@ export function visualizeSQLInjection(queries, userInput, dbResponses, container
             noResponseDiv.innerHTML = `<strong>DB Rows for Query ${index + 1}:</strong> No rows returned.`;
             noResponseDiv.style.marginLeft = '20px';
             queryList.appendChild(noResponseDiv);
+        }
+
+        // Zeige die entsprechenden ML-Response an
+        if (mlResponses[index]) {
+            const mlResponseDiv = document.createElement('div');
+            mlResponseDiv.innerHTML = `
+                <strong>ML Response for Query ${index + 1}:</strong>
+                <pre><strong>Predicted Class:</strong> ${mlResponses[index].predicted_class}</pre>
+                <pre><strong>Probabilities:</strong> ${JSON.stringify(mlResponses[index].probabilities, null, 2)}</pre>
+                <pre><strong>Message:</strong> ${mlResponses[index].message}</pre>
+            `;
+            mlResponseDiv.style.marginLeft = '20px';
+            queryList.appendChild(mlResponseDiv);
+        } else {
+            const noMLResponseDiv = document.createElement('div');
+            noMLResponseDiv.innerHTML = `<strong>ML Response for Query ${index + 1}:</strong> No ML response available.`;
+            noMLResponseDiv.style.marginLeft = '20px';
+            queryList.appendChild(noMLResponseDiv);
         }
     });
 

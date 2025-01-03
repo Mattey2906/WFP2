@@ -7,7 +7,8 @@ const checkUvicornServer = async () => {
         const response = await axios.get('http://127.0.0.1:8001/health');
 
         if (response.status === 200) {
-            logger.info(`Uvicorn Server Status: ${JSON.stringify(response.data)}`);
+            const { status, uptime } = response.data;
+            console.info(`Uvicorn Server erreichbar. Status: ${status}. Uptime: ${uptime}`);
         } else {
             logger.info(`Uvicorn Server nicht erreichbar. Statuscode: ${response.status}`);
         }

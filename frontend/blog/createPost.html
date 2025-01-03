@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Post</title>
+  <link rel="stylesheet" href="/blog/css/posts.css">
+  <link rel="stylesheet" href="/css/saveModeVis.css">
+  <link rel="stylesheet" href="/css/queryVisualizer.css">
 </head>
 <body>
+
 <div id="navbar"></div>
+<p id="safeModeText"></p>
+
 <h1>Create a New Blog Post</h1>
 <form id="createPostForm">
   <label for="title">Title:</label><br>
@@ -23,31 +29,69 @@
   <button type="submit">Create Post</button>
 </form>
 
-<button onclick="window.location.href='/';">index</button>
-<button id="modeToggle" onclick="toggleMode()">Switch to Safe Mode</button>
 
-<script>
-  function initializeSafeModeButton() {
-    const modeToggle = document.getElementById('modeToggle');
-    if (!modeToggle) {
-      console.error('Mode toggle button not found in the DOM.');
-      return;
+<div id="visualizationContainer" style="display: none;"></div>
+
+<p id="responseMessage"></p>
+
+<script type="module">
+  import { getCookie, setCookie } from '../js/cookieUtils.js';
+  import { visualizeSQLInjection } from '../js/queryVisualizer.js';
+
+  // Die ID des Containers, in dem die Visualisierung angezeigt wird
+  const containerId = 'visualizationContainer';
+
+  function initCookieButtons() {
+    const modeToggle = document.getElementById('modeToggle'); // Button für Safe Mode
+    const modelToggle = document.getElementById('modelToggle'); // Button für Model Selection
+    const safeModeText = document.getElementById('safeModeText'); // Anzeige des Safe Mode Status
+
+    // Buttons aktualisieren
+    function safeModeUpdateButton() {
+      modeToggle.innerText = isSafeMode ? "Safe Mode Activated" : "Unsafe Mode Activated";
+      safeModeText.textContent = isSafeMode
+              ? "Safe Mode: Uses Prepared Statements and Input Validation"
+              : "Unsafe Mode: Uses dynamic SQL-Queries.";
     }
 
-    // Safe Mode Status aus Cookies laden
-    function getCookie(name) {
-      const cookies = document.cookie.split(';');
-      for (const cookie of cookies) {
-        const [key, value] = cookie.trim().split('=');
-        if (key === name) return value;
+    /**
+     * Aktualisiert den Text des Model-Selection-Buttons.
+     * @returns {void}
+     */
+    function modelSelectionUpdateButton() {
+      if (modelSelection === 1) {
+        modelToggle.innerText = "Model 1";
       }
-      return null;
+      if (modelSelection === 2) {
+        modelToggle.innerText = "Model 2";
+      }
     }
 
-    function setCookie(name, value) {
-      document.cookie = `${name}=${value}; path=/;`;
+    /**
+     * Wechselt den Safe Mode und speichert den neuen Status im Cookie.
+     * @returns {void}
+     */
+    function safeModeToggleCookie() {
+      isSafeMode = !isSafeMode;
+      setCookie('safeMode', isSafeMode);
+      safeModeUpdateButton();
     }
 
+    /**
+     * Wechselt die Model Selection und speichert die Auswahl im Cookie.
+     * @returns {void}
+     */
+    function modelSelectionToggleCookie() {
+      if (modelSelection === 1) {
+        modelSelection = 2;
+      } else if (modelSelection === 2) {
+        modelSelection = 1;
+      }
+      setCookie('modelSelection', modelSelection);
+      modelSelectionUpdateButton();
+    }
+
+    // Safe Mode und Model Selection laden
     let isSafeMode = getCookie('safeMode');
     if (isSafeMode === null) {
       isSafeMode = true; // Standardwert setzen
@@ -56,113 +100,24 @@
       isSafeMode = isSafeMode === 'true';
     }
 
-    function updateModeToggle() {
-      modeToggle.innerText = isSafeMode ? "Switch to Unsafe Mode" : "Switch to Safe Mode";
-    }
-
-    function toggleMode() {
-      isSafeMode = !isSafeMode;
-      setCookie('safeMode', isSafeMode);
-      updateModeToggle();
-    }
-
-    // Button-Event und initialer Text
-    updateModeToggle();
-    modeToggle.addEventListener('click', toggleMode);
-  }
-
-  function renderLoggedInNavbar(username) {
-    const usernameDisplay = document.createElement('li');
-    usernameDisplay.innerText = `Welcome, ${username}!`;
-    document.querySelector('nav ul').appendChild(usernameDisplay);
-
-    const logoutButton = document.getElementById('logoutButton');
-    logoutButton.style.display = 'inline'; // Zeige den Logout-Button
-
-    const logoutAction = document.getElementById('logoutAction');
-    logoutAction.addEventListener('click', async () => {
-      try {
-        const response = await fetch('/api/acc_man/logout', {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          credentials: 'include'
-        });
-
-        if (response.ok) {
-          window.location.href = '/account_management/logout.html'; // Weiterleitung zur Login-Seite
-        } else {
-          console.error('Logout failed');
-          alert('Logout failed. Please try again.');
-        }
-      } catch (error) {
-        console.error('Error during logout:', error);
-        alert('An error occurred during logout.');
+    let modelSelection = getCookie('modelSelection');
+    if (modelSelection === null) {
+      modelSelection = 1; // Standardmodell ist 1
+      setCookie('modelSelection', modelSelection);
+      modelToggle.innerText = "Model 1";
+    } else {
+      modelSelection = parseInt(modelSelection, 10);
+      if (isNaN(modelSelection) || modelSelection < 1 || modelSelection > 2) { // Maximal 2 Modelle
+        setCookie('modelSelection', modelSelection);
+        modelToggle.innerText = modelSelection;
       }
-    });
-
-    const createPostButton = document.getElementById('createPostButton');
-    createPostButton.style.display = 'inline'; // Zeige den Logout-Button
-
-    const createPostAction = document.getElementById('createPostAction');
-
-    createPostAction.addEventListener('click', async () => {
-      window.location.href = '/blog/createPost.html';
-    });
-  }
-
-  function renderLoggedOutNavbar() {
-    const loginLink = document.createElement('li');
-    loginLink.innerHTML = `<a href="/account_management/login.html">Login</a>`;
-    document.querySelector('nav ul').appendChild(loginLink);
-
-    const logoutButton = document.getElementById('logoutButton');
-    if (logoutButton) {
-      logoutButton.style.display = 'none'; // Verstecke den Logout-Button
     }
-  }
 
-  async function loadNavbar() {
-    try {
-      const response = await fetch('/navbar.html');
-      if (response.ok) {
-        const navbarHTML = await response.text();
-        document.getElementById('navbar').innerHTML = navbarHTML;
-
-        // Safe Mode Button initialisieren, nachdem die Navbar geladen wurde
-        initializeSafeModeButton();
-        await initDynamicPageContent();
-
-        // Benutzerstatus abfragen und Posts laden
-      } else {
-        console.error('Failed to load navbar');
-      }
-    } catch (error) {
-      console.error('Error loading navbar:', error);
-    }
-  }
-
-  async function initDynamicPageContent() {
-    try {
-      const response = await fetch('/api/acc_man/getUser', {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include'
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        renderLoggedInNavbar(data.username);
-
-
-      } else {
-        renderLoggedOutNavbar();
-      }
-    } catch (error) {
-      console.error('Error determining user status:', error);
-    }
+    // Buttons initialisieren
+    safeModeUpdateButton();
+    modelSelectionUpdateButton();
+    modeToggle.addEventListener('click', safeModeToggleCookie);
+    modelToggle.addEventListener('click', modelSelectionToggleCookie);
   }
 
 
@@ -204,10 +159,16 @@
       const response = await fetch('/api/blog/createPost', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(formData)
       });
 
       const result = await response.json();
+
+      if(getCookie('safeMode') === 'false'){
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
+      }
+
       if (response.ok) {
         alert('Post created successfully!');
       } else {
@@ -219,7 +180,118 @@
     }
   });
 
+  /*******************************
+   * Navbar laden und initialisieren
+   *******************************/
+
+  /**
+   * Lädt die Navbar und initialisiert die Cookie-Buttons.
+   * @returns {void}
+   */
+  async function loadNavbar() {
+    try {
+      const response = await fetch('/navbar.html');
+      if (response.ok) {
+        const navbarHTML = await response.text();
+        document.getElementById('navbar').innerHTML = navbarHTML;
+
+        // Safe Mode Buttons initialisieren
+        initCookieButtons();
+      } else {
+        console.error('Failed to load navbar');
+      }
+    } catch (error) {
+      console.error('Error loading navbar:', error);
+    }
+  }
+
+  /**
+   * Passt die Navbar basierend auf dem Benutzerstatus an.
+   * @param {boolean} isLoggedIn - Gibt an, ob der Benutzer eingeloggt ist.
+   * @param {string} username - Der Benutzername des eingeloggten Benutzers (optional).
+   * @returns {void}
+   */
+  function renderNavbar(isLoggedIn, username = '') {
+    const createPostButton = document.getElementById('createPostButton'); // "Post erstellen"-Button
+    const logoutButton = document.getElementById('logoutButton'); // Logout-Button
+    const loginButton = document.getElementById('loginButton'); // Login-Button
+
+    if (isLoggedIn) {
+      // Begrüßung anzeigen
+      const usernameDisplay = document.createElement('li');
+      usernameDisplay.innerText = `Welcome, ${username}!`;
+      usernameDisplay.id = 'welcomeMessage'; // ID hinzufügen, um Duplikate zu vermeiden
+      if (!document.getElementById('welcomeMessage')) {
+        document.querySelector('nav ul').prepend(usernameDisplay);
+      }
+
+      // Buttons anzeigen
+      createPostButton.style.display = 'inline';
+      logoutButton.style.display = 'inline';
+      loginButton.style.display = 'none';
+
+      // Logout-Button mit Funktion belegen
+      document.getElementById('logoutAction').addEventListener('click', async () => {
+        try {
+          const response = await fetch('/api/acc_man/logout', {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+          });
+
+          if (response.ok) {
+            window.location.href = '/account_management/logout.html';
+          } else {
+            console.error('Logout failed');
+            alert('Logout failed. Please try again.');
+          }
+        } catch (error) {
+          console.error('Error during logout:', error);
+          alert('An error occurred during logout.');
+        }
+      });
+    } else {
+      // Begrüßung entfernen
+      const welcomeMessage = document.getElementById('welcomeMessage');
+      if (welcomeMessage) welcomeMessage.remove();
+
+      // Buttons für nicht eingeloggte Benutzer
+      createPostButton.style.display = 'none';
+      logoutButton.style.display = 'none';
+      loginButton.style.display = 'inline';
+
+      // Login-Button mit Funktion belegen
+      document.getElementById('loginAction').addEventListener('click', () => {
+        window.location.href = '/account_management/login.html';
+      });
+    }
+  }
+
   loadNavbar();
+
+  (async () => {
+    try {
+      const response = await fetch('/api/acc_man/getUser', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-cache' },
+        credentials: 'include',
+      });
+
+      const data = await response.json();
+
+      if (response.ok) { //eingeloggt
+        renderNavbar(true, data.username);
+
+      } else {
+        renderNavbar(false); //ausgeloggt
+
+      }
+    } catch (error) {
+      console.error('Error determining user status:', error);
+      renderNavbar(false);
+
+    }
+  })();
 
 </script>
 </body>

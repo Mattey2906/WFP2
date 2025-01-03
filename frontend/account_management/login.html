@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/blog/css/posts.css">
+    <link rel="stylesheet" href="/css/saveModeVis.css">
     <link rel="stylesheet" href="/css/queryVisualizer.css">
     <title>Login</title>
 </head>
@@ -22,7 +24,7 @@
     <input type="password" id="password" name="password"><br><br>
 
     <!-- Submit-Button -->
-    <button type="submit">Login</button>
+    <button id="login-button" type="submit">Login</button>
 </form>
 
 <div id="visualizationContainer" style="display: none;"></div>
@@ -232,7 +234,7 @@
                 },
                 body: JSON.stringify({
                     username: username,
-                    password: password // Safe Mode-Status mitsenden
+                    password: password
                 }),
                 credentials: 'include',
             });
@@ -240,10 +242,11 @@
             const result = await response.json();
 
             if(getCookie('safeMode') === 'false'){
-                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
             }
 
             if (response.ok) {
+                renderNavbar(true, username);
                 document.getElementById('responseMessage').innerText = result.message;
 
                 if(getCookie('safeMode') === 'true'){
@@ -251,6 +254,7 @@
                 }
                 else {
                     document.getElementById('proceed-button').style.display = 'block';
+                    document.getElementById('login-button').style.display = 'none';
                 }
 
             } else {

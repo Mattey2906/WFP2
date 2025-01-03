@@ -10,6 +10,7 @@ const { unsafeCreateUser, unsafeValidateLogin, unsafeDeleteSession } = require(p
 const { logger } = require(path.join(process.cwd(), '/logging/logging'));
 const {getConnection} = require("../db/db_connector");
 const axios = require('axios');
+const { escapeSQLQuery, sendSQLQueryToUvicorn } = require(path.join(process.cwd(), '/ml_server/utils'));
 
 // ---------------------------------- REGISTER ROUTE ----------------------------------
 /**
@@ -122,24 +123,9 @@ router.post('/acc_man/login', async (req, res) => {
 
 
             const querySalt = `SELECT salt FROM users WHERE username = '${username}'`;
+            const mlResponse1 = await sendSQLQueryToUvicorn(querySalt, modelSelection);
+            logger.info("[editPost/unsafe] Response from Uvicorn:", mlResponse1);
             const [results1] = await dbConnection.query(querySalt);
-
-            const uvicornRequestData = {
-                query: querySalt,
-                model_selection: modelSelection,
-                parameters: [
-                    { username: username, password: password }
-                ],
-            };
-
-            const uvicornResponse = await axios.post('http://localhost:8000/analyze-sql', uvicornRequestData, {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-
-            logger.info('Response from FastAPI: ' + uvicornResponse.data);
-
 
             if (results1.length === 0) {
                 logger.info(`[unsafeValidateLogin] User not found: username=${username}`);
@@ -150,6 +136,8 @@ router.post('/acc_man/login', async (req, res) => {
             const { hash } = encryptPassword(password, salt); // Nur den Hash extrahieren
 
             const queryLogin = `SELECT * FROM users WHERE username = '${username}' AND password = '${hash}'`;
+            const mlResponse2 = await sendSQLQueryToUvicorn(querySalt, modelSelection);
+            logger.info("[editPost/unsafe] Response from Uvicorn:", mlResponse2);
             const [results2] = await dbConnection.query(queryLogin);
 
             if (results2.length > 0) {
@@ -175,7 +163,8 @@ router.post('/acc_man/login', async (req, res) => {
                     message: 'Login Succesful',
                     queries: [querySalt, queryLogin],
                     dbResponses: [results1, results2], // Beide Antworten zurückgeben (z. B. leere Antwort für DELETE)
-                    userInput: { username, password }
+                    userInput: { username, password },
+                    mlResponses: [mlResponse1, mlResponse2]
                 });
 
             } else {

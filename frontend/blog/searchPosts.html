@@ -173,7 +173,7 @@
       const result = await response.json();
 
       if(getCookie('safeMode') === 'false'){
-        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
       }
 
       if (response.ok) {
@@ -229,7 +229,7 @@
       const isLoggedIn = userResponse.ok;
 
       if(getCookie('safeMode') === 'false'){
-        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
       }
 
       // Posts anzeigen
@@ -310,7 +310,7 @@
       const result = await response.json();
 
       if(getCookie('safeMode') === 'false'){
-        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+        visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
       }
 
       if (response.ok) {

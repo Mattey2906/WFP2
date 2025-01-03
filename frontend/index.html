@@ -25,10 +25,9 @@
 </div>
 
 <div id="visualizationContainer" style="display: none;"></div>
-
 <p id="responseMessage"></p>
-
 <div id="postsContainer">Loading...</div>
+
 <script type="module">
     import { getCookie, setCookie } from '/js/cookieUtils.js';
     import { visualizeSQLInjection } from '/js/queryVisualizer.js';
@@ -177,7 +176,7 @@
             const result = await response.json();
 
             if(getCookie('safeMode') === 'false'){
-                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
             }
 
             if (response.ok) {
@@ -214,7 +213,7 @@
             const result = await response.json();
 
             if(getCookie('safeMode') === 'false'){
-                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, containerId);
+                visualizeSQLInjection(result.queries, result.userInput, result.dbResponses, result.mlResponses, containerId);
             }
 
             if (response.ok) {
